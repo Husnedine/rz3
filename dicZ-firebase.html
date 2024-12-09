@@ -6,20 +6,20 @@
     <title>Zoto Dico Junior</title>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
- 
-    <script>
+    <!-- Firebase SDK (Version 9+) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+        import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js";
+
         // Initialiser Firebase
         const firebaseConfig = {
             apiKey: "AIzaSyBR1fdcI5eEQhueq4DxNNelfZT2RiOh2VA",
-            databaseURL: "https://rakibolana-d6a0b-default-rtdb.firebaseio.com",
+            databaseURL: "https://rakibolana-d6a0b-default-rtdb.firebaseio.com/",
             projectId: "rakibolana-d6a0b",
             appId: "1:918816609430:android:36dc72ee5c053077a39eb7"
         };
-        const app = firebase.initializeApp(firebaseConfig);
-        const database = firebase.database(app);
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
     </script>
 
     <style>
@@ -168,16 +168,16 @@
     </style>
 </head>
 <body>
-    <span class="mascot left">🦁</span>
-    <span class="mascot right">🐯</span>
-    <span class="star" style="top:5%;left:5%">⭐</span>
-    <span class="star" style="top:10%;right:5%">🌟</span>
-    <span class="star" style="bottom:5%;left:5%">⭐</span>
-    <span class="star" style="bottom:10%;right:5%">🌟</span>
+    <span class="mascot left"></span>
+    <span class="mascot right"></span>
+    <span class="star" style="top:5%;left:5%"></span>
+    <span class="star" style="top:10%;right:5%"></span>
+    <span class="star" style="bottom:5%;left:5%"></span>
+    <span class="star" style="bottom:10%;right:5%"></span>
 
     <div class="container">
-        <h1>Zoto Dico Junior 🎈</h1>
-        <input type="text" id="searchInput" placeholder="Écris ici ! ✨ اكتب هنا ✨ Write here" oninput="showSuggestions(this.value)">
+        <h1>Zoto Dico Junior </h1>
+        <input type="text" id="searchInput" placeholder="�cris ici !     Write here" oninput="showSuggestions(this.value)">
         <div id="suggestions"></div>
         <div id="result"></div>
     </div>
@@ -185,29 +185,31 @@
     <script>
         let dictionary = {};
 
-        // Récupérer les données depuis Firebase
+        // R�cup�rer les donn�es depuis Firebase
         const fetchData = () => {
-            const reference = database.ref('r4k5b6l7n8z9t1/789');
-            reference.get().then((snapshot) => {
+            const dbRef = ref(database, 'r4k5b6l7n8z9t1/789');
+            get(dbRef).then((snapshot) => {
                 if (snapshot.exists()) {
                     dictionary = snapshot.val();
-                    console.log('Données récupérées depuis Firebase:', dictionary);
+                    console.log('Donn�es r�cup�r�es depuis Firebase:', dictionary);
                 } else {
-                    console.error('Aucune donnée trouvée');
+                    console.error('Aucune donn�e trouv�e');
                 }
             }).catch((error) => {
-                console.error('Erreur lors de la récupération des données:', error);
+                console.error('Erreur lors de la r�cup�ration des donn�es:', error);
             });
         };
 
         // Appeler fetchData lors du chargement de la page
-        window.onload = fetchData;
+        window.onload = () => {
+            fetchData();
+        };
 
         const flags = {
-            "mg": "🇲🇬",
-            "fr": "🇫🇷",
-            "en": "🇬🇧",
-            "ar": "🇸🇦"
+            "mg": "",
+            "fr": "",
+            "en": "",
+            "ar": ""
         };
 
         function showSuggestions(input) {
@@ -250,24 +252,15 @@
             resultDiv.innerHTML = '';
 
             for (const key in dictionary) {
-                const result = dictionary[key];
-                if (Object.values(result).includes(word)) {
-                    const emojis = ["🌈", "🎈", "⭐", "🎨"];
-                    let i = 0;
-                    
-                    Object.entries(result).forEach(([langCode, text]) => {
-                        if (langCode !== 'type' && langCode !== 'example') {
-                            const div = document.createElement('div');
-                            div.className = 'translation';
-                            div.innerHTML = `
-                                <div class="word">${flags[langCode]} ${emojis[i]} ${text}</div>
-                                <div class="example">${result.example[langCode]}</div>
-                            `;
-                            resultDiv.appendChild(div);
-                            i = (i + 1) % emojis.length;
-                        }
-                    });
-                    break;
+                const data = dictionary[key];
+                if (data.fr && data.fr.toLowerCase() === word.toLowerCase()) {
+                    resultDiv.innerHTML += `
+                        <div class="translation">
+                            <span class="flag">${flags["fr"]}</span>
+                            <div class="word">${data.fr}</div>
+                            <div class="example">Exemple: ${data.example}</div>
+                        </div>
+                    `;
                 }
             }
         }
