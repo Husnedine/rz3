@@ -1,0 +1,4551 @@
+{
+    "chat": {
+        "mg": "saka",
+        "fr": "chat",
+        "en": "cat",
+        "ar": "قطة",
+        "example": {
+            "mg": "Misy saka ao an-trano",
+            "fr": "Il y a un chat dans la maison",
+            "en": "There is a cat in the house",
+            "ar": "هناك قطة في المنزل"
+        }
+    },
+    "chien": {
+        "mg": "alika",
+        "fr": "chien",
+        "en": "dog",
+        "ar": "كلب",
+        "example": {
+            "mg": "Tiako ny alikako",
+            "fr": "J'aime mon chien",
+            "en": "I love my dog",
+            "ar": "أحب كلبي"
+        }
+    },
+    "maison": {
+        "mg": "trano",
+        "fr": "maison",
+        "en": "house",
+        "ar": "منزل",
+        "example": {
+            "mg": "Tsara ny tranoko",
+            "fr": "Ma maison est belle",
+            "en": "My house is beautiful",
+            "ar": "منزلي جميل"
+        }
+    },
+    "voiture": {
+        "mg": "fiara",
+        "fr": "voiture",
+        "en": "car",
+        "ar": "سيارة",
+        "example": {
+            "mg": "Mandeha amin'ny fiara aho",
+            "fr": "Je vais en voiture",
+            "en": "I am going by car",
+            "ar": "أنا ذاهب بالسيارة"
+        }
+    },
+    "fleur": {
+        "mg": "voninkazo",
+        "fr": "fleur",
+        "en": "flower",
+        "ar": "زهرة",
+        "example": {
+            "mg": "Manana voninkazo tsara ny reniko",
+            "fr": "Ma mère a de belles fleurs",
+            "en": "My mother has beautiful flowers",
+            "ar": "أمي لديها زهور جميلة"
+        }
+    },
+    "arbre": {
+        "mg": "hazo",
+        "fr": "arbre",
+        "en": "tree",
+        "ar": "شجرة",
+        "example": {
+            "mg": "Misy hazo lehibe ao amin'ny zaridaina",
+            "fr": "Il y a un grand arbre dans le jardin",
+            "en": "There is a big tree in the garden",
+            "ar": "هناك شجرة كبيرة في الحديقة"
+        }
+    },
+    "pomme": {
+        "mg": "paoma",
+        "fr": "pomme",
+        "en": "apple",
+        "ar": "تفاحة",
+        "example": {
+            "mg": "Tsy tia paoma aho",
+            "fr": "Je n'aime pas les pommes",
+            "en": "I don't like apples",
+            "ar": "لا أحب التفاح"
+        }
+    },
+    "balle": {
+        "mg": "baolina",
+        "fr": "balle",
+        "en": "ball",
+        "ar": "كرة",
+        "example": {
+            "mg": "Milalao baolina ny ankizy",
+            "fr": "Les enfants jouent avec une balle",
+            "en": "The children are playing with a ball",
+            "ar": "الأطفال يلعبون بالكرة"
+        }
+    },
+    "livre": {
+        "mg": "boky",
+        "fr": "livre",
+        "en": "book",
+        "ar": "كتاب",
+        "example": {
+            "mg": "Misy boky eo amin'ny latabatra",
+            "fr": "Il y a un livre sur la table",
+            "en": "There is a book on the table",
+            "ar": "هناك كتاب على الطاولة"
+        }
+    },
+    "soleil": {
+        "mg": "masoandro",
+        "fr": "soleil",
+        "en": "sun",
+        "ar": "شمس",
+        "example": {
+            "mg": "Mibaliaka ny masoandro",
+            "fr": "Le soleil brille",
+            "en": "The sun is shining",
+            "ar": "الشمس ساطعة"
+        }
+    },
+    "étoile": {
+        "mg": "kintana",
+        "fr": "étoile",
+        "en": "star",
+        "ar": "نجم",
+        "example": {
+            "mg": "Tsy hita ny kintana androany alina",
+            "fr": "Les étoiles ne sont pas visibles ce soir",
+            "en": "The stars are not visible tonight",
+            "ar": "النجوم غير مرئية هذا المساء"
+        }
+    },
+    "lune": {
+        "mg": "volana",
+        "fr": "lune",
+        "en": "moon",
+        "ar": "قمر",
+        "example": {
+            "mg": "Mahita volana aho",
+            "fr": "Je vois la lune",
+            "en": "I see the moon",
+            "ar": "أرى القمر"
+        }
+    },
+    "eau": {
+        "mg": "rano",
+        "fr": "eau",
+        "en": "water",
+        "ar": "ماء",
+        "example": {
+            "mg": "Misy rano ao anaty tavoahangy",
+            "fr": "Il y a de l'eau dans la bouteille",
+            "en": "There is water in the bottle",
+            "ar": "هناك ماء في الزجاجة"
+        }
+    },
+    "pain": {
+        "mg": "mofo",
+        "fr": "pain",
+        "en": "bread",
+        "ar": "خبز",
+        "example": {
+            "mg": "Te hihinana mofo aho",
+            "fr": "Je veux manger du pain",
+            "en": "I want to eat bread",
+            "ar": "أريد أن آكل الخبز"
+        }
+    },
+    "lait": {
+        "mg": "ronono",
+        "fr": "lait",
+        "en": "milk",
+        "ar": "حليب",
+        "example": {
+            "mg": "Misy ronono ao anaty vata fampangatsiahana",
+            "fr": "Il y a du lait dans le réfrigérateur",
+            "en": "There is milk in the fridge",
+            "ar": "هناك حليب في الثلاجة"
+        }
+    },
+    "tasse": {
+        "mg": "tasy",
+        "fr": "tasse",
+        "en": "cup",
+        "ar": "فنجان",
+        "example": {
+            "mg": "Tiako ny tasiko",
+            "fr": "J'aime ma tasse",
+            "en": "I like my cup",
+            "ar": "أحب فنجاني"
+        }
+    },
+    "chaise": {
+        "mg": "seza",
+        "fr": "chaise",
+        "en": "chair",
+        "ar": "كرسي",
+        "example": {
+            "mg": "Mipetraka amin'ny seza aho",
+            "fr": "Je suis assis sur la chaise",
+            "en": "I am sitting on the chair",
+            "ar": "أنا جالس على الكرسي"
+        }
+    },
+    "table": {
+        "mg": "latabatra",
+        "fr": "table",
+        "en": "table",
+        "ar": "طاولة",
+        "example": {
+            "mg": "Misy boky eo ambonin'ny latabatra",
+            "fr": "Il y a un livre sur la table",
+            "en": "There is a book on the table",
+            "ar": "هناك كتاب على الطاولة"
+        }
+    },
+    "oiseau": {
+        "mg": "vorona",
+        "fr": "oiseau",
+        "en": "bird",
+        "ar": "طائر",
+        "example": {
+            "mg": "Manidina eny amin'ny lanitra ny vorona",
+            "fr": "L'oiseau vole dans le ciel",
+            "en": "The bird is flying in the sky",
+            "ar": "الطائر يطير في السماء"
+        }
+    },
+    "poisson": {
+        "mg": "trondro",
+        "fr": "poisson",
+        "en": "fish",
+        "ar": "سمك",
+        "example": {
+            "mg": "Misy trondro ao anaty rano",
+            "fr": "Il y a du poisson dans l'eau",
+            "en": "There is fish in the water",
+            "ar": "هناك سمك في الماء"
+        }
+    },
+    "ciel": {
+        "mg": "lanitra",
+        "fr": "ciel",
+        "en": "sky",
+        "ar": "سماء",
+        "example": {
+            "mg": "Manga ny lanitra",
+            "fr": "Le ciel est bleu",
+            "en": "The sky is blue",
+            "ar": "السماء زرقاء"
+        }
+    },
+    "porte": {
+        "mg": "varavarana",
+        "fr": "porte",
+        "en": "door",
+        "ar": "باب",
+        "example": {
+            "mg": "Misokatra ny varavarana",
+            "fr": "La porte est ouverte",
+            "en": "The door is open",
+            "ar": "الباب مفتوح"
+        }
+    },
+    "fenêtre": {
+        "mg": "varavarankely",
+        "fr": "fenêtre",
+        "en": "window",
+        "ar": "نافذة",
+        "example": {
+            "mg": "Manokatra ny varavarankely aho",
+            "fr": "J'ouvre la fenêtre",
+            "en": "I open the window",
+            "ar": "أفتح النافذة"
+        }
+    },
+    "clé": {
+        "mg": "fanalahidy",
+        "fr": "clé",
+        "en": "key",
+        "ar": "مفتاح",
+        "example": {
+            "mg": "Tsy hita ny fanalahidiko",
+            "fr": "Je ne trouve pas ma clé",
+            "en": "I can't find my key",
+            "ar": "لا أستطيع العثور على مفتاحي"
+        }
+    },
+    "lampe": {
+        "mg": "jiro",
+        "fr": "lampe",
+        "en": "lamp",
+        "ar": "مصباح",
+        "example": {
+            "mg": "Misy jiro ao amin'ny efitrano",
+            "fr": "Il y a une lampe dans la chambre",
+            "en": "There is a lamp in the room",
+            "ar": "هناك مصباح في الغرفة"
+        }
+    },
+    "chapeau": {
+        "mg": "satroka",
+        "fr": "chapeau",
+        "en": "hat",
+        "ar": "قبعة",
+        "example": {
+            "mg": "Manana satroka mena aho",
+            "fr": "J'ai un chapeau rouge",
+            "en": "I have a red hat",
+            "ar": "لدي قبعة حمراء"
+        }
+    },
+    "chaussure": {
+        "mg": "kiraro",
+        "fr": "chaussure",
+        "en": "shoe",
+        "ar": "حذاء",
+        "example": {
+            "mg": "Misy kiraro eo ambonin'ny latabatra",
+            "fr": "Il y a des chaussures sur la table",
+            "en": "There are shoes on the table",
+            "ar": "هناك أحذية على الطاولة"
+        }
+    },
+    "vêtement": {
+        "mg": "lamba",
+        "fr": "vêtement",
+        "en": "clothes",
+        "ar": "ملابس",
+        "example": {
+            "mg": "Manao lamba vaovao aho",
+            "fr": "Je porte des vêtements neufs",
+            "en": "I am wearing new clothes",
+            "ar": "أرتدي ملابس جديدة"
+        }
+    },
+    "sac": {
+        "mg": "kitapo",
+        "fr": "sac",
+        "en": "bag",
+        "ar": "حقيبة",
+        "example": {
+            "mg": "Mitondra kitapo aho",
+            "fr": "Je porte un sac",
+            "en": "I carry a bag",
+            "ar": "أحمل حقيبة"
+        }
+    },
+    "fille": {
+        "mg": "zazavavy",
+        "fr": "fille",
+        "en": "girl",
+        "ar": "فتاة",
+        "example": {
+            "mg": "Mankafy milalao ilay zazavavy",
+            "fr": "La fille aime jouer",
+            "en": "The girl likes to play",
+            "ar": "الفتاة تحب اللعب"
+        }
+    },
+    "garçon": {
+        "mg": "zazalahy",
+        "fr": "garçon",
+        "en": "boy",
+        "ar": "صبي",
+        "example": {
+            "mg": "Milalao baolina ilay zazalahy",
+            "fr": "Le garçon joue au football",
+            "en": "The boy is playing football",
+            "ar": "الولد يلعب كرة القدم"
+        }
+    },
+    "papa": {
+        "mg": "ray",
+        "fr": "papa",
+        "en": "dad",
+        "ar": "أب",
+        "example": {
+            "mg": "Miasa ny raiko",
+            "fr": "Mon père travaille",
+            "en": "My dad is working",
+            "ar": "أبي يعمل"
+        }
+    },
+    "maman": {
+        "mg": "reny",
+        "fr": "maman",
+        "en": "mom",
+        "ar": "أم",
+        "example": {
+            "mg": "Mihinana ny reniko",
+            "fr": "Ma mère mange",
+            "en": "My mom is eating",
+            "ar": "أمي تأكل"
+        }
+    },
+    "bébé": {
+        "mg": "zaza",
+        "fr": "bébé",
+        "en": "baby",
+        "ar": "طفل",
+        "example": {
+            "mg": "Matory ilay zaza",
+            "fr": "Le bébé dort",
+            "en": "The baby is sleeping",
+            "ar": "الطفل نائم"
+        }
+    },
+    "ami": {
+        "mg": "namana",
+        "fr": "ami",
+        "en": "friend",
+        "ar": "صديق",
+        "example": {
+            "mg": "Handeha hiasa ny namako",
+            "fr": "Mon ami va travailler",
+            "en": "My friend is going to work",
+            "ar": "صديقي ذاهب للعمل"
+        }
+    },
+    "école": {
+        "mg": "sekoly",
+        "fr": "école",
+        "en": "school",
+        "ar": "مدرسة",
+        "example": {
+            "mg": "Hoany an-tsekoly aho (Handeha hianatra aho)",
+            "fr": "Je vais à l'école",
+            "en": "I go to school",
+            "ar": "أذهب إلى المدرسة"
+        }
+    },
+    "professeur": {
+        "mg": "mpampianatra",
+        "fr": "professeur",
+        "en": "teacher",
+        "ar": "أستاذ",
+        "example": {
+            "mg": "Manazava ny lesona ny mpampianatra",
+            "fr": "Le professeur explique la leçon",
+            "en": "The teacher is explaining the lesson",
+            "ar": "الأستاذ يشرح الدرس"
+        }
+    },
+    "livre": {
+        "mg": "boky",
+        "fr": "livre",
+        "en": "book",
+        "ar": "كتاب",
+        "example": {
+            "mg": "Misy boky eo amin'ny latabatra",
+            "fr": "Il y a un livre sur la table",
+            "en": "There is a book on the table",
+            "ar": "هناك كتاب على الطاولة"
+        }
+    },
+    "stylo": {
+        "mg": "penina",
+        "fr": "stylo",
+        "en": "pen",
+        "ar": "قلم",
+        "example": {
+            "mg": "Manoratra amin'ny penina aho",
+            "fr": "J'écris avec un stylo",
+            "en": "I write with a pen",
+            "ar": "أكتب بقلم"
+        }
+    },
+    "papier": {
+        "mg": "taratasy",
+        "fr": "papier",
+        "en": "paper",
+        "ar": "ورقة",
+        "example": {
+            "mg": "Misy taratasy eo amin'ny latabatra",
+            "fr": "Il y a du papier sur la table",
+            "en": "There is paper on the table",
+            "ar": "هناك ورقة على الطاولة"
+        }
+    },
+    "crayon": {
+        "mg": "pensilihazo",
+        "fr": "crayon",
+        "en": "pencil",
+        "ar": "قلم رصاص",
+        "example": {
+            "mg": "Manao sary amin'ny pensilihazo aho",
+            "fr": "Je dessine avec un crayon",
+            "en": "I draw with a pencil",
+            "ar": "أرسم بالقلم الرصاص"
+        }
+    },
+    "chambre": {
+        "mg": "efitra",
+        "fr": "chambre",
+        "en": "room",
+        "ar": "غرفة",
+        "example": {
+            "mg": "Misy fandriana ao amin'ny efitra",
+            "fr": "Il y a un lit dans la chambre",
+            "en": "There is a bed in the room",
+            "ar": "هناك سرير في الغرفة"
+        }
+    },
+    "salon": {
+        "mg": "efitra fandraisam-bahiny",
+        "fr": "salon",
+        "en": "living room",
+        "ar": "غرفة معيشة",
+        "example": {
+            "mg": "Misy seza sy latabatra ao amin'ny efitra fandraisam-bahiny",
+            "fr": "Il y a des chaises et une table dans le salon",
+            "en": "There are chairs and a table in the living room",
+            "ar": "هناك كراسي وطاولة في غرفة المعيشة"
+        }
+    },
+    "cuisine": {
+        "mg": "lakozia",
+        "fr": "cuisine",
+        "en": "kitchen",
+        "ar": "مطبخ",
+        "example": {
+            "mg": "Mahandro ao an-dakozia aho",
+            "fr": "Je cuisine dans la cuisine",
+            "en": "I am cooking in the kitchen",
+            "ar": "أنا أطبخ في المطبخ"
+        }
+    },
+    "toilettes": {
+        "mg": "trano fidiovana",
+        "fr": "toilettes",
+        "en": "toilet",
+        "ar": "مرحاض",
+        "example": {
+            "mg": "Tsy afaka mankany amin'ny trano fidiovana aho",
+            "fr": "Je ne peux pas aller aux toilettes",
+            "en": "I can't go to the toilet",
+            "ar": "لا أستطيع الذهاب إلى المرحاض"
+        }
+    },
+    "balcon": {
+        "mg": "lavarangana",
+        "fr": "balcon",
+        "en": "balcony",
+        "ar": "شرفة",
+        "example": {
+            "mg": "Mijoro amin'ny lavarangana aho",
+            "fr": "Je me tiens sur le balcon",
+            "en": "I am standing on the balcony",
+            "ar": "أنا واقف على الشرفة"
+        }
+    },
+    "porte-monnaie": {
+        "mg": "poketram-bola",
+        "fr": "porte-monnaie",
+        "en": "wallet",
+        "ar": "محفظة",
+        "example": {
+            "mg": "Manana poketram-bola aho",
+            "fr": "J'ai un porte-monnaie",
+            "en": "I have a wallet",
+            "ar": "لدي محفظة"
+        }
+    },
+    "argent": {
+        "mg": "vola",
+        "fr": "argent",
+        "en": "money",
+        "ar": "مال",
+        "example": {
+            "mg": "Mila vola aho",
+            "fr": "J'ai besoin d'argent",
+            "en": "I need money",
+            "ar": "أحتاج إلى المال"
+        }
+    },
+    "banque": {
+        "mg": "banky",
+        "fr": "banque",
+        "en": "bank",
+        "ar": "بنك",
+        "example": {
+            "mg": "Misy banky eo an-tanàna",
+            "fr": "Il y a une banque en ville",
+            "en": "There is a bank in the town",
+            "ar": "هناك بنك في المدينة"
+        }
+    },
+    "voisin": {
+        "mg": "mpifanolo-bodirindrina",
+        "fr": "voisin",
+        "en": "neighbor",
+        "ar": "جار",
+        "example": {
+            "mg": "Olona tsara ny mpifanila trano amiko",
+            "fr": "J'ai un bon voisin",
+            "en": "I have a good neighbor",
+            "ar": "لدي جار جيد"
+        }
+    },
+    "magasin": {
+        "mg": "fivarotana",
+        "fr": "magasin",
+        "en": "store",
+        "ar": "محل",
+        "example": {
+            "mg": "Handeha hiantsena any amin'ny toeram-pivarotana aho",
+            "fr": "Je vais faire des courses au magasin",
+            "en": "I am going to shop at the store",
+            "ar": "أنا ذاهب للتسوق في المتجر"
+        }
+    },
+    "restaurant": {
+        "mg": "trano fisakafoanana",
+        "fr": "restaurant",
+        "en": "restaurant",
+        "ar": "مطعم",
+        "example": {
+            "mg": "Mihinana amin'ny trano fisakafoanana isika",
+            "fr": "Nous mangeons au restaurant",
+            "en": "We are eating at the restaurant",
+            "ar": "نحن نتناول الطعام في المطعم"
+        }
+    },
+    "marché": {
+        "mg": "tsena",
+        "fr": "marché",
+        "en": "market",
+        "ar": "سوق",
+        "example": {
+            "mg": "Mividy vokatra any an-tsena izahay",
+            "fr": "Nous achetons des produits au marché",
+            "en": "We buy products at the market",
+            "ar": "نشتري المنتجات من السوق"
+        }
+    },
+    "fruits": {
+        "mg": "voankazo",
+        "fr": "fruits",
+        "en": "fruits",
+        "ar": "فواكه",
+        "example": {
+            "mg": "Mividy voankazo any an-tsena tsena izahay",
+            "fr": "Nous achetons des fruits au marché",
+            "en": "We buy fruits at the market",
+            "ar": "نشتري الفواكه من السوق"
+        }
+    },
+    "légumes": {
+        "mg": "legioma",
+        "fr": "légumes",
+        "en": "vegetables",
+        "ar": "خضروات",
+        "example": {
+            "mg": "Mividy legioma any an-tsena izahay",
+            "fr": "Nous achetons des légumes au marché",
+            "en": "We buy vegetables at the market",
+            "ar": "نشتري الخضروات من السوق"
+        }
+    },
+    "fromage": {
+        "mg": "fromazy",
+        "fr": "fromage",
+        "en": "cheese",
+        "ar": "جبن",
+        "example": {
+            "mg": "Tia fromazy aho",
+            "fr": "J'aime le fromage",
+            "en": "I like cheese",
+            "ar": "أحب الجبن"
+        }
+    },
+    "pain": {
+        "mg": "mofo",
+        "fr": "pain",
+        "en": "bread",
+        "ar": "خبز",
+        "example": {
+            "mg": "Mividy mofo aho",
+            "fr": "J'achète du pain",
+            "en": "I buy bread",
+            "ar": "أشتري الخبز"
+        }
+    },
+    "beurre": {
+        "mg": "dibera",
+        "fr": "beurre",
+        "en": "butter",
+        "ar": "زبدة",
+        "example": {
+            "mg": "Hosorako dibera ilay mofo",
+            "fr": "Je mets du beurre sur le pain",
+            "en": "I put butter on the bread",
+            "ar": "أضع الزبدة على الخبز"
+        }
+    },
+    "salade": {
+        "mg": "lasary",
+        "fr": "salade",
+        "en": "salad",
+        "ar": "سلطة",
+        "example": {
+            "mg": "Manao salady aho",
+            "fr": "Je prépare une salade de laitue",
+            "en": "I'm making a lettuce salad",
+            "ar": "أنا أعد سلطة الخس"
+        }
+    },
+    "soupe": {
+        "mg": "lasopy",
+        "fr": "soupe",
+        "en": "soup",
+        "ar": "حساء",
+        "example": {
+            "mg": "Mihinana lasopy izahay",
+            "fr": "Nous mangeons de la soupe",
+            "en": "We are eating soup",
+            "ar": "نحن نأكل حساء"
+        }
+    },
+    "riz": {
+        "mg": "vary",
+        "fr": "riz",
+        "en": "rice",
+        "ar": "أرز",
+        "example": {
+            "mg": "Mihinam-bary izahay",
+            "fr": "Nous mangeons du riz",
+            "en": "We are eating rice",
+            "ar": "نحن نأكل الأرز"
+        }
+    },
+    "poisson": {
+        "mg": "trondro",
+        "fr": "poisson",
+        "en": "fish",
+        "ar": "سمك",
+        "example": {
+            "mg": "Mihinana trondro izahay",
+            "fr": "Nous mangeons du poisson",
+            "en": "We are eating fish",
+            "ar": "نحن نأكل السمك"
+        }
+    },
+    "viande": {
+        "mg": "hena",
+        "fr": "viande",
+        "en": "meat",
+        "ar": "لحم",
+        "example": {
+            "mg": "Mihinana hena izahay",
+            "fr": "Nous mangeons de la viande",
+            "en": "We are eating meat",
+            "ar": "نحن نأكل اللحم"
+        }
+    },
+    "poulet": {
+        "mg": "akoho",
+        "fr": "poulet",
+        "en": "chicken",
+        "ar": "دجاج",
+        "example": {
+            "mg": "Mihinana akoho izahay",
+            "fr": "Nous mangeons du poulet",
+            "en": "We are eating chicken",
+            "ar": "نحن نأكل الدجاج"
+        }
+    },
+    "œuf": {
+        "mg": "atody",
+        "fr": "œuf",
+        "en": "egg",
+        "ar": "بيض",
+        "example": {
+            "mg": "Mihinana atody izahay",
+            "fr": "Nous mangeons des œufs",
+            "en": "We are eating eggs",
+            "ar": "نحن نأكل البيض"
+        }
+    },
+    "lait": {
+        "mg": "ronono",
+        "fr": "lait",
+        "en": "milk",
+        "ar": "حليب",
+        "example": {
+            "mg": "Misotro ronono aho",
+            "fr": "Je bois du lait",
+            "en": "I drink milk",
+            "ar": "أنا أشرب الحليب"
+        }
+    },
+    "eau": {
+        "mg": "rano",
+        "fr": "eau",
+        "en": "water",
+        "ar": "ماء",
+        "example": {
+            "mg": "Misotro rano aho",
+            "fr": "Je bois de l'eau",
+            "en": "I drink water",
+            "ar": "أشرب الماء"
+        }
+    },
+    "jus": {
+        "mg": "ranom-boankazo",
+        "fr": "jus",
+        "en": "juice",
+        "ar": "عصير",
+        "example": {
+            "mg": "Misotro ranom-boankazo aho",
+            "fr": "Je bois du jus",
+            "en": "I drink juice",
+            "ar": "أنا أشرب العصير"
+        }
+    },
+    "bouteille": {
+        "mg": "tavoahangy",
+        "fr": "bouteille",
+        "en": "bottle",
+        "ar": "زجاجة",
+        "example": {
+            "mg": "Misy tavoahangy eo amin'ny latabatra",
+            "fr": "Il y a une bouteille sur la table",
+            "en": "There is a bottle on the table",
+            "ar": "هناك زجاجة على الطاولة"
+        }
+    },
+    "verre": {
+        "mg": "vera",
+        "fr": "verre",
+        "en": "glass",
+        "ar": "كأس",
+        "example": {
+            "mg": "Misy kaopy rano iray vera eto",
+            "fr": "Il y a un verre d'eau ici",
+            "en": "There is a glass of water here",
+            "ar": "هناك كأس من الماء هنا"
+        }
+    },
+    "tasse": {
+        "mg": "tasy",
+        "fr": "tasse",
+        "en": "cup",
+        "ar": "فنجان",
+        "example": {
+            "mg": "Misy tasina kafe eto",
+            "fr": "Il y a une tasse de café ici",
+            "en": "There is a cup of coffee here",
+            "ar": "هناك فنجان من القهوة هنا"
+        }
+    },
+    "chocolat": {
+        "mg": "sokola",
+        "fr": "chocolat",
+        "en": "chocolate",
+        "ar": "شوكولاتة",
+        "example": {
+            "mg": "Mihinana sokola aho",
+            "fr": "Je mange du chocolat",
+            "en": "I am eating chocolate",
+            "ar": "أنا أتناول الشوكولاتة"
+        }
+    },
+    "gâteau": {
+        "mg": "mofomamy",
+        "fr": "gâteau",
+        "en": "cake",
+        "ar": "كعكة",
+        "example": {
+            "mg": "Maka mofomamy aho",
+            "fr": "Je prends un gâteau",
+            "en": "I take a cake",
+            "ar": "أنا آخذ كعكة"
+        }
+    },
+    "bonbon": {
+        "mg": "vatomamy",
+        "fr": "bonbon",
+        "en": "candy",
+        "ar": "حلوى",
+        "example": {
+            "mg": "Mihinana vatomamy aho",
+            "fr": "Je mange des bonbons",
+            "en": "I eat candy",
+            "ar": "أنا آكل الحلوى"
+        }
+    },
+    "framboise": {
+        "mg": "voarointsaka",
+        "fr": "framboise",
+        "en": "raspberry",
+        "ar": "توت العليق",
+        "example": {
+            "mg": "Mihinana voarointsaka aho",
+            "fr": "Je mange des framboises",
+            "en": "I eat raspberries",
+            "ar": "أنا آكل التوت"
+        }
+    },
+    "fraise": {
+        "mg": "frezy",
+        "fr": "fraise",
+        "en": "strawberry",
+        "ar": "فراولة",
+        "example": {
+            "mg": "Mankafy fraisi aho",
+            "fr": "Je mange des fraises",
+            "en": "I am eating strawberries",
+            "ar": "أنا آكل الفراولة"
+        }
+    },
+    "pomme": {
+        "mg": "paoma",
+        "fr": "pomme",
+        "en": "apple",
+        "ar": "تفاحة",
+        "example": {
+            "mg": "Mihinana paoma aho",
+            "fr": "Je mange une pomme",
+            "en": "I am eating an apple",
+            "ar": "أنا آكل تفاحة"
+        }
+    },
+    "banane": {
+        "mg": "akondro",
+        "fr": "banane",
+        "en": "banana",
+        "ar": "موز",
+        "example": {
+            "mg": "Mihinana akondro aho",
+            "fr": "Je mange une banane",
+            "en": "I am eating a banana",
+            "ar": "أنا آكل موزة"
+        }
+    },
+    "orange": {
+        "mg": "voasary",
+        "fr": "orange",
+        "en": "orange",
+        "ar": "برتقال",
+        "example": {
+            "mg": "Mihinana voasary aho",
+            "fr": "Je mange une orange",
+            "en": "I am eating an orange",
+            "ar": "أنا آكل برتقالة"
+        }
+    },
+    "melon": {
+        "mg": "voatango",
+        "fr": "melon",
+        "en": "melon",
+        "ar": "بطيخ",
+        "example": {
+            "mg": "Mihinana voatango aho",
+            "fr": "Je mange du melon",
+            "en": "I am eating melon",
+            "ar": "أنا آكل البطيخ"
+        }
+    },
+    "raisin": {
+        "mg": "voaloboka",
+        "fr": "raisin",
+        "en": "grape",
+        "ar": "عنب",
+        "example": {
+            "mg": "Mihinana voaloboka aho",
+            "fr": "Je mange des raisins",
+            "en": "I am eating grapes",
+            "ar": "أنا آكل العنب"
+        }
+    },
+    "citron": {
+        "mg": "voasarimakirana",
+        "fr": "citron",
+        "en": "lemon",
+        "ar": "ليمون",
+        "example": {
+            "mg": "Manao ranom-boasarimakirana aho",
+            "fr": "Je fais du jus de citron",
+            "en": "I make lemon juice",
+            "ar": "أنا أصنع عصير الليمون"
+        }
+    },
+    "tomate": {
+        "mg": "voatabia",
+        "fr": "tomate",
+        "en": "tomato",
+        "ar": "طماطم",
+        "example": {
+            "mg": "Mihinana voatabia aho",
+            "fr": "Je mange une tomate",
+            "en": "I am eating a tomato",
+            "ar": "أنا آكل طماطم"
+        }
+    },
+    "carotte": {
+        "mg": "karaoty",
+        "fr": "carotte",
+        "en": "carrot",
+        "ar": "جزر",
+        "example": {
+            "mg": "Mihinana karaoty aho",
+            "fr": "Je mange une carotte",
+            "en": "I am eating a carrot",
+            "ar": "أنا آكل جزرة"
+        }
+    },
+    "concombre": {
+        "mg": "kôkômbra",
+        "fr": "concombre",
+        "en": "cucumber",
+        "ar": "خيار",
+        "example": {
+            "mg": "Mihinana kôkômbra aho",
+            "fr": "Je mange un concombre",
+            "en": "I am eating a cucumber",
+            "ar": "أنا آكل خيار"
+        }
+    },
+    "pomme de terre": {
+        "mg": "ovy",
+        "fr": "pomme de terre",
+        "en": "potato",
+        "ar": "بطاطا",
+        "example": {
+            "mg": "Mihinana ovy aho",
+            "fr": "Je mange une pomme de terre",
+            "en": "I am eating a potato",
+            "ar": "أنا آكل بطاطا"
+        }
+    },
+    "aubergine": {
+        "mg": "baranjely",
+        "fr": "aubergine",
+        "en": "eggplant",
+        "ar": "باذنجان",
+        "example": {
+            "mg": "Mihinana baranjely aho",
+            "fr": "Je mange une aubergine",
+            "en": "I am eating an eggplant",
+            "ar": "أنا آكل باذنجان"
+        }
+    },
+    "poivron": {
+        "mg": "sakaibe",
+        "fr": "poivron",
+        "en": "pepper",
+        "ar": "فليفل",
+        "example": {
+            "mg": "Mihinana sakaibe aho",
+            "fr": "Je mange du poivron",
+            "en": "I am eating pepper",
+            "ar": "أنا آكل فليفل"
+        }
+    },
+    "oignon": {
+        "mg": "tongolo",
+        "fr": "oignon",
+        "en": "onion",
+        "ar": "بصل",
+        "example": {
+            "mg": "Mihinana tongolo aho",
+            "fr": "Je mange un oignon",
+            "en": "I am eating an onion",
+            "ar": "أنا آكل بصل"
+        }
+    },
+    "ail": {
+        "mg": "tongologasy",
+        "fr": "ail",
+        "en": "garlic",
+        "ar": "ثوم",
+        "example": {
+            "mg": "Manao saosy togologasy aho",
+            "fr": "Je fais de la sauce à l'ail",
+            "en": "I make garlic sauce",
+            "ar": "أنا أصنع صلصة الثوم"
+        }
+    },
+    "huile": {
+        "mg": "menaka",
+        "fr": "huile",
+        "en": "oil",
+        "ar": "زيت",
+        "example": {
+            "mg": "Manao menaka amin'ny sakafo aho",
+            "fr": "Je mets de l'huile dans la nourriture",
+            "en": "I put oil in the food",
+            "ar": "أضع الزيت في الطعام"
+        }
+    },
+    "sel": {
+        "mg": "sira",
+        "fr": "sel",
+        "en": "salt",
+        "ar": "ملح",
+        "example": {
+            "mg": "Manisy sira amin'ny sakafo aho",
+            "fr": "Je mets du sel dans la nourriture",
+            "en": "I put salt in the food",
+            "ar": "أضع الملح في الطعام"
+        }
+    },
+    "poivre": {
+        "mg": "dipoavatra",
+        "fr": "poivre",
+        "en": "pepper",
+        "ar": "فلفل أسود",
+        "example": {
+            "mg": "Manisy dipoavatra amin'ny sakafo aho",
+            "fr": "Je mets du poivre dans la nourriture",
+            "en": "I put pepper in the food",
+            "ar": "أضع الفلفل في الطعام"
+        }
+    },
+    "pain": {
+        "mg": "mofo",
+        "fr": "pain",
+        "en": "bread",
+        "ar": "خبز",
+        "example": {
+            "mg": "Mihinana mofo aho",
+            "fr": "Je mange du pain",
+            "en": "I am eating bread",
+            "ar": "أنا آكل خبز"
+        }
+    },
+    "beurre": {
+        "mg": "dibera",
+        "fr": "beurre",
+        "en": "butter",
+        "ar": "زبدة",
+        "example": {
+            "mg": "Manosotra dibera amin'ny mofo aho",
+            "fr": "Je mets du beurre sur le pain",
+            "en": "I put butter on the bread",
+            "ar": "أضع الزبدة على الخبز"
+        }
+    },
+    "fromage": {
+        "mg": "fromazy",
+        "fr": "fromage",
+        "en": "cheese",
+        "ar": "جبن",
+        "example": {
+            "mg": "Mihinana fromazy aho",
+            "fr": "Je mange du fromage",
+            "en": "I am eating cheese",
+            "ar": "أنا آكل الجبن"
+        }
+    },
+    "yaourt": {
+        "mg": "iaorta",
+        "fr": "yaourt",
+        "en": "yogurt",
+        "ar": "زبادي",
+        "example": {
+            "mg": "Mihinana iaorta aho",
+            "fr": "Je mange du yaourt",
+            "en": "I am eating yogurt",
+            "ar": "أنا آكل الزبادي"
+        }
+    },
+    "café": {
+        "mg": "kafe",
+        "fr": "café",
+        "en": "coffee",
+        "ar": "قهوة",
+        "example": {
+            "mg": "Misotro kafe aho",
+            "fr": "Je bois du café",
+            "en": "I am drinking coffee",
+            "ar": "أنا أشرب القهوة"
+        }
+    },
+    "thé": {
+        "mg": "dite",
+        "fr": "thé",
+        "en": "tea",
+        "ar": "شاي",
+        "example": {
+            "mg": "Misotro dite aho",
+            "fr": "Je bois du thé",
+            "en": "I am drinking tea",
+            "ar": "أنا أشرب الشاي"
+        }
+    },
+    "sucre": {
+        "mg": "siramamy",
+        "fr": "sucre",
+        "en": "sugar",
+        "ar": "سكر",
+        "example": {
+            "mg": "Manisy siramamy amin'ny kafeko aho",
+            "fr": "Je mets du sucre dans mon café",
+            "en": "I put sugar in my coffee",
+            "ar": "أضع السكر في قهوتي"
+        }
+    },
+    "sel": {
+        "mg": "sira",
+        "fr": "sel",
+        "en": "salt",
+        "ar": "ملح",
+        "example": {
+            "mg": "Manisy sira amin'ny sakafo aho",
+            "fr": "Je mets du sel dans la nourriture",
+            "en": "I put salt in the food",
+            "ar": "أضع الملح في الطعام"
+        }
+    },
+    "réfrigérateur": {
+        "mg": "vata fampangatsiahana",
+        "fr": "réfrigérateur, frigidaire",
+        "en": "refrigerator",
+        "ar": "ثلاجة",
+        "example": {
+            "mg": "Manana vata fampangatsiahana aho",
+            "fr": "J'ai un réfrigérateur",
+            "en": "I have a refrigerator",
+            "ar": "لدي ثلاجة"
+        }
+    },
+    "four": {
+        "mg": "lafaoro",
+        "fr": "four",
+        "en": "oven",
+        "ar": "فرن",
+        "example": {
+            "mg": "Mampiasa lafaoro aho",
+            "fr": "J'utilise le four",
+            "en": "I am using the oven",
+            "ar": "أنا أستخدم الفرن"
+        }
+    },
+    "micro-ondes": {
+        "mg": "mikraondy",
+        "fr": "micro-ondes",
+        "en": "microwave",
+        "ar": "ميكروويف",
+        "example": {
+            "mg": "Mampiasa mikraondy aho",
+            "fr": "J'utilise le micro-ondes",
+            "en": "I am using the microwave",
+            "ar": "أنا أستخدم الميكروويف"
+        }
+    },
+    "cuisinière": {
+        "mg": "fatana",
+        "fr": "réchaud",
+        "en": "stove",
+        "ar": "موقد",
+        "example": {
+            "mg": "Mampiasa fatana aho",
+            "fr": "Je suis en train de cuisiner",
+            "en": "I am cooking",
+            "ar": "أنا أطبخ"
+        }
+    },
+    "assiette": {
+        "mg": "lovia, vilia",
+        "fr": "assiette",
+        "en": "plate",
+        "ar": "طبق",
+        "example": {
+            "mg": "Misy lovia eo amin'ny latabatra",
+            "fr": "Il y a une assiette sur la table",
+            "en": "There is a plate on the table",
+            "ar": "هناك طبق على الطاولة"
+        }
+    },
+    "cuillère": {
+        "mg": "sotro",
+        "fr": "cuillère",
+        "en": "spoon",
+        "ar": "ملعقة",
+        "example": {
+            "mg": "Mampiasa sotro aho",
+            "fr": "J'utilise une cuillère",
+            "en": "I am using a spoon",
+            "ar": "أنا أستخدم الملعقة"
+        }
+    },
+    "fourchette": {
+        "mg": "sotrorovitra",
+        "fr": "fourchette",
+        "en": "fork",
+        "ar": "شوكة",
+        "example": {
+            "mg": "Mampiasa sotrorovitra aho",
+            "fr": "J'utilise une fourchette",
+            "en": "I am using a fork",
+            "ar": "أنا أستخدم الشوكة"
+        }
+    },
+    "couteau": {
+        "mg": "antsy",
+        "fr": "couteau",
+        "en": "knife",
+        "ar": "سكين",
+        "example": {
+            "mg": "Mampiasa antsy aho",
+            "fr": "J'utilise un couteau",
+            "en": "I am using a knife",
+            "ar": "أنا أستخدم السكين"
+        }
+    },
+    "serviette": {
+        "mg": "serveta",
+        "fr": "serviette",
+        "en": "napkin",
+        "ar": "مناديل",
+        "example": {
+            "mg": "Misy serveta eo amin'ny latabatra",
+            "fr": "Il y a une serviette sur la table",
+            "en": "There is a napkin on the table",
+            "ar": "هناك مناديل على الطاولة"
+        }
+    },
+    "panier": {
+        "mg": "harona",
+        "fr": "panier",
+        "en": "basket",
+        "ar": "سلة",
+        "example": {
+            "mg": "Manana harona aho",
+            "fr": "J'ai un panier",
+            "en": "I have a basket",
+            "ar": "لدي سلة"
+        }
+    },
+    "manger": {
+        "mg": "mihinana",
+        "fr": "manger",
+        "en": "eat",
+        "ar": "أكل",
+        "example": {
+            "mg": "Mihinana mofo aho",
+            "fr": "Je mange du pain",
+            "en": "I am eating bread",
+            "ar": "أنا آكل خبز"
+        }
+    },
+    "boire": {
+        "mg": "misotro",
+        "fr": "boire",
+        "en": "drink",
+        "ar": "شرب",
+        "example": {
+            "mg": "Misotro rano aho",
+            "fr": "Je bois de l'eau",
+            "en": "I am drinking water",
+            "ar": "أنا أشرب الماء"
+        }
+    },
+    "dormir": {
+        "mg": "matory",
+        "fr": "dormir",
+        "en": "sleep",
+        "ar": "نام",
+        "example": {
+            "mg": "Matory aho",
+            "fr": "Je dors",
+            "en": "I am sleeping",
+            "ar": "أنا نائم"
+        }
+    },
+    "travailler": {
+        "mg": "miasa",
+        "fr": "travailler",
+        "en": "work",
+        "ar": "عمل",
+        "example": {
+            "mg": "Miasa aho",
+            "fr": "Je travaille",
+            "en": "I am working",
+            "ar": "أنا أعمل"
+        }
+    },
+    "aller": {
+        "mg": "mankany, mandeha",
+        "fr": "aller",
+        "en": "go",
+        "ar": "ذهب",
+        "example": {
+            "mg": "Hankany an-sekoly aho. (Handeha hianatra aho)",
+            "fr": "Je vais à l'école",
+            "en": "I am going to school",
+            "ar": "أنا ذاهب إلى المدرسة"
+        }
+    },
+    "faire": {
+        "mg": "manao",
+        "fr": "faire",
+        "en": "do",
+        "ar": "فعل",
+        "example": {
+            "mg": "Manao fanatanjahan-tena aho",
+            "fr": "Je fais du sport",
+            "en": "I am doing sports",
+            "ar": "أنا أفعل الرياضة / أنا أمارس الرياضة"
+        }
+    },
+    "parler": {
+        "mg": "miresaka",
+        "fr": "parler",
+        "en": "speak",
+        "ar": "تحدث",
+        "example": {
+            "mg": "Miresaka amin'ny namako aho",
+            "fr": "Je parle avec mon ami",
+            "en": "I am talking with my friend",
+            "ar": "أنا أتحدث مع صديقي"
+        }
+    },
+    "écouter": {
+        "mg": "mihaino",
+        "fr": "écouter",
+        "en": "listen",
+        "ar": "استمع",
+        "example": {
+            "mg": "Mihaino hira aho",
+            "fr": "J'écoute de la musique",
+            "en": "I am listening to music",
+            "ar": "أنا أستمع إلى الموسيقى"
+        }
+    },
+    "regarder": {
+        "mg": "mijery",
+        "fr": "regarder",
+        "en": "watch",
+        "ar": "شاهد",
+        "example": {
+            "mg": "Mijery fahitalavitra aho",
+            "fr": "Je regarde la télévision",
+            "en": "I am watching television",
+            "ar": "أنا أشاهد التلفزيون"
+        }
+    },
+    "aimer": {
+        "mg": "tiako",
+        "fr": "aimer",
+        "en": "love",
+        "ar": "أحب",
+        "example": {
+            "mg": "Tiako ilay boky",
+            "fr": "J'aime le livre",
+            "en": "I love the book",
+            "ar": "أنا أحب الكتاب"
+        }
+    },
+    "acheter": {
+        "mg": "mividy",
+        "fr": "acheter",
+        "en": "buy",
+        "ar": "اشترى",
+        "example": {
+            "mg": "Mividy sakafo aho",
+            "fr": "J'achète de la nourriture",
+            "en": "I am buying food",
+            "ar": "أنا أشتري طعاما"
+        }
+    },
+    "vendre": {
+        "mg": "mivarotra",
+        "fr": "vendre",
+        "en": "sell",
+        "ar": "باع",
+        "example": {
+            "mg": "Mivarotra entana aho",
+            "fr": "Je vends des marchandises",
+            "en": "I am selling goods",
+            "ar": "أنا أبيع البضائع"
+        }
+    },
+    "voir": {
+        "mg": "mahita",
+        "fr": "voir",
+        "en": "see",
+        "ar": "رأى",
+        "example": {
+            "mg": "Mahita fiara aho",
+            "fr": "Je vois une voiture",
+            "en": "I see a car",
+            "ar": "أنا أرى سيارة"
+        }
+    },
+    "savoir": {
+        "mg": "mahafantatra",
+        "fr": "savoir",
+        "en": "know",
+        "ar": "علم",
+        "example": {
+            "mg": "Mahafantatra ny adiresy aho",
+            "fr": "Je sais l'adresse",
+            "en": "I know the address",
+            "ar": "أنا أعرف العنوان"
+        }
+    },
+    "vouloir": {
+        "mg": "mila",
+        "fr": "vouloir",
+        "en": "want",
+        "ar": "أراد",
+        "example": {
+            "mg": "Mila sakafo aho",
+            "fr": "Je veux de la nourriture",
+            "en": "I want food",
+            "ar": "أريد الطعام"
+        }
+    },
+    "pouvoir": {
+        "mg": "afaka, mahavita",
+        "fr": "pouvoir",
+        "en": "can",
+        "ar": "استطاع",
+        "example": {
+            "mg": "Afaka manao izany aho. (Mahavita manao izany aho)",
+            "fr": "Je peux faire ça",
+            "en": "I can do this",
+            "ar": "أستطيع أن أفعل ذلك"
+        }
+    },
+    "devoir": {
+        "mg": "tsy maintsy",
+        "fr": "devoir",
+        "en": "must",
+        "ar": "وجب",
+        "example": {
+            "mg": "Tsy maintsy mianatra aho",
+            "fr": "Je dois étudier",
+            "en": "I must study",
+            "ar": "يجب علي أن أدرس"
+        }
+    },
+    "arriver": {
+        "mg": "tonga",
+        "fr": "arriver",
+        "en": "arrive",
+        "ar": "وصل",
+        "example": {
+            "mg": "Tonga tamin'ny fotoana aho",
+            "fr": "Je suis arrivé à l'heure",
+            "en": "I arrived on time",
+            "ar": "وصلت في الوقت المحدد"
+        }
+    },
+    "partir": {
+        "mg": "miala",
+        "fr": "partir",
+        "en": "leave",
+        "ar": "غادر",
+        "example": {
+            "mg": "Miala amin'ny toerana aho",
+            "fr": "Je pars du lieu",
+            "en": "I am leaving the place",
+            "ar": "أنا أغادر المكان"
+        }
+    },
+    "chercher": {
+        "mg": "mitady",
+        "fr": "chercher",
+        "en": "search",
+        "ar": "بحث",
+        "example": {
+            "mg": "Mitady boky aho",
+            "fr": "Je cherche un livre",
+            "en": "I am searching for a book",
+            "ar": "أنا أبحث عن كتاب"
+        }
+    },
+    "trouver": {
+        "mg": "mahita",
+        "fr": "trouver",
+        "en": "find",
+        "ar": "وجد",
+        "example": {
+            "mg": "Nahita vola aho",
+            "fr": "J'ai trouvé de l'argent",
+            "en": "I found money",
+            "ar": "وجدت المال"
+        }
+    },
+    "aider": {
+        "mg": "manampy",
+        "fr": "aider",
+        "en": "help",
+        "ar": "ساعد",
+        "example": {
+            "mg": "Manampy ny namako aho",
+            "fr": "J'aide mon ami",
+            "en": "I am helping my friend",
+            "ar": "أنا أساعد صديقي"
+        }
+    },
+    "attendre": {
+        "mg": "miandry",
+        "fr": "attendre",
+        "en": "wait",
+        "ar": "انتظر",
+        "example": {
+            "mg": "Miandry bisy aho",
+            "fr": "J'attends le bus",
+            "en": "I am waiting for the bus",
+            "ar": "أنا أنتظر الحافلة"
+        }
+    },
+    "comprendre": {
+        "mg": "mahazo",
+        "fr": "comprendre",
+        "en": "understand",
+        "ar": "فهم",
+        "example": {
+            "mg": "Mahazo aho ny teny frantsay",
+            "fr": "Je comprends le français",
+            "en": "I understand French",
+            "ar": "أنا أفهم اللغة الفرنسية"
+        }
+    },
+    "expliquer": {
+        "mg": "manazava",
+        "fr": "expliquer",
+        "en": "explain",
+        "ar": "شرح",
+        "example": {
+            "mg": "Manazava zavatra aho",
+            "fr": "J'explique quelque chose",
+            "en": "I am explaining something",
+            "ar": "أنا أشرح شيئًا"
+        }
+    },
+    "apprendre": {
+        "mg": "mianatra",
+        "fr": "apprendre",
+        "en": "learn",
+        "ar": "تعلم",
+        "example": {
+            "mg": "Mianatra teny frantsay aho",
+            "fr": "J'apprends le français",
+            "en": "I am learning French",
+            "ar": "أنا أتعلم الفرنسية"
+        }
+    },
+    "enseigner": {
+        "mg": "mampianatra",
+        "fr": "enseigner",
+        "en": "teach",
+        "ar": "علم",
+        "example": {
+            "mg": "Mampianatra an-tsekoly aho",
+            "fr": "J'enseigne à l'école",
+            "en": "I am teaching at the school",
+            "ar": "أنا أُعلّم في المدرسة"
+        }
+    },
+    "jouer": {
+        "mg": "milalao",
+        "fr": "jouer",
+        "en": "play",
+        "ar": "لعب",
+        "example": {
+            "mg": "Milalao baolina aho",
+            "fr": "Je joue au football",
+            "en": "I am playing soccer",
+            "ar": "أنا ألعب كرة القدم"
+        }
+    },
+    "courir": {
+        "mg": "mihazakazaka",
+        "fr": "courir",
+        "en": "run",
+        "ar": "ركض",
+        "example": {
+            "mg": "Mihazakazaka aho",
+            "fr": "Je cours",
+            "en": "I am running",
+            "ar": "أنا أركض"
+        }
+    },
+    "marcher": {
+        "mg": "mandeha",
+        "fr": "marcher",
+        "en": "walk",
+        "ar": "مشى",
+        "example": {
+            "mg": "Mandeha amin'ny arabe aho",
+            "fr": "Je marche dans la rue",
+            "en": "I am walking in the street",
+            "ar": "أنا أمشي في الشارع"
+        }
+    },
+    "construire": {
+        "mg": "manorina",
+        "fr": "construire",
+        "en": "build",
+        "ar": "بنى",
+        "example": {
+            "mg": "Manorina trano aho",
+            "fr": "Je construis une maison",
+            "en": "I am building a house",
+            "ar": "أنا أبني منزلًا"
+        }
+    },
+    "décider": {
+        "mg": "manapa-kevitra",
+        "fr": "décider",
+        "en": "decide",
+        "ar": "قرر",
+        "example": {
+            "mg": "Manapa-kevitra ny handeha amin'ny fety aho",
+            "fr": "J'ai décidé d'aller à la fête",
+            "en": "I decided to go to the party",
+            "ar": "قررت الذهاب إلى الحفلة"
+        }
+    },
+    "changer": {
+        "mg": "manova, manolo, misolo",
+        "fr": "changer",
+        "en": "change",
+        "ar": "تغيير",
+        "example": {
+            "mg": "Misolo akanjo aho",
+            "fr": "Je change de vêtements",
+            "en": "I am changing clothes",
+            "ar": "أنا أغير ملابسي"
+        }
+    },
+    "demander": {
+        "mg": "manontany",
+        "fr": "demander",
+        "en": "ask",
+        "ar": "سأل",
+        "example": {
+            "mg": "Manontany mpampianatra aho",
+            "fr": "Je demande à l'enseignant",
+            "en": "I am asking the teacher",
+            "ar": "أنا أسأل المعلم"
+        }
+    },
+    "répondre": {
+        "mg": "mamaly",
+        "fr": "répondre",
+        "en": "answer",
+        "ar": "أجاب",
+        "example": {
+            "mg": "Mamaly fanontaniana aho",
+            "fr": "Je réponds à la question",
+            "en": "I am answering the question",
+            "ar": "أنا أجيب على السؤال"
+        }
+    },
+    "prendre": {
+        "mg": "mandray",
+        "fr": "prendre",
+        "en": "take",
+        "ar": "أخذ",
+        "example": {
+            "mg": "Mandray taratasy aho",
+            "fr": "Je prends un papier",
+            "en": "I am taking a paper",
+            "ar": "أنا أخذ ورقة"
+        }
+    },
+    "mettre": {
+        "mg": "mametraka",
+        "fr": "mettre",
+        "en": "put",
+        "ar": "وضع",
+        "example": {
+            "mg": "Mametraka ny boky eo amin'ny latabatra aho",
+            "fr": "Je mets le livre sur la table",
+            "en": "I am putting the book on the table",
+            "ar": "أنا أضع الكتاب على الطاولة"
+        }
+    },
+    "lire": {
+        "mg": "mamaky",
+        "fr": "lire",
+        "en": "read",
+        "ar": "قرأ",
+        "example": {
+            "mg": "Mamaky boky aho",
+            "fr": "Je lis un livre",
+            "en": "I am reading a book",
+            "ar": "أنا أقرأ كتابًا"
+        }
+    },
+    "écrire": {
+        "mg": "manoratra",
+        "fr": "écrire",
+        "en": "write",
+        "ar": "كتب",
+        "example": {
+            "mg": "Manoratra taratasy aho",
+            "fr": "J'écris une lettre",
+            "en": "I am writing a letter",
+            "ar": "أنا أكتب رسالة"
+        }
+    },
+    "penser": {
+        "mg": "mieritreritra",
+        "fr": "penser",
+        "en": "think",
+        "ar": "فكر",
+        "example": {
+            "mg": "Mieritreritra ny fianarako aho",
+            "fr": "Je pense à mes études",
+            "en": "I am thinking about my studies",
+            "ar": "أفكر في دراستي"
+        }
+    },
+    "sentir": {
+        "mg": "mahatsapa, mahatsiaro",
+        "fr": "sentir",
+        "en": "feel",
+        "ar": "شعر",
+        "example": {
+            "mg": "Mahatsapa reraka aho",
+            "fr": "Je me sens fatigué",
+            "en": "I feel tired",
+            "ar": "أشعر بالتعب"
+        }
+    },
+    "voir": {
+        "mg": "mahita",
+        "fr": "voir",
+        "en": "see",
+        "ar": "رأى",
+        "example": {
+            "mg": "Mahita trano aho",
+            "fr": "Je vois une maison",
+            "en": "I see a house",
+            "ar": "أنا أرى منزلًا"
+        }
+    },
+    "écouter": {
+        "mg": "mihaino",
+        "fr": "écouter",
+        "en": "listen",
+        "ar": "استمع",
+        "example": {
+            "mg": "Mihaino hira aho",
+            "fr": "J'écoute de la musique",
+            "en": "I am listening to music",
+            "ar": "أنا أستمع إلى الموسيقى"
+        }
+    },
+    "toucher": {
+        "mg": "Mikitika, mikasika",
+        "fr": "toucher",
+        "en": "touch",
+        "ar": "لمس",
+        "example": {
+            "mg": "Mikitika zavatra mafana aho",
+            "fr": "Je touche quelque chose de chaud",
+            "en": "I am touching something hot",
+            "ar": "أنا ألمس شيئًا ساخنًا"
+        }
+    },
+    "savoir": {
+        "mg": "mahafantatra",
+        "fr": "savoir",
+        "en": "know",
+        "ar": "علم",
+        "example": {
+            "mg": "Mahafantatra ny valiny aho",
+            "fr": "Je sais la réponse",
+            "en": "I know the answer",
+            "ar": "أعرف الجواب"
+        }
+    },
+    "vouloir": {
+        "mg": "mila",
+        "fr": "vouloir",
+        "en": "want",
+        "ar": "أراد",
+        "example": {
+            "mg": "Mila sakafo aho",
+            "fr": "Je veux de la nourriture",
+            "en": "I want food",
+            "ar": "أريد الطعام"
+        }
+    },
+    "devoir": {
+        "mg": "tsy maintsy",
+        "fr": "devoir",
+        "en": "must",
+        "ar": "وجب",
+        "example": {
+            "mg": "Tsy maintsy mianatra aho",
+            "fr": "Je dois étudier",
+            "en": "I must study",
+            "ar": "يجب علي أن أدرس"
+        }
+    },
+    "pouvoir": {
+        "mg": "afaka, mahavita",
+        "fr": "pouvoir",
+        "en": "can",
+        "ar": "استطاع",
+        "example": {
+            "mg": "Afaka manao izany aho",
+            "fr": "Je peux faire ça",
+            "en": "I can do this",
+            "ar": "أستطيع أن أفعل ذلك"
+        }
+    },
+    "aimer": {
+        "mg": "tia",
+        "fr": "aimer",
+        "en": "love",
+        "ar": "أحب",
+        "example": {
+            "mg": "Tiako ilay boky",
+            "fr": "J'aime le livre",
+            "en": "I love the book",
+            "ar": "أنا أحب الكتاب"
+        }
+    },
+    "détester": {
+        "mg": "mankahala",
+        "fr": "détester",
+        "en": "hate",
+        "ar": "كره",
+        "example": {
+            "mg": "Halako ilay asa",
+            "fr": "Je déteste le travail",
+            "en": "I hate work",
+            "ar": "أنا أكره العمل"
+        }
+    },
+    "avoir": {
+        "mg": "manana",
+        "fr": "avoir",
+        "en": "have",
+        "ar": "لدي",
+        "example": {
+            "mg": "Manam-bola aho",
+            "fr": "J'ai de l'argent",
+            "en": "I have money",
+            "ar": "لدي مال"
+        }
+    },
+    "être": {
+        "mg": "dia",
+        "fr": "être",
+        "en": "be",
+        "ar": "كان",
+        "example": {
+            "mg": "Mpampianatra aho. (Izaho dia mpampianatra)",
+            "fr": "Je suis enseignant",
+            "en": "I am a teacher",
+            "ar": "أنا معلم"
+        }
+    },
+    "faire": {
+        "mg": "manao",
+        "fr": "faire",
+        "en": "do",
+        "ar": "فعل",
+        "example": {
+            "mg": "Manao fanatanjahan-tena aho",
+            "fr": "Je fais du sport",
+            "en": "I am doing sports",
+            "ar": "أنا أفعل الرياضة / أنا أمارس الرياضة"
+        }
+    },
+    "vivre": {
+        "mg": "miaina",
+        "fr": "vivre",
+        "en": "live",
+        "ar": "عاش",
+        "example": {
+            "mg": "Miaina an-tanan-dehibe aho",
+            "fr": "Je vis en ville",
+            "en": "I live in the city",
+            "ar": "أنا أعيش في المدينة"
+        }
+    },
+    "manger": {
+        "mg": "mihinana",
+        "fr": "manger",
+        "en": "eat",
+        "ar": "أكل",
+        "example": {
+            "mg": "Mihinana sakafo aho",
+            "fr": "Je mange de la nourriture",
+            "en": "I am eating food",
+            "ar": "أنا آكل الطعام"
+        }
+    },
+    "boire": {
+        "mg": "misotro",
+        "fr": "boire",
+        "en": "drink",
+        "ar": "شرب",
+        "example": {
+            "mg": "Misotro rano aho",
+            "fr": "Je bois de l'eau",
+            "en": "I am drinking water",
+            "ar": "أنا أشرب الماء"
+        }
+    },
+    "acheter": {
+        "mg": "mividy",
+        "fr": "acheter",
+        "en": "buy",
+        "ar": "اشترى",
+        "example": {
+            "mg": "Mividy kiraro aho",
+            "fr": "J'achète des chaussures",
+            "en": "I am buying shoes",
+            "ar": "أنا أشتري حذاء"
+        }
+    },
+    "vendre": {
+        "mg": "mivarotra",
+        "fr": "vendre",
+        "en": "sell",
+        "ar": "باع",
+        "example": {
+            "mg": "Mivarotra sakafo aho",
+            "fr": "Je vends de la nourriture",
+            "en": "I am selling food",
+            "ar": "أنا أبيع الطعام"
+        }
+    },
+    "travailler": {
+        "mg": "miasa",
+        "fr": "travailler",
+        "en": "work",
+        "ar": "عمل",
+        "example": {
+            "mg": "Miasa amin'ny birao aho",
+            "fr": "Je travaille au bureau",
+            "en": "I work at the office",
+            "ar": "أنا أعمل في المكتب"
+        }
+    },
+    "jouir": {
+        "mg": "mankafy",
+        "fr": "jouir",
+        "en": "enjoy",
+        "ar": "استمتع",
+        "example": {
+            "mg": "Mankafy ny fialam-boly aho",
+            "fr": "Je profite du loisir",
+            "en": "I enjoy the leisure",
+            "ar": "أنا أستمتع بالترفيه"
+        }
+    },
+    "aider": {
+        "mg": "manampy",
+        "fr": "aider",
+        "en": "help",
+        "ar": "ساعد",
+        "example": {
+            "mg": "Manampy ny namako aho",
+            "fr": "J'aide mon ami",
+            "en": "I am helping my friend",
+            "ar": "أنا أساعد صديقي"
+        }
+    },
+    "réfléchir": {
+        "mg": "mandinika",
+        "fr": "réfléchir",
+        "en": "think",
+        "ar": "فكر",
+        "example": {
+            "mg": "Mandinika ny olana aho",
+            "fr": "Je réfléchis au problème",
+            "en": "I am thinking about the problem",
+            "ar": "أنا أفكر في المشكلة"
+        }
+    },
+    "regarder": {
+        "mg": "mijery",
+        "fr": "regarder",
+        "en": "watch",
+        "ar": "شاهد",
+        "example": {
+            "mg": "Mijery sarimihetsika aho",
+            "fr": "Je regarde un film",
+            "en": "I am watching a movie",
+            "ar": "أنا أشاهد فيلمًا"
+        }
+    },
+    "attendre": {
+        "mg": "miandry",
+        "fr": "attendre",
+        "en": "wait",
+        "ar": "انتظر",
+        "example": {
+            "mg": "Miandry bisy aho",
+            "fr": "J'attends le bus",
+            "en": "I am waiting for the bus",
+            "ar": "أنا أنتظر الحافلة"
+        }
+    },
+    "réussir": {
+        "mg": "tafita",
+        "fr": "réussir",
+        "en": "succeed",
+        "ar": "نجح",
+        "example": {
+            "mg": "Tafita amin'ny fianaranako aho",
+            "fr": "Je réussis dans mes études",
+            "en": "I succeed in my studies",
+            "ar": "أنا أنجح في دراستي"
+        }
+    },
+    "échouer": {
+        "mg": "tsy afaka",
+        "fr": "échouer, rater",
+        "en": "fail",
+        "ar": "فشل",
+        "example": {
+            "mg": "Tsy afa-panadinana aho",
+            "fr": "Je rate l'examen",
+            "en": "I fail the exam",
+            "ar": "أنا أفشل في الامتحان"
+        }
+    },
+    "connaître": {
+        "mg": "mahalala",
+        "fr": "connaître",
+        "en": "know",
+        "ar": "عرف",
+        "example": {
+            "mg": "Mahalala azy aho",
+            "fr": "Je le connais",
+            "en": "I know him",
+            "ar": "أنا أعرفه"
+        }
+    },
+    "choisir": {
+        "mg": "misafidy",
+        "fr": "choisir",
+        "en": "choose",
+        "ar": "اختار",
+        "example": {
+            "mg": "Misafidy boky aho",
+            "fr": "Je choisis un livre",
+            "en": "I am choosing a book",
+            "ar": "أنا أختار كتابًا"
+        }
+    },
+    "oublier": {
+        "mg": "manadino",
+        "fr": "oublier",
+        "en": "forget",
+        "ar": "نسي",
+        "example": {
+            "mg": "Hadinoko ilay fanafody",
+            "fr": "J'oublie les médicaments",
+            "en": "I forget the medicine",
+            "ar": "أنا أنسى الدواء"
+        }
+    },
+    "apprendre": {
+        "mg": "mianatra",
+        "fr": "apprendre",
+        "en": "learn",
+        "ar": "تعلم",
+        "example": {
+            "mg": "Mianatra fiteny vaovao aho",
+            "fr": "J'apprends une nouvelle langue",
+            "en": "I am learning a new language",
+            "ar": "أنا أتعلم لغة جديدة"
+        }
+    },
+    "dormir": {
+        "mg": "matory",
+        "fr": "dormir",
+        "en": "sleep",
+        "ar": "نام",
+        "example": {
+            "mg": "Matory amin'ny fandriana aho",
+            "fr": "Je dors dans le lit",
+            "en": "I sleep in the bed",
+            "ar": "أنا أنام في السرير"
+        }
+    },
+    "réveiller": {
+        "mg": "mifoha",
+        "fr": "réveiller",
+        "en": "wake up",
+        "ar": "استيقظ",
+        "example": {
+            "mg": "Mifoha maraina aho",
+            "fr": "Je me réveille le matin",
+            "en": "I wake up in the morning",
+            "ar": "أستيقظ في الصباح"
+        }
+    },
+    "rire": {
+        "mg": "mihomehy",
+        "fr": "rire",
+        "en": "laugh",
+        "ar": "ضحك",
+        "example": {
+            "mg": "Mihomehy ny ankizy",
+            "fr": "Les enfants rient",
+            "en": "The children laugh",
+            "ar": "الأطفال يضحكون"
+        }
+    },
+    "pleurer": {
+        "mg": "mitomany",
+        "fr": "pleurer",
+        "en": "cry",
+        "ar": "بكى",
+        "example": {
+            "mg": "Mitomany ilay zazakely",
+            "fr": "Le bébé pleure",
+            "en": "The baby cries",
+            "ar": "الطفل يبكي"
+        }
+    },
+    "sourire": {
+        "mg": "mitsiky",
+        "fr": "sourire",
+        "en": "smile",
+        "ar": "ابتسم",
+        "example": {
+            "mg": "Mitsiky izy",
+            "fr": "Il sourit",
+            "en": "He smiles",
+            "ar": "هو يبتسم"
+        }
+    },
+    "embrasser": {
+        "mg": "manoroka",
+        "fr": "embrasser",
+        "en": "kiss",
+        "ar": "قبل",
+        "example": {
+            "mg": "Manoroka ny vadiko aho",
+            "fr": "J'embrasse ma femme",
+            "en": "I kiss my wife",
+            "ar": "أنا أقبل زوجتي"
+        }
+    },
+    "aider": {
+        "mg": "manampy",
+        "fr": "aider",
+        "en": "help",
+        "ar": "ساعد",
+        "example": {
+            "mg": "Manampy ny namako aho",
+            "fr": "J'aide mon ami",
+            "en": "I help my friend",
+            "ar": "أنا أساعد صديقي"
+        }
+    },
+    "se lever": {
+        "mg": "miala fandriana",
+        "fr": "se lever",
+        "en": "get up",
+        "ar": "نهض",
+        "example": {
+            "mg": "Miala fandriana aho rehefa maraina",
+            "fr": "Je me lève le matin",
+            "en": "I get up in the morning",
+            "ar": "أنا أنهض في الصباح"
+        }
+    },
+    "marcher": {
+        "mg": "mandeha",
+        "fr": "marcher",
+        "en": "walk",
+        "ar": "مشى",
+        "example": {
+            "mg": "Mandeha eny amin'ny arabe aho",
+            "fr": "Je marche dans la rue",
+            "en": "I walk on the street",
+            "ar": "أنا أمشي في الشارع"
+        }
+    },
+    "courir": {
+        "mg": "mihazakazaka",
+        "fr": "courir",
+        "en": "run",
+        "ar": "ركض",
+        "example": {
+            "mg": "Mihazakazaka aho",
+            "fr": "Je cours",
+            "en": "I run",
+            "ar": "أنا أركض"
+        }
+    },
+    "sauter": {
+        "mg": "mitsambikina",
+        "fr": "sauter",
+        "en": "jump",
+        "ar": "قفز",
+        "example": {
+            "mg": "Mitsambikina amin'ny arabe aho",
+            "fr": "Je saute dans la rue",
+            "en": "I jump in the street",
+            "ar": "أنا أقفز في الشارع"
+        }
+    },
+    "nager": {
+        "mg": "milomano",
+        "fr": "nager",
+        "en": "swim",
+        "ar": "سبح",
+        "example": {
+            "mg": "Milomano ao amin'ny dobo filomanosana aho",
+            "fr": "Je nage dans la piscine",
+            "en": "I swim in the pool",
+            "ar": "أنا أسبح في المسبح"
+        }
+    },
+    "chanter": {
+        "mg": "mihira",
+        "fr": "chanter",
+        "en": "sing",
+        "ar": "غنى",
+        "example": {
+            "mg": "Mihira ilay zaza",
+            "fr": "L'enfant chante",
+            "en": "The child sings",
+            "ar": "الطفل يغني"
+        }
+    },
+    "danser": {
+        "mg": "mandihy",
+        "fr": "danser",
+        "en": "dance",
+        "ar": "رقص",
+        "example": {
+            "mg": "Mandihy aho",
+            "fr": "Je danse",
+            "en": "I dance",
+            "ar": "أرقص"
+        }
+    },
+    "écouter": {
+        "mg": "mihaino",
+        "fr": "écouter",
+        "en": "listen",
+        "ar": "استمع",
+        "example": {
+            "mg": "Mihaino hira aho",
+            "fr": "J'écoute de la musique",
+            "en": "I listen to music",
+            "ar": "أنا أستمع إلى الموسيقى"
+        }
+    },
+    "voir": {
+        "mg": "mahita",
+        "fr": "voir",
+        "en": "see",
+        "ar": "رأى",
+        "example": {
+            "mg": "Mahita masoandro aho",
+            "fr": "Je vois le soleil",
+            "en": "I see the sun",
+            "ar": "أنا أرى الشمس"
+        }
+    },
+    "sentir": {
+        "mg": "mahare, maheno",
+        "fr": "sentir",
+        "en": "feel",
+        "ar": "شعر",
+        "example": {
+            "mg": "Mahare mafana aho",
+            "fr": "Je sens la chaleur",
+            "en": "I feel the heat",
+            "ar": "أشعر بالحرارة"
+        }
+    },
+    "rêver": {
+        "mg": "manonofy",
+        "fr": "rêver",
+        "en": "dream",
+        "ar": "حلم",
+        "example": {
+            "mg": "Manonofo fiainana tsara aho",
+            "fr": "Je rêve d'une belle vie",
+            "en": "I dream of a beautiful life",
+            "ar": "أحلم بحياة جميلة"
+        }
+    },
+    "avoir": {
+        "mg": "manana",
+        "fr": "avoir",
+        "en": "have",
+        "ar": "يملك",
+        "example": {
+            "mg": "Manana fiara aho",
+            "fr": "J'ai une voiture",
+            "en": "I have a car",
+            "ar": "أنا أملك سيارة"
+        }
+    },
+    "faire": {
+        "mg": "manao",
+        "fr": "faire",
+        "en": "do",
+        "ar": "فعل",
+        "example": {
+            "mg": "Manao ilay asa aho",
+            "fr": "Je fais le travail",
+            "en": "I am doing the work",
+            "ar": "أنا أفعل العمل"
+        }
+    },
+    "dire": {
+        "mg": "milaza",
+        "fr": "dire",
+        "en": "say",
+        "ar": "قال",
+        "example": {
+            "mg": "Milaza vaovao aho",
+            "fr": "Je dis des nouvelles",
+            "en": "I am saying the news",
+            "ar": "أنا أقول الأخبار"
+        }
+    },
+    "demander": {
+        "mg": "mangataka",
+        "fr": "demander",
+        "en": "ask",
+        "ar": "سأل",
+        "example": {
+            "mg": "Mangataka fanampiana aho",
+            "fr": "Je demande de l'aide",
+            "en": "I am asking for help",
+            "ar": "أنا أطلب المساعدة"
+        }
+    },
+    "répondre": {
+        "mg": "mamaly",
+        "fr": "répondre",
+        "en": "answer",
+        "ar": "أجاب",
+        "example": {
+            "mg": "Mamaly ilay fanontaniana aho",
+            "fr": "Je réponds à la question",
+            "en": "I answer the question",
+            "ar": "أنا أجيب على السؤال"
+        }
+    },
+    "se coucher": {
+        "mg": "mandeha matory",
+        "fr": "se coucher",
+        "en": "go to bed",
+        "ar": "ذهب إلى الفراش",
+        "example": {
+            "mg": "Mandeha matory aho amin'ny alina",
+            "fr": "Je me couche le soir",
+            "en": "I go to bed at night",
+            "ar": "أنا أذهب إلى السرير في الليل"
+        }
+    },
+    "attendre": {
+        "mg": "miandry",
+        "fr": "attendre",
+        "en": "wait",
+        "ar": "انتظر",
+        "example": {
+            "mg": "Miandry bisy aho",
+            "fr": "J'attends le bus",
+            "en": "I am waiting for the bus",
+            "ar": "أنا أنتظر الحافلة"
+        }
+    },
+    "chercher": {
+        "mg": "mitady",
+        "fr": "chercher",
+        "en": "search",
+        "ar": "بحث",
+        "example": {
+            "mg": "Mitady boky aho",
+            "fr": "Je cherche un livre",
+            "en": "I am searching for a book",
+            "ar": "أنا أبحث عن كتاب"
+        }
+    },
+    "trouver": {
+        "mg": "mahita",
+        "fr": "trouver",
+        "en": "find",
+        "ar": "وجد",
+        "example": {
+            "mg": "Mahita vola aho",
+            "fr": "Je trouve de l'argent",
+            "en": "I find money",
+            "ar": "أنا أجد المال"
+        }
+    },
+    "perdre": {
+        "mg": "very",
+        "fr": "perdre",
+        "en": "lose",
+        "ar": "فقد",
+        "example": {
+            "mg": "Very finday aho",
+            "fr": "J'ai perdu mon téléphone",
+            "en": "I lost my phone",
+            "ar": "فقدت هاتفي"
+        }
+    },
+    "gagner": {
+        "mg": "mandresy",
+        "fr": "gagner",
+        "en": "win",
+        "ar": "فاز",
+        "example": {
+            "mg": "Nandresy aho",
+            "fr": "J'ai gagné",
+            "en": "I won",
+            "ar": "فزت"
+        }
+    },
+    "permettre": {
+        "mg": "mamela",
+        "fr": "permettre",
+        "en": "allow",
+        "ar": "سمح",
+        "example": {
+            "mg": "Mamela ahy hanatrika ny fivoriana ianao",
+            "fr": "Tu me permets d'assister à la réunion",
+            "en": "You allow me to attend the meeting",
+            "ar": "أنت تسمح لي بحضور الاجتماع"
+        }
+    },
+    "interdire": {
+        "mg": "manakana",
+        "fr": "interdire",
+        "en": "forbid",
+        "ar": "حظر",
+        "example": {
+            "mg": "Manakana ny zaza tsy hihinana vatomamy izy",
+            "fr": "Il interdit à l'enfant de manger des bonbons",
+            "en": "He forbids the child to eat sweets",
+            "ar": "هو يمنع الطفل من تناول الحلويات"
+        }
+    },
+    "aider": {
+        "mg": "manampy",
+        "fr": "aider",
+        "en": "help",
+        "ar": "ساعد",
+        "example": {
+            "mg": "Manampy ny namako aho",
+            "fr": "J'aide mon ami",
+            "en": "I help my friend",
+            "ar": "أنا أساعد صديقي"
+        }
+    },
+    "souhaiter": {
+        "mg": "maniry, mirary",
+        "fr": "souhaiter",
+        "en": "wish",
+        "ar": "تمنى",
+        "example": {
+            "mg": "Maniry fahombiazana aho",
+            "fr": "Je souhaite du succès",
+            "en": "I wish success",
+            "ar": "أتمنى النجاح"
+        }
+    },
+    "rencontrer": {
+        "mg": "mihaona",
+        "fr": "rencontrer",
+        "en": "meet",
+        "ar": "قابل",
+        "example": {
+            "mg": "Mihaona amin'ny namako aho",
+            "fr": "Je rencontre mon ami",
+            "en": "I meet my friend",
+            "ar": "أنا قابلت صديقي"
+        }
+    },
+    "saluer": {
+        "mg": "miarahaba",
+        "fr": "saluer",
+        "en": "greet",
+        "ar": "سلم",
+        "example": {
+            "mg": "Miarahaba olona aho",
+            "fr": "Je salue les gens",
+            "en": "I greet the people",
+            "ar": "أسلم على الناي"
+        }
+    },
+    "travailler": {
+        "mg": "miasa",
+        "fr": "travailler",
+        "en": "work",
+        "ar": "عمل",
+        "example": {
+            "mg": "Miasa amin'ny birao aho",
+            "fr": "Je travaille au bureau",
+            "en": "I work at the office",
+            "ar": "أنا أعمل في المكتب"
+        }
+    },
+    "étudier": {
+        "mg": "mianatra",
+        "fr": "étudier",
+        "en": "study",
+        "ar": "دراسة",
+        "example": {
+            "mg": "Mianatra momba ny zavakanto aho",
+            "fr": "J'étudie l'art",
+            "en": "I study art",
+            "ar": "أنا أدرس الفن"
+        }
+    },
+    "grand": {
+        "mg": "lehibe",
+        "fr": "grand",
+        "en": "big",
+        "ar": "كبير",
+        "example": {
+            "mg": "Lehibe ilay trano",
+            "fr": "La maison est grande",
+            "en": "The house is big",
+            "ar": "المنزل كبير"
+        }
+    },
+    "petit": {
+        "mg": "kely",
+        "fr": "petit",
+        "en": "small",
+        "ar": "صغير",
+        "example": {
+            "mg": "Kely ilay boky",
+            "fr": "Le livre est petit",
+            "en": "The book is small",
+            "ar": "الكتاب صغير"
+        }
+    },
+    "joli": {
+        "mg": "tsara",
+        "fr": "joli",
+        "en": "beautiful",
+        "ar": "جميل",
+        "example": {
+            "mg": "Tsara ilay tanàna",
+            "fr": "La ville est jolie",
+            "en": "The city is beautiful",
+            "ar": "المدينة جميلة"
+        }
+    },
+    "laid": {
+        "mg": "ratsy",
+        "fr": "laid",
+        "en": "ugly",
+        "ar": "قبيح",
+        "example": {
+            "mg": "Ratsy ilay sary",
+            "fr": "L'image est laide",
+            "en": "The picture is ugly",
+            "ar": "الصورة قبيحة"
+        }
+    },
+    "fort": {
+        "mg": "matanjaka",
+        "fr": "fort",
+        "en": "strong",
+        "ar": "قوي",
+        "example": {
+            "mg": "Matanjaka izy",
+            "fr": "Il est fort",
+            "en": "He is strong",
+            "ar": "هو قوي"
+        }
+    },
+    "faible": {
+        "mg": "marefo",
+        "fr": "faible",
+        "en": "weak",
+        "ar": "ضعيف",
+        "example": {
+            "mg": "Marefo izy",
+            "fr": "Il est faible",
+            "en": "He is weak",
+            "ar": "هو ضعيف"
+        }
+    },
+    "vieux": {
+        "mg": "tranainy",
+        "fr": "vieux",
+        "en": "old",
+        "ar": "قديم",
+        "example": {
+            "mg": "Tranaint ilay trano",
+            "fr": "La maison est vieille",
+            "en": "The house is old",
+            "ar": "المنزل قديم"
+        }
+    },
+    "jeune": {
+        "mg": "tanora",
+        "fr": "jeune",
+        "en": "young",
+        "ar": "شباب",
+        "example": {
+            "mg": "Tanora izy",
+            "fr": "Il est jeune",
+            "en": "He is young",
+            "ar": "هو شاب"
+        }
+    },
+    "rapide": {
+        "mg": "haingam-pandeha",
+        "fr": "rapide",
+        "en": "fast",
+        "ar": "سريع",
+        "example": {
+            "mg": "Haingam-pandeha ny fiara",
+            "fr": "La voiture est rapide",
+            "en": "The car is fast",
+            "ar": "السيارة سريعة"
+        }
+    },
+    "lent": {
+        "mg": "maida",
+        "fr": "lent",
+        "en": "slow",
+        "ar": "بطيء",
+        "example": {
+            "mg": "Maida ny fiara",
+            "fr": "La voiture est lente",
+            "en": "The car is slow",
+            "ar": "السيارة بطيئة"
+        }
+    },
+    "clair": {
+        "mg": "mazava",
+        "fr": "clair",
+        "en": "clear",
+        "ar": "واضح",
+        "example": {
+            "mg": "Mazava ny lanitra",
+            "fr": "Le ciel est clair",
+            "en": "The sky is clear",
+            "ar": "السماء واضحة"
+        }
+    },
+    "sombre": {
+        "mg": "maizina",
+        "fr": "sombre",
+        "en": "dark",
+        "ar": "مظلم",
+        "example": {
+            "mg": "Maizina ny efitra",
+            "fr": "La pièce est sombre",
+            "en": "The room is dark",
+            "ar": "الغرفة مظلمة"
+        }
+    },
+    "chaud": {
+        "mg": "mafana",
+        "fr": "chaud",
+        "en": "hot",
+        "ar": "حار",
+        "example": {
+            "mg": "Mafana ny andro",
+            "fr": "Il fait chaud",
+            "en": "It is hot",
+            "ar": "الجو حار"
+        }
+    },
+    "froid": {
+        "mg": "mangatsiaka",
+        "fr": "froid",
+        "en": "cold",
+        "ar": "بارد",
+        "example": {
+            "mg": "Mangatsiaka ny andro",
+            "fr": "Il fait froid",
+            "en": "It is cold",
+            "ar": "الجو بارد"
+        }
+    },
+    "propre": {
+        "mg": "madio",
+        "fr": "propre",
+        "en": "clean",
+        "ar": "نظيف",
+        "example": {
+            "mg": "Madio ny trano",
+            "fr": "La maison est propre",
+            "en": "The house is clean",
+            "ar": "المنزل نظيف"
+        }
+    },
+    "sale": {
+        "mg": "maloto",
+        "fr": "sale",
+        "en": "dirty",
+        "ar": "وسخ",
+        "example": {
+            "mg": "Maloto ny tany",
+            "fr": "Le sol est sale",
+            "en": "The floor is dirty",
+            "ar": "الأرض وسخة"
+        }
+    },
+    "riche": {
+        "mg": "manan-karena",
+        "fr": "riche",
+        "en": "rich",
+        "ar": "غني",
+        "example": {
+            "mg": "Manan-karena izy",
+            "fr": "Il est riche",
+            "en": "He is rich",
+            "ar": "هو غني"
+        }
+    },
+    "pauvre": {
+        "mg": "mahantra",
+        "fr": "pauvre",
+        "en": "poor",
+        "ar": "فقير",
+        "example": {
+            "mg": "Mahantra izy",
+            "fr": "Il est pauvre",
+            "en": "He is poor",
+            "ar": "هو فقير"
+        }
+    },
+    "heureux": {
+        "mg": "faly",
+        "fr": "heureux",
+        "en": "happy",
+        "ar": "سعيد",
+        "example": {
+            "mg": "Faly aho",
+            "fr": "Je suis heureux",
+            "en": "I am happy",
+            "ar": "أنا سعيد"
+        }
+    },
+    "triste": {
+        "mg": "malahelo",
+        "fr": "triste",
+        "en": "sad",
+        "ar": "حزين",
+        "example": {
+            "mg": "Malahelo izy",
+            "fr": "Il est triste",
+            "en": "He is sad",
+            "ar": "هو حزين"
+        }
+    },
+    "simple": {
+        "mg": "tsotra",
+        "fr": "facile",
+        "en": "easy",
+        "ar": "سهل",
+        "example": {
+            "mg": "Tsotra ny fanazavana",
+            "fr": "L'explication est simple",
+            "en": "The explanation is easy",
+            "ar": "التفسير سهل"
+        }
+    },
+    "difficile": {
+        "mg": "sarotra",
+        "fr": "difficile",
+        "en": "difficult",
+        "ar": "صعب",
+        "example": {
+            "mg": "Sarotra ny fanontaniana",
+            "fr": "La question est difficile",
+            "en": "The question is difficult",
+            "ar": "السؤال صعب"
+        }
+    },
+    "intelligent": {
+        "mg": "mahay, henjana",
+        "fr": "intelligent",
+        "en": "intelligent",
+        "ar": "ذكي",
+        "example": {
+            "mg": "Henjana izy",
+            "fr": "Il est intelligent",
+            "en": "He is intelligent",
+            "ar": "هو ذكي"
+        }
+    },
+    "stupide": {
+        "mg": "vaindrana",
+        "fr": "stupide",
+        "en": "stupid",
+        "ar": "غبي",
+        "example": {
+            "mg": "Vaindrana ny heviny",
+            "fr": "Il est stupide",
+            "en": "He is stupid",
+            "ar": "هو غبي"
+        }
+    },
+    "doux": {
+        "mg": "malefaka",
+        "fr": "doux",
+        "en": "soft",
+        "ar": "لطيف",
+        "example": {
+            "mg": "Malefaka ny hoditra",
+            "fr": "La peau est douce",
+            "en": "The skin is soft",
+            "ar": "الجلد لطيف"
+        }
+    },
+    "dur": {
+        "mg": "mafy",
+        "fr": "dur",
+        "en": "hard",
+        "ar": "صعب",
+        "example": {
+            "mg": "Mafy ny hazo",
+            "fr": "Le bois est dur",
+            "en": "The wood is hard",
+            "ar": "الخشب صعب"
+        }
+    },
+    "mouillé": {
+        "mg": "lena",
+        "fr": "mouillé",
+        "en": "wet",
+        "ar": "مبلل",
+        "example": {
+            "mg": "Lena ny lamba",
+            "fr": "Le tissu est mouillé",
+            "en": "The cloth is wet",
+            "ar": "القماش مبلل"
+        }
+    },
+    "sec": {
+        "mg": "maina",
+        "fr": "sec",
+        "en": "dry",
+        "ar": "جاف",
+        "example": {
+            "mg": "Maina ny tanana",
+            "fr": "Les mains sont sèches",
+            "en": "The hands are dry",
+            "ar": "الأيدي جافة"
+        }
+    },
+    "pauvre": {
+        "mg": "mahantra",
+        "fr": "pauvre",
+        "en": "poor",
+        "ar": "فقير",
+        "example": {
+            "mg": "Mahantra izy",
+            "fr": "Il est pauvre",
+            "en": "He is poor",
+            "ar": "هو فقير"
+        }
+    },
+    "riche": {
+        "mg": "manan-karena",
+        "fr": "riche",
+        "en": "rich",
+        "ar": "غني",
+        "example": {
+            "mg": "Manan-karena izy",
+            "fr": "Il est riche",
+            "en": "He is rich",
+            "ar": "هو غني"
+        }
+    },
+    "nouveau": {
+        "mg": "vaovao",
+        "fr": "nouveau",
+        "en": "new",
+        "ar": "جديد",
+        "example": {
+            "mg": "Vaovao ny boky",
+            "fr": "Le livre est nouveau",
+            "en": "The book is new",
+            "ar": "الكتاب جديد"
+        }
+    },
+    "ancien": {
+        "mg": "tranainy",
+        "fr": "ancien",
+        "en": "old",
+        "ar": "قديم",
+        "example": {
+            "mg": "Tranainy ny tanàna",
+            "fr": "La ville est ancienne",
+            "en": "The city is old",
+            "ar": "المدينة قديمة"
+        }
+    },
+    "facile": {
+        "mg": "mora",
+        "fr": "facile",
+        "en": "easy",
+        "ar": "سهل",
+        "example": {
+            "mg": "Mora ilay asa",
+            "fr": "Le travail est facile",
+            "en": "The work is easy",
+            "ar": "العمل سهل"
+        }
+    },
+    "difficile": {
+        "mg": "sarotra",
+        "fr": "difficile",
+        "en": "difficult",
+        "ar": "صعب",
+        "example": {
+            "mg": "Sarotra ny fanazavana",
+            "fr": "L'explication est difficile",
+            "en": "The explanation is difficult",
+            "ar": "التفسير صعب"
+        }
+    },
+    "intéressant": {
+        "mg": "mahaliana",
+        "fr": "intéressant",
+        "en": "interesting",
+        "ar": "مثير للاهتمام",
+        "example": {
+            "mg": "Mahaliana ilay tantara",
+            "fr": "L'histoire est intéressante",
+            "en": "The story is interesting",
+            "ar": "القصة مثيرة للاهتمام"
+        }
+    },
+    "ennuyeux": {
+        "mg": "mankaleo",
+        "fr": "ennuyeux",
+        "en": "boring",
+        "ar": "ممل",
+        "example": {
+            "mg": "Mankaleo ilay boky",
+            "fr": "Le livre est ennuyeux",
+            "en": "The book is boring",
+            "ar": "الكتاب ممل"
+        }
+    },
+    "gentil": {
+        "mg": "tsara fanahy",
+        "fr": "gentil",
+        "en": "kind",
+        "ar": "لطيف",
+        "example": {
+            "mg": "Tsara fanahy izy",
+            "fr": "Il est gentil",
+            "en": "He is kind",
+            "ar": "هو لطيف"
+        }
+    },
+    "méchant": {
+        "mg": "ratsy fanahy",
+        "fr": "méchant",
+        "en": "mean",
+        "ar": "سيء",
+        "example": {
+            "mg": "Ratsy fanahy izy",
+            "fr": "Il est méchant",
+            "en": "He is mean",
+            "ar": "هو سيء"
+        }
+    },
+    "vrai": {
+        "mg": "marina",
+        "fr": "vrai",
+        "en": "true",
+        "ar": "صحيح",
+        "example": {
+            "mg": "Marina ny fanazavana",
+            "fr": "L'explication est vraie",
+            "en": "The explanation is true",
+            "ar": "التفسير صحيح"
+        }
+    },
+    "faux": {
+        "mg": "diso",
+        "fr": "faux",
+        "en": "false",
+        "ar": "خطأ",
+        "example": {
+            "mg": "Diso ny valiny",
+            "fr": "La réponse est fausse",
+            "en": "The answer is false",
+            "ar": "الإجابة خاطئة"
+        }
+    },
+    "bruyant": {
+        "mg": "mitabataba",
+        "fr": "bruyant",
+        "en": "noisy",
+        "ar": "صاخب",
+        "example": {
+            "mg": "Mitabataba ny fiara",
+            "fr": "La voiture est bruyante",
+            "en": "The car is noisy",
+            "ar": "السيارة صاخبة"
+        }
+    },
+    "silencieux": {
+        "mg": "mangiana",
+        "fr": "silencieux",
+        "en": "silent",
+        "ar": "صامت",
+        "example": {
+            "mg": "Mangiana ny trano",
+            "fr": "La maison est silencieuse",
+            "en": "The house is silent",
+            "ar": "المنزل صامت"
+        }
+    },
+    "frais": {
+        "mg": "vaovao",
+        "fr": "frais",
+        "en": "fresh",
+        "ar": "طازج",
+        "example": {
+            "mg": "Vaovao ny voankazo",
+            "fr": "Les fruits sont frais",
+            "en": "The fruits are fresh",
+            "ar": "الفواكه طازجة"
+        }
+    },
+    "chaud": {
+        "mg": "mafana",
+        "fr": "chaud",
+        "en": "hot",
+        "ar": "حار",
+        "example": {
+            "mg": "Mafana ny andro",
+            "fr": "Il fait chaud",
+            "en": "It is hot",
+            "ar": "الجو حار"
+        }
+    },
+    "froid": {
+        "mg": "mangatsiaka",
+        "fr": "froid",
+        "en": "cold",
+        "ar": "بارد",
+        "example": {
+            "mg": "Mangatsiaka ny andro",
+            "fr": "Il fait froid",
+            "en": "It is cold",
+            "ar": "الجو بارد"
+        }
+    },
+    "beau": {
+        "mg": "tsara",
+        "fr": "beau",
+        "en": "beautiful",
+        "ar": "جميل",
+        "example": {
+            "mg": "Tsara ny tranonao",
+            "fr": "Ta maison est belle",
+            "en": "Your house is beautiful",
+            "ar": "منزلك جميل"
+        }
+    },
+    "jeune": {
+        "mg": "tanora",
+        "fr": "jeune",
+        "en": "young",
+        "ar": "شاب",
+        "example": {
+            "mg": "Tanora izy",
+            "fr": "Il est jeune",
+            "en": "He is young",
+            "ar": "هو شاب"
+        }
+    },
+    "vieux": {
+        "mg": "antitra",
+        "fr": "vieux",
+        "en": "old",
+        "ar": "قديم",
+        "example": {
+            "mg": "Antitra izy",
+            "fr": "Il est vieux",
+            "en": "He is old",
+            "ar": "هو قديم"
+        }
+    },
+    "fort": {
+        "mg": "matanjaka",
+        "fr": "fort",
+        "en": "strong",
+        "ar": "قوي",
+        "example": {
+            "mg": "Matanjaka izy",
+            "fr": "Il est fort",
+            "en": "He is strong",
+            "ar": "هو قوي"
+        }
+    },
+    "haut": {
+        "mg": "avo",
+        "fr": "haut",
+        "en": "high",
+        "ar": "عالٍ",
+        "example": {
+            "mg": "Avo ilay trano",
+            "fr": "La maison est haute",
+            "en": "The house is high",
+            "ar": "المنزل عالٍ"
+        }
+    },
+    "bas": {
+        "mg": "ambany",
+        "fr": "bas",
+        "en": "low",
+        "ar": "منخفض",
+        "example": {
+            "mg": "Ambany ny tany",
+            "fr": "Le sol est bas",
+            "en": "The ground is low",
+            "ar": "الأرض منخفضة"
+        }
+    },
+    "propre": {
+        "mg": "madio",
+        "fr": "propre",
+        "en": "clean",
+        "ar": "نظيف",
+        "example": {
+            "mg": "Madio ny efitra",
+            "fr": "La chambre est propre",
+            "en": "The room is clean",
+            "ar": "الغرفة نظيفة"
+        }
+    },
+    "large": {
+        "mg": "malalaka",
+        "fr": "large",
+        "en": "wide",
+        "ar": "عريض",
+        "example": {
+            "mg": "Malalaka ny làlana",
+            "fr": "La route est large",
+            "en": "The road is wide",
+            "ar": "الطريق عريض"
+        }
+    },
+    "étroit": {
+        "mg": "tery",
+        "fr": "étroit",
+        "en": "narrow",
+        "ar": "ضيق",
+        "example": {
+            "mg": "Tery ny lalana",
+            "fr": "La route est étroite",
+            "en": "The road is narrow",
+            "ar": "الطريق ضيق"
+        }
+    },
+    "profond": {
+        "mg": "lalina",
+        "fr": "profond",
+        "en": "deep",
+        "ar": "عميق",
+        "example": {
+            "mg": "Lalina ny farihy",
+            "fr": "Le lac est profond",
+            "en": "The lake is deep",
+            "ar": "البحيرة عميقة"
+        }
+    },
+    "superficiel": {
+        "mg": "marivo",
+        "fr": "superficiel",
+        "en": "shallow",
+        "ar": "سطحي",
+        "example": {
+            "mg": "Marivo ny rano",
+            "fr": "L'eau est superficielle",
+            "en": "The water is shallow",
+            "ar": "الماء سطحي"
+        }
+    },
+    "plein": {
+        "mg": "feno",
+        "fr": "plein",
+        "en": "full",
+        "ar": "ممتلئ",
+        "example": {
+            "mg": "Feno ny fitoeran-drano",
+            "fr": "Le réservoir est plein",
+            "en": "The tank is full",
+            "ar": "الخزان ممتلئ"
+        }
+    },
+    "vide": {
+        "mg": "foana",
+        "fr": "vide",
+        "en": "empty",
+        "ar": "فارغ",
+        "example": {
+            "mg": "Foana ny harona",
+            "fr": "Le panier est vide",
+            "en": "The basket is empty",
+            "ar": "السلة خالية"
+        }
+    },
+    "lourd": {
+        "mg": "mavesatra",
+        "fr": "lourd",
+        "en": "heavy",
+        "ar": "ثقيل",
+        "example": {
+            "mg": "Mavesatra ilay entana",
+            "fr": "Les bagages sont lourds",
+            "en": "The luggage is heavy",
+            "ar": "الأمتعة ثقيلة"
+        }
+    },
+    "léger": {
+        "mg": "maivana",
+        "fr": "léger",
+        "en": "light",
+        "ar": "خفيف",
+        "example": {
+            "mg": "Maivana ilay zavatra",
+            "fr": "La chose est légère",
+            "en": "The thing is light",
+            "ar": "الشيء خفيف"
+        }
+    },
+    "sage": {
+        "mg": "hendry",
+        "fr": "sage",
+        "en": "well-behaved",
+        "ar": "مطيع",
+        "example": {
+            "mg": "Hendry izy",
+            "fr": "Il est sage",
+            "en": "He is well-behaved",
+            "ar": "هو مطيع"
+        }
+    },
+    "bête": {
+        "mg": "dondrina",
+        "fr": "bête",
+        "en": "stupid",
+        "ar": "غبي",
+        "example": {
+            "mg": "Dondrina izy",
+            "fr": "Il est bête",
+            "en": "He is stupid",
+            "ar": "هو غبي"
+        }
+    },
+    "calme": {
+        "mg": "mangiana",
+        "fr": "calme",
+        "en": "calm",
+        "ar": "هادئ",
+        "example": {
+            "mg": "Mangiana ny efitra",
+            "fr": "La pièce est calme",
+            "en": "The room is calm",
+            "ar": "الغرفة هادئة"
+        }
+    },
+    "énergique": {
+        "mg": "matanjaka",
+        "fr": "énergique",
+        "en": "energetic",
+        "ar": "متحمس",
+        "example": {
+            "mg": "Matanjaka izy",
+            "fr": "Il est énergique",
+            "en": "He is energetic",
+            "ar": "هو متحمس"
+        }
+    },
+    "drôle": {
+        "mg": "mampihomehy",
+        "fr": "drôle",
+        "en": "funny",
+        "ar": "مضحك",
+        "example": {
+            "mg": "Mampihomehy izy",
+            "fr": "Il est drôle",
+            "en": "He is funny",
+            "ar": "هو مضحك"
+        }
+    },
+    "sérieux": {
+        "mg": "matotra",
+        "fr": "sérieux",
+        "en": "serious",
+        "ar": "جدي",
+        "example": {
+            "mg": "Matotra izy",
+            "fr": "Il est sérieux",
+            "en": "He is serious",
+            "ar": "هو جدي"
+        }
+    },
+    "poli": {
+        "mg": "mahalala fomba",
+        "fr": "poli",
+        "en": "polite",
+        "ar": "مهذب",
+        "example": {
+            "mg": "Mahalala fomba izy",
+            "fr": "Il est poli",
+            "en": "He is polite",
+            "ar": "هو مهذب"
+        }
+    },
+    "impoli": {
+        "mg": "tsy mahalala fomba",
+        "fr": "impoli",
+        "en": "impolite",
+        "ar": "غير مهذب",
+        "example": {
+            "mg": "Tsy mahalala fomba izy",
+            "fr": "Il est impoli",
+            "en": "He is impolite",
+            "ar": "هو غير مهذب"
+        }
+    },
+    "timide": {
+        "mg": "saro-kenatra",
+        "fr": "timide",
+        "en": "shy",
+        "ar": "خجول",
+        "example": {
+            "mg": "Saro-kenatra izy",
+            "fr": "Il est timide",
+            "en": "He is shy",
+            "ar": "هو خجول"
+        }
+    },
+    "ouvert": {
+        "mg": "misokatra",
+        "fr": "ouvert",
+        "en": "open",
+        "ar": "مفتوح",
+        "example": {
+            "mg": "Misokatra ny varavarana",
+            "fr": "La porte est ouverte",
+            "en": "The door is open",
+            "ar": "الباب مفتوح"
+        }
+    },
+    "fermé": {
+        "mg": "mihidy",
+        "fr": "fermé",
+        "en": "closed",
+        "ar": "مغلق",
+        "example": {
+            "mg": "Mihidy ny varavarana",
+            "fr": "La porte est fermée",
+            "en": "The door is closed",
+            "ar": "الباب مغلق"
+        }
+    },
+    "lisse": {
+        "mg": "malama",
+        "fr": "lisse",
+        "en": "smooth",
+        "ar": "أملس",
+        "example": {
+            "mg": "Malama volo izy",
+            "fr": "Ses cheveux sont lisses",
+            "en": "His hair is smooth",
+            "ar": "شعره أملس"
+        }
+    },
+    "rugueux": {
+        "mg": "maraorao",
+        "fr": "rugueux",
+        "en": "rough",
+        "ar": "خشن",
+        "example": {
+            "mg": "Maraorao ilay hazo",
+            "fr": "Le bois est rugueux",
+            "en": "The wood is rough",
+            "ar": "الخشب خشن"
+        }
+    },
+    "froid": {
+        "mg": "mangatsiaka",
+        "fr": "froid",
+        "en": "cold",
+        "ar": "بارد",
+        "example": {
+            "mg": "Mangatsiaka ny rivotra",
+            "fr": "Le vent est froid",
+            "en": "The wind is cold",
+            "ar": "الريح باردة"
+        }
+    }, 
+    "sec": {
+        "mg": "maina",
+        "fr": "sec",
+        "en": "dry",
+        "ar": "جاف",
+        "example": {
+            "mg": "Maina ny tany",
+            "fr": "Le sol est sec",
+            "en": "The ground is dry",
+            "ar": "الأرض جافة"
+        }
+    },
+    "vite": {
+        "mg": "haingana",
+        "fr": "vite",
+        "en": "quickly",
+        "ar": "بسرعة",
+        "example": {
+            "mg": "Niala haingana izy",
+            "fr": "Il est parti vite",
+            "en": "He left quickly",
+            "ar": "غادر بسرعة"
+        }
+    },
+    "lentement": {
+        "mg": "moramora",
+        "fr": "lentement",
+        "en": "slowly",
+        "ar": "ببطء",
+        "example": {
+            "mg": "Nihazakazaka moramora izy",
+            "fr": "Il a couru lentement",
+            "en": "He ran slowly",
+            "ar": "ركض ببطء"
+        }
+    },
+    "toujours": {
+        "mg": "mandrakariva",
+        "fr": "toujours",
+        "en": "always",
+        "ar": "دائماً",
+        "example": {
+            "mg": "Manampy ahy mandrakariva izy",
+            "fr": "Il m'aide toujours",
+            "en": "He always helps me",
+            "ar": "هو يساعدني دائماً"
+        }
+    },
+    "jamais": {
+        "mg": "tsy mbola, tsy ary",
+        "fr": "jamais",
+        "en": "never",
+        "ar": "أبداً",
+        "example": {
+            "mg": "Tsy mbola niaina zava-dehibe izy",
+            "fr": "Il n'a jamais vécu quelque chose d'important",
+            "en": "He has never experienced anything important",
+            "ar": "لم يمر أبداً بشيء مهم"
+        }
+    },
+    "souvent": {
+        "mg": "matetika",
+        "fr": "souvent",
+        "en": "often",
+        "ar": "غالباً",
+        "example": {
+            "mg": "Matetika izy no mankany",
+            "fr": "Il y va souvent",
+            "en": "He goes there often",
+            "ar": "يذهب هناك غالباً"
+        }
+    },
+    "parfois": {
+        "mg": "indraindray",
+        "fr": "parfois",
+        "en": "sometimes",
+        "ar": "أحياناً",
+        "example": {
+            "mg": "Indraindray izy no mangataka fanampiana",
+            "fr": "Parfois, il demande de l'aide",
+            "en": "Sometimes, he asks for help",
+            "ar": "أحياناً يطلب المساعدة"
+        }
+    },
+    "ici": {
+        "mg": "eto",
+        "fr": "ici",
+        "en": "here",
+        "ar": "هنا",
+        "example": {
+            "mg": "Eto aho",
+            "fr": "Je suis ici",
+            "en": "I am here",
+            "ar": "أنا هنا"
+        }
+    },
+    "là": {
+        "mg": "any",
+        "fr": "là",
+        "en": "there",
+        "ar": "هناك",
+        "example": {
+            "mg": "Any izy",
+            "fr": "Il est là-bas",
+            "en": "He is there",
+            "ar": "هو هناك"
+        }
+    },
+    "loin": {
+        "mg": "lavitra",
+        "fr": "loin",
+        "en": "far",
+        "ar": "بعيد",
+        "example": {
+            "mg": "Lavitra ny tanàna",
+            "fr": "La ville est loin",
+            "en": "The city is far",
+            "ar": "المدينة بعيدة"
+        }
+    },
+    "près": {
+        "mg": "akaiky",
+        "fr": "près",
+        "en": "near",
+        "ar": "قريب",
+        "example": {
+            "mg": "Akaiky ny fivarotana",
+            "fr": "Le magasin est près",
+            "en": "The store is near",
+            "ar": "المتجر قريب"
+        }
+    },
+    "partout": {
+        "mg": "manerana izao tontonlo izao",
+        "fr": "partout",
+        "en": "everywhere",
+        "ar": "في كل مكان",
+        "example": {
+            "mg": "Manerana izao tontolo izao izy",
+            "fr": "Il est partout dans le monde",
+            "en": "He is everywhere in the world",
+            "ar": "هو في كل مكان في العالم"
+        }
+    },
+    "bientôt": {
+        "mg": "tsy ho ela",
+        "fr": "bientôt",
+        "en": "soon",
+        "ar": "قريباً",
+        "example": {
+            "mg": "Hiverina tsy ho ela izy",
+            "fr": "Il reviendra bientôt",
+            "en": "He will come back soon",
+            "ar": "سيعود قريباً"
+        }
+    },
+    "déjà": {
+        "mg": "efa",
+        "fr": "déjà",
+        "en": "already",
+        "ar": "بالفعل",
+        "example": {
+            "mg": "Efa nandeha izy",
+            "fr": "Il est déjà parti",
+            "en": "He has already left",
+            "ar": "لقد غادر بالفعل"
+        }
+    },
+    "encore": {
+        "mg": "indray",
+        "fr": "encore",
+        "en": "again",
+        "ar": "مجدداً",
+        "example": {
+            "mg": "Nataony indray izany",
+            "fr": "Il l'a fait encore",
+            "en": "He did it again",
+            "ar": "فعلها مجدداً"
+        }
+    },
+    "finalement": {
+        "mg": "tamin'ny farany",
+        "fr": "finalement",
+        "en": "finally",
+        "ar": "أخيرا",
+        "example": {
+            "mg": "Namangy ahy izy tamin'ny farany",
+            "fr": "Finalement, il m'a rendu visite",
+            "en": "Finally, he visited me",
+            "ar": "أخيراً، زارني"
+        }
+    },
+    "vite": {
+        "mg": "haingana, mafy",
+        "fr": "vite",
+        "en": "quickly",
+        "ar": "بسرعة",
+        "example": {
+            "mg": "Mandeha mafy ny fiara",
+            "fr": "La voiture roule vite",
+            "en": "The car is driving quickly",
+            "ar": "السيارة تسير بسرعة"
+        }
+    },
+    "lentement": {
+        "mg": "mora",
+        "fr": "lentement",
+        "en": "slowly",
+        "ar": "ببطء",
+        "example": {
+            "mg": "Mihodina mora ny bisikileta",
+            "fr": "Le vélo roule lentement",
+            "en": "The bicycle is moving slowly",
+            "ar": "الدراجة تسير ببطء"
+        }
+    },
+    "bien": {
+        "mg": "tsara",
+        "fr": "bien",
+        "en": "well",
+        "ar": "جيدًا",
+        "example": {
+            "mg": "Manao tsara izy",
+            "fr": "Il fait bien",
+            "en": "He does well",
+            "ar": "هو يفعل جيدًا"
+        }
+    },
+    "mal": {
+        "mg": "ratsy",
+        "fr": "mal",
+        "en": "badly",
+        "ar": "بشدة",
+        "example": {
+            "mg": "Manao tsirambina ny asany izy",
+            "fr": "Il a fait mal son travail",
+            "en": "He did his work badly",
+            "ar": "هو قام بعمله بشكل سيء"
+        }
+    },
+    "toujours": {
+        "mg": "mandrakariva",
+        "fr": "toujours",
+        "en": "always",
+        "ar": "دائمًا",
+        "example": {
+            "mg": "Mila manao soa mandrakariva ianao",
+            "fr": "Tu dois toujours faire de bonnes actions",
+            "en": "You should always do good deeds",
+            "ar": "يجب عليك دائمًا فعل الأعمال الجيدة"
+        }
+    },
+    "souvent": {
+        "mg": "matetika",
+        "fr": "souvent",
+        "en": "often",
+        "ar": "غالبًا",
+        "example": {
+            "mg": "Mijery tele matetika izy",
+            "fr": "Il regarde souvent la télé",
+            "en": "He watches TV often",
+            "ar": "هو يشاهد التلفاز غالبًا"
+        }
+    },
+    "ici": {
+        "mg": "eto",
+        "fr": "ici",
+        "en": "here",
+        "ar": "هنا",
+        "example": {
+            "mg": "Eto izahay",
+            "fr": "Nous sommes ici",
+            "en": "We are here",
+            "ar": "نحن هنا"
+        }
+    },
+    "là": {
+        "mg": "any",
+        "fr": "là",
+        "en": "there",
+        "ar": "هناك",
+        "example": {
+            "mg": "Any izy",
+            "fr": "Il est là",
+            "en": "He is there",
+            "ar": "هو هناك"
+        }
+    },
+    "parfois": {
+        "mg": "indraindray",
+        "fr": "parfois",
+        "en": "sometimes",
+        "ar": "أحيانًا",
+        "example": {
+            "mg": "Indraindray izahay no mankany amin'ny tora-pasika",
+            "fr": "Parfois, nous allons à la plage",
+            "en": "Sometimes we go to the beach",
+            "ar": "أحيانًا نذهب إلى الشاطئ"
+        }
+    },
+    "encore": {
+        "mg": "indray mandeha",
+        "fr": "encore",
+        "en": "again",
+        "ar": "مرة أخرى",
+        "example": {
+            "mg": "Avereno indray mandeha, azafady",
+            "fr": "S'il vous plaît, répétez encore",
+            "en": "Please repeat again",
+            "ar": "من فضلك كرر مرة أخرى"
+        }
+    },
+    "avant": {
+        "mg": "alohan'ny",
+        "fr": "avant",
+        "en": "before",
+        "ar": "قبل",
+        "example": {
+            "mg": "Alohan'ny hidirana dia mila mahandry",
+            "fr": "Avant d'entrer, il faut attendre",
+            "en": "Before entering, we need to wait",
+            "ar": "قبل الدخول، يجب علينا الانتظار"
+        }
+    },
+    "après": {
+        "mg": "aorian'ny",
+        "fr": "après",
+        "en": "after",
+        "ar": "بعد",
+        "example": {
+            "mg": "Aorian'ny sakafo dia handeha hivory izahay",
+            "fr": "Après le repas, nous irons à la réunion",
+            "en": "After the meal, we will go to the meeting",
+            "ar": "بعد الطعام، سنذهب إلى الاجتماع"
+        }
+    },
+    "ailleurs": {
+        "mg": "any ivelany",
+        "fr": "ailleurs",
+        "en": "elsewhere",
+        "ar": "في مكان آخر",
+        "example": {
+            "mg": "Nandeha any ivelany izy",
+            "fr": "Il est allé ailleurs",
+            "en": "He went elsewhere",
+            "ar": "ذهب إلى مكان آخر"
+        }
+    },
+    "souvent": {
+        "mg": "matetika",
+        "fr": "souvent",
+        "en": "often",
+        "ar": "غالبًا",
+        "example": {
+            "mg": "Mijery tele matetika izy",
+            "fr": "Il regarde souvent la télé",
+            "en": "He watches TV often",
+            "ar": "هو يشاهد التلفاز غالبًا"
+        }
+    },
+    "et": {
+        "mg": "sy",
+        "fr": "et",
+        "en": "and",
+        "ar": "و",
+        "example": {
+            "mg": "Mividy sakafo sy zava-pisotro aho",
+            "fr": "J'achète de la nourriture et des boissons",
+            "en": "I buy food and drinks",
+            "ar": "أشتري الطعام والمشروبات"
+        }
+    },
+    "mais": {
+        "mg": "saingy",
+        "fr": "mais",
+        "en": "but",
+        "ar": "لكن",
+        "example": {
+            "mg": "Tiako izy saingy tsy afaka manampy aho",
+            "fr": "Je l'aime mais je ne peux pas aider",
+            "en": "I love him but I cannot help",
+            "ar": "أحبّه لكن لا أستطيع المساعدة"
+        }
+    },
+    "ou": {
+        "mg": "na",
+        "fr": "ou",
+        "en": "or",
+        "ar": "أو",
+        "example": {
+            "mg": "Mihinana paoma na akondro",
+            "fr": "Mange du pomme ou de la banane",
+            "en": "Eat apple or banana",
+            "ar": "كل تفاحا أو موزا"
+        }
+        },
+            "ou": {
+        "mg": "sa",
+        "fr": "ou",
+        "en": "or",
+        "ar": "أو",
+        "example": {
+            "mg": "Eny sa tsia ?",
+            "fr": "Oui ou non ?",
+            "en": "Yes or no ?",
+            "ar": "نعم أم لا"
+        }
+    },
+    "parce que": {
+        "mg": "satria",
+        "fr": "parce que",
+        "en": "because",
+        "ar": "لأن",
+        "example": {
+            "mg": "Mianatra aho satria te ho mpampianatra",
+            "fr": "J'étudie parce que je veux être professeur",
+            "en": "I study because I want to be a teacher",
+            "ar": "أدرس لأنني أريد أن أصبح معلمًا"
+        }
+    },
+    "donc": {
+        "mg": "ka",
+        "fr": "donc",
+        "en": "so",
+        "ar": "إذن",
+        "example": {
+            "mg": "Mila miasa aho ka tsy afaka ny miala",
+            "fr": "Je dois travailler donc je ne peux pas partir",
+            "en": "I need to work so I cannot leave",
+            "ar": "يجب أن أعمل إذن لا أستطيع المغادرة"
+        }
+    },
+    "quand": {
+        "mg": "rehefa",
+        "fr": "quand",
+        "en": "when",
+        "ar": "متى",
+        "example": {
+            "mg": "Rehefa tonga ianao dia hifampiresaka",
+            "fr": "Quand tu arriveras, nous discuterons",
+            "en": "When you arrive, we will talk",
+            "ar": "عندما تصل، سنتحدث"
+        }
+    },
+    "si": {
+        "mg": "raha",
+        "fr": "si",
+        "en": "if",
+        "ar": "إذا",
+        "example": {
+            "mg": "Raha mandeha tsara dia ho tonga ara-potoana ianao",
+            "fr": "Si tout va bien, tu arriveras à l'heure",
+            "en": "If everything goes well, you will arrive on time",
+            "ar": "إذا سارت الأمور على ما يرام، ستصل في الوقت المحدد"
+        }
+    },
+    "aussi": {
+        "mg": "ihany koa",
+        "fr": "aussi",
+        "en": "also",
+        "ar": "أيضا",
+        "example": {
+            "mg": "Tsy tiako ihany koa ny zava-pisotro mangatsiaka",
+            "fr": "Je n'aime pas aussi les boissons froides",
+            "en": "I don't like cold drinks also",
+            "ar": "أنا لا أحب المشروبات الباردة أيضًا"
+        }
+    },
+    "enfin": {
+        "mg": "farany",
+        "fr": "enfin",
+        "en": "finally",
+        "ar": "أخيرًا",
+        "example": {
+            "mg": "Farany, tonga soa izy",
+            "fr": "Enfin, il est arrivé",
+            "en": "Finally, he arrived",
+            "ar": "أخيرًا، وصل"
+        }
+    },
+    "je": {
+        "mg": "izaho, aho",
+        "fr": "je",
+        "en": "I",
+        "ar": "أنا",
+        "example": {
+            "mg": "Hoany an-tsena aho. (Izaho dia hoany an-tsena)",
+            "fr": "Je vais au marché",
+            "en": "I am going to the market",
+            "ar": "أنا ذاهب إلى السوق"
+        }
+    },
+    "tu": {
+        "mg": "ianao",
+        "fr": "tu",
+        "en": "you",
+        "ar": "أنت",
+        "example": {
+            "mg": "Hoany ve ianao?",
+            "fr": "Tu veux y aller ?",
+            "en": "Do you want to go there?",
+            "ar": "هل تريد الذهاب إلى هناك؟"
+        }
+    },
+    "il": {
+        "mg": "izy",
+        "fr": "il",
+        "en": "he",
+        "ar": "هو",
+        "example": {
+            "mg": "Mijery ny fahitalavitra izy",
+            "fr": "Il regarde la télévision",
+            "en": "He is watching TV",
+            "ar": "هو يشاهد التلفاز"
+        }
+    },
+    "elle": {
+        "mg": "izy",
+        "fr": "elle",
+        "en": "she",
+        "ar": "هي",
+        "example": {
+            "mg": "Miasa amin'ny tobim-pahasalamana izy",
+            "fr": "Elle travaille à l'hôpital",
+            "en": "She works at the hospital",
+            "ar": "هي تعمل في المستشفى"
+        }
+    },
+    "nous": {
+        "mg": "isika",
+        "fr": "nous",
+        "en": "we",
+        "ar": "نحن",
+        "example": {
+            "mg": "Hiara-hiasa isika",
+            "fr": "Nous allons travailler ensemble",
+            "en": "We will work together",
+            "ar": "سنعمل معًا"
+        }
+    },
+    "vous": {
+        "mg": "ianareo",
+        "fr": "vous",
+        "en": "you",
+        "ar": "أنتم",
+        "example": {
+            "mg": "Mitady asa ve ianareo?",
+            "fr": "Vous cherchez du travail ?",
+            "en": "Are you looking for a job?",
+            "ar": "هل تبحثون عن عمل؟"
+        }
+    },
+    "ils": {
+        "mg": "izy ireo",
+        "fr": "ils",
+        "en": "they",
+        "ar": "هم",
+        "example": {
+            "mg": "Mipetraka ao an-tanàna izy ireo",
+            "fr": "Ils habitent dans la ville",
+            "en": "They live in the city",
+            "ar": "هم يعيشون في المدينة"
+        }
+    },
+    "elles": {
+        "mg": "izy ireo",
+        "fr": "elles",
+        "en": "they (feminine)",
+        "ar": "هن",
+        "example": {
+            "mg": "Hoany amin'ny fety izy ireo",
+            "fr": "Elles vont à la fête",
+            "en": "They are going to the party",
+            "ar": "هن ذاهبات إلى الحفلة"
+        }
+    },
+    "me": {
+        "mg": "ahy",
+        "fr": "me",
+        "en": "me",
+        "ar": "ني",
+        "example": {
+            "mg": "Manampy ahy izy",
+            "fr": "Il m'aide",
+            "en": "He helps me",
+            "ar": "هو يساعدني"
+        }
+    },
+    "te": {
+        "mg": "anao",
+        "fr": "toi",
+        "en": "you",
+        "ar": "ك",
+        "example": {
+            "mg": "Ahoana no hanampianao ahy?",
+            "fr": "Je te remercie",
+            "en": "I thank you",
+            "ar": "أشكرك"
+        }
+    },
+    "le, la, l'": {
+        "mg": "azy",
+        "fr": "le, la, l'",
+        "en": "him, her, it",
+        "ar": "هو",
+        "example": {
+            "mg": "Nanampy azy aho",
+            "fr": "Je l'ai aidé",
+            "en": "I helped him",
+            "ar": "ساعدته"
+        }
+    },
+    "nous": {
+        "mg": "anay",
+        "fr": "nous",
+        "en": "us",
+        "ar": "نحن",
+        "example": {
+            "mg": "Nanampy anay izy",
+            "fr": "Il nous a aidé",
+            "en": "He helped us",
+            "ar": "ساعدنا"
+        }
+    },
+    "vous": {
+        "mg": "anareo",
+        "fr": "vous",
+        "en": "you",
+        "ar": "كم كنّ",
+        "example": {
+            "mg": "Nanampy anareo izy",
+            "fr": "Il vous a aidé",
+            "en": "He helped you",
+            "ar": "ساعدكم"
+        }
+    },
+    "les": {
+        "mg": "azy ireo",
+        "fr": "eux",
+        "en": "them",
+        "ar": "هم",
+        "example": {
+            "mg": "Manampy azy ireo amin'ny fianarana izahay",
+            "fr": "Nous les aidons avec leurs études",
+            "en": "We help them with their studies",
+            "ar": "نحن نساعدهم في دراستهم"
+        }
+        },
+    "aujourd'hui": {
+        "mg": "androany",
+        "fr": "aujourd'hui",
+        "en": "today",
+        "ar": "اليوم",
+        "example": {
+            "mg": "Androany no manomboka ny fianarana",
+            "fr": "Aujourd'hui commence l'école",
+            "en": "Today school starts",
+            "ar": "اليوم يبدأ المدرسة"
+        }
+    },
+    "demain": {
+        "mg": "rahampitso",
+        "fr": "demain",
+        "en": "tomorrow",
+        "ar": "غداً",
+        "example": {
+            "mg": "Rahampitso dia hanatrika fihaonana isika",
+            "fr": "Demain, nous aurons notre réunion",
+            "en": "Tomorrow, we will have our meeting",
+            "ar": "غداً سيكون لدينا اجتماعنا"
+        }
+    },
+    "hier": {
+        "mg": "omaly",
+        "fr": "hier",
+        "en": "yesterday",
+        "ar": "أمس",
+        "example": {
+            "mg": "Nankany an-tsena aho omaly",
+            "fr": "Hier, je suis allé au marché",
+            "en": "Yesterday, I went to the market",
+            "ar": "أمس ذهبت إلى السوق"
+        }
+    },
+    "toujours": {
+        "mg": "mandrakariva",
+        "fr": "toujours",
+        "en": "always",
+        "ar": "دائماً",
+        "example": {
+            "mg": "Manampy ahy mandrakariva izy",
+            "fr": "Il m'aide toujours",
+            "en": "He always helps me",
+            "ar": "هو يساعدني دائماً"
+        }
+    },
+    "jamais": {
+        "mg": "tsisy androny",
+        "fr": "jamais",
+        "en": "never",
+        "ar": "أبداً",
+        "example": {
+            "mg": "Tsisy androny aho hisotro kafe",
+            "fr": "Je ne bois jamais de café",
+            "en": "I never drink coffee",
+            "ar": "أنا لا أشرب القهوة أبداً"
+        }
+    },
+    "tout de suite": {
+        "mg": "avy hatrany",
+        "fr": "tout de suite",
+        "en": "right away",
+        "ar": "على الفور",
+        "example": {
+            "mg": "Atomboy avy hatrany",
+            "fr": "On commence tout de suite",
+            "en": "We start right away",
+            "ar": "نبدأ على الفور"
+        }
+    },
+    "ce matin": {
+        "mg": "amin'ny maraina",
+        "fr": "ce matin",
+        "en": "this morning",
+        "ar": "هذا الصباح",
+        "example": {
+            "mg": "Tamin'ny maraina aho no nanao fanatanjahan-tena",
+            "fr": "Ce matin, j'ai fait de l'exercice",
+            "en": "This morning, I exercised",
+            "ar": "هذا الصباح، مارست الرياضة"
+        }
+    },
+    "ce soir": {
+        "mg": "hariva",
+        "fr": "ce soir",
+        "en": "this evening",
+        "ar": "هذا المساء",
+        "example": {
+            "mg": "Hifampiresaka izahay hariva",
+            "fr": "Ce soir, nous discuterons",
+            "en": "This evening, we will talk",
+            "ar": "هذا المساء سنتحدث"
+        }
+    },
+    "lundi": {
+        "mg": "alatsinainy",
+        "fr": "lundi",
+        "en": "Monday",
+        "ar": "الاثنين",
+        "example": {
+            "mg": "Alatsinainy no hanombohako ny asa",
+            "fr": "Lundi, je commence le travail",
+            "en": "On Monday, I start work",
+            "ar": "يوم الاثنين أبدأ العمل"
+        }
+    },
+    "demain matin": {
+        "mg": "rahampitso maraina",
+        "fr": "demain matin",
+        "en": "tomorrow morning",
+        "ar": "غداً صباحاً",
+        "example": {
+            "mg": "Rahampitso maraina dia hiatrika fivoriana aho",
+            "fr": "Demain matin, je serai à la réunion",
+            "en": "Tomorrow morning, I will be at the meeting",
+            "ar": "غداً صباحاً سأكون في الاجتماع"
+        }
+    },
+    "mardi": {
+        "mg": "talata",
+        "fr": "mardi",
+        "en": "Tuesday",
+        "ar": "الثلاثاء",
+        "example": {
+            "mg": "Talata no andro fiantsenana",
+            "fr": "Mardi est le jour du marché",
+            "en": "Tuesday is market day",
+            "ar": "الثلاثاء هو يوم السوق"
+        }
+    },
+    "mercredi": {
+        "mg": "alarobia",
+        "fr": "mercredi",
+        "en": "Wednesday",
+        "ar": "الأربعاء",
+        "example": {
+            "mg": "Mivory isika ny alarobia",
+            "fr": "Nous nous réunissons le mercredi",
+            "en": "We meet on Wednesday",
+            "ar": "نحن نجتمع يوم الأربعاء"
+        }
+    },
+    "jeudi": {
+        "mg": "alakamisy",
+        "fr": "jeudi",
+        "en": "Thursday",
+        "ar": "الخميس",
+        "example": {
+            "mg": "Hoany amin'ny dokotera aho ny alakamisy",
+            "fr": "Je vais chez le médecin jeudi",
+            "en": "I am going to the doctor on Thursday",
+            "ar": "أنا ذاهب إلى الطبيب يوم الخميس"
+        }
+    },
+    "vendredi": {
+        "mg": "zoma",
+        "fr": "vendredi",
+        "en": "Friday",
+        "ar": "الجمعة",
+        "example": {
+            "mg": "Hanao fanatanjahan-tena aho ny zoma",
+            "fr": "Je fais du sport le vendredi",
+            "en": "I exercise on Friday",
+            "ar": "أمارس الرياضة يوم الجمعة"
+        }
+    },
+    "samedi": {
+        "mg": "sabotsy",
+        "fr": "samedi",
+        "en": "Saturday",
+        "ar": "السبت",
+        "example": {
+            "mg": "Sabotsy izahay no manadio trano",
+            "fr": "Nous nettoyons la maison le samedi",
+            "en": "We clean the house on Saturday",
+            "ar": "نحن ننظف المنزل يوم السبت"
+        }
+    },
+    "dimanche": {
+        "mg": "alahady",
+        "fr": "dimanche",
+        "en": "Sunday",
+        "ar": "الأحد",
+        "example": {
+            "mg": "Miala sasatra aho ny alahady hariva",
+            "fr": "Dimanche, je me repose le soir",
+            "en": "On Sunday evening, I rest",
+            "ar": "يوم الأحد، أرتاح في المساء"
+        }
+    }, 
+    "matin": {
+        "mg": "maraina",
+        "fr": "matin",
+        "en": "morning",
+        "ar": "صباح",
+        "example": {
+            "mg": "Mitsangatsangana aho amin'ny maraina",
+            "fr": "Je me promène le matin",
+            "en": "I take a walk in the morning",
+            "ar": "أتمشى في الصباح"
+        }
+    },
+    "jour": {
+        "mg": "andro",
+        "fr": "jour",
+        "en": "day",
+        "ar": "يوم",
+        "example": {
+            "mg": "Tsara ny andro",
+            "fr": "Le jour est beau",
+            "en": "The day is beautiful",
+            "ar": "اليوم جميل"
+        }
+    },
+    "semaine": {
+        "mg": "herinandro",
+        "fr": "semaine",
+        "en": "week",
+        "ar": "أسبوع",
+        "example": {
+            "mg": "Manomboka amin'ny herinandro ambony ny fialan-tsasatra",
+            "fr": "Les vacances commencent la semaine prochaine",
+            "en": "The holidays start next week",
+            "ar": "تبدأ العطلة الأسبوع القادم"
+        }
+    },
+    "mois": {
+        "mg": "volana",
+        "fr": "mois",
+        "en": "month",
+        "ar": "شهر",
+        "example": {
+            "mg": "Amin'ny volana ambony",
+            "fr": "Le mois prochain ",
+            "en": "Next month",
+            "ar": "الشهر المقبل"
+        }
+    },
+    "année": {
+        "mg": "taona",
+        "fr": "année",
+        "en": "year",
+        "ar": "سنة",
+        "example": {
+            "mg": "Ny taom-baovao dia manomboka rahampitso",
+            "fr": "La nouvelle année commence demain",
+            "en": "The new year starts tomorrow",
+            "ar": "السنة الجديدة تبدأ غداً"
+        }
+    },
+    "matinée": {
+        "mg": "tontolo andro maraina",
+        "fr": "matinée",
+        "en": "morning",
+        "ar": "فترة الصباح",
+        "example": {
+            "mg": "Niasa aho nandritra ny maraina",
+            "fr": "Pendant la matinée, j'ai travaillé",
+            "en": "During the morning, I worked",
+            "ar": "خلال فترة الصباح، كنت أعمل"
+        }
+    },
+    "soir": {
+        "mg": "hariva",
+        "fr": "soir",
+        "en": "evening",
+        "ar": "مساء",
+        "example": {
+            "mg": "Mitsangatsangana amin'ny hariva aho",
+            "fr": "Je me promène le soir",
+            "en": "I take a walk in the evening",
+            "ar": "أتمشى في المساء"
+        }
+    },
+    "nuit": {
+        "mg": "alina",
+        "fr": "nuit",
+        "en": "night",
+        "ar": "ليل",
+        "example": {
+            "mg": "Matory amin'ny alina aho",
+            "fr": "Je dors la nuit",
+            "en": "I sleep at night",
+            "ar": "أنام في الليل"
+        }
+    },
+    "minute": {
+        "mg": "minitra",
+        "fr": "minute",
+        "en": "minute",
+        "ar": "دقيقة",
+        "example": {
+            "mg": "Miandry dimy minitra aho",
+            "fr": "J'attends cinq minutes",
+            "en": "I wait five minutes",
+            "ar": "أنتظر خمس دقائق"
+        }
+    },
+    "heure": {
+        "mg": "ora",
+        "fr": "heure",
+        "en": "hour",
+        "ar": "ساعة",
+        "example": {
+            "mg": "Amin'ny folo ora izao",
+            "fr": "Il est dix heures",
+            "en": "It is ten o'clock",
+            "ar": "الساعة الآن العاشرة"
+        }
+    },
+    "seconde": {
+        "mg": "segondra",
+        "fr": "seconde",
+        "en": "second",
+        "ar": "ثانية",
+        "example": {
+            "mg": "Miandry segondra vitsy aho",
+            "fr": "J'attends quelques secondes",
+            "en": "I wait a few seconds",
+            "ar": "أنتظر بضع ثوانٍ"
+        }
+    },
+    "printemps": {
+        "mg": "lohataona",
+        "fr": "printemps",
+        "en": "spring",
+        "ar": "ربيع",
+        "example": {
+            "mg": "Manomboka amin'ny lohataona ny fotoana tsara",
+            "fr": "Le beau temps commence au printemps",
+            "en": "Good weather starts in spring",
+            "ar": "يبدأ الطقس الجميل في الربيع"
+        }
+    },
+    "été": {
+        "mg": "fahavaratra",
+        "fr": "été",
+        "en": "summer",
+        "ar": "صيف",
+        "example": {
+            "mg": "Ny fahavaratra dia mafana",
+            "fr": "L'été est chaud",
+            "en": "The summer is hot",
+            "ar": "الصيف حار"
+        }
+    },
+    "automne": {
+        "mg": "fararano",
+        "fr": "automne",
+        "en": "autumn",
+        "ar": "خريف",
+        "example": {
+            "mg": "Mangatsiaka ny fararano",
+            "fr": "L'automne est froid",
+            "en": "The autumn is cold",
+            "ar": "الخريف بارد"
+        }
+    },
+    "hiver": {
+        "mg": "ririnina",
+        "fr": "hiver",
+        "en": "winter",
+        "ar": "شتاء",
+        "example": {
+            "mg": "Mangatsiaka ny ririnina",
+            "fr": "L'hiver est froid",
+            "en": "The winter is cold",
+            "ar": "الشتاء بارد"
+        }
+    },
+    "siècle": {
+        "mg": "taonjato",
+        "fr": "siècle",
+        "en": "century",
+        "ar": "قرن",
+        "example": {
+            "mg": "Taonjato faha-21",
+            "fr": "Le XXIe siècle",
+            "en": "the 21st century",
+            "ar": "القرن الحادي والعشرون"
+        }
+    },
+    "temps": {
+        "mg": "fotoana",
+        "fr": "temps",
+        "en": "time",
+        "ar": "وقت",
+        "example": {
+            "mg": "fotoana mampalalaka azy",
+            "fr": "ses temps libres",
+            "en": "His free times",
+            "ar": "أوقات فراغت"
+        }
+    }
+}
+
