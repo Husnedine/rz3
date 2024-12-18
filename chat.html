@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoto Bot (Prof Ankida Sonita)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #e5ddd5;
+            height: 100vh;
+        }
+        .chat-container {
+            max-width: 600px;
+            margin: 0 auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+        .chat-header {
+            background-color: #075e54;
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+        .chat-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white ;
+  padding: 3px;
+  object-fit: cover;
+}
+
+       
+        .chat-header h2 {
+            font-size: 1.1em;
+        }
+        .chat-header .status {
+            font-size: 0.8em;
+            opacity: 0.8;
+        }
+        #chatHistory {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFpJREFUOI3NkbENACEMA+PQMBmLsP9WYQeYgILiggrp5HzCJ1sXYAk8dQVoyu1WYClayton2Ap7b0nEt9OcBTRjDAc0t6TkM9H+A+9/uYF5CkVegGCVRvD+f0BskqOuMJ2/a4AAAAAElFTkSuQmCC');
+            background-repeat: repeat;
+        }
+        .message {
+            max-width: 80%;
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-radius: 7.5px;
+            position: relative;
+            line-height: 1.4;
+            font-size: 0.95em;
+        }
+        .question {
+            background-color: #fff;
+            margin-right: auto;
+            border-top-left-radius: 0;
+            box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+        }
+        .user-response {
+            background-color: #dcf8c6;
+            margin-left: auto;
+            border-top-right-radius: 0;
+            box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+        }
+        .feedback {
+            background-color: #fff;
+            margin-right: auto;
+            border-top-left-radius: 0;
+            box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+        }
+        .timestamp {
+            font-size: 0.7em;
+            color: #666;
+            float: right;
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        .chat-input-container {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        #userAnswer {
+            flex: 1;
+            padding: 9px 12px;
+            border: none;
+            border-radius: 20px;
+            background-color: white;
+            font-size: 0.95em;
+        }
+        button {
+            background-color: #075e54;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+<img src="Robot.png" alt="Icône de robot" class="chat-header img">
+            <div>
+                <h2>Zoto Bot (Prof Ankida Sonita)</h2>
+                <div class="status">زوتو بوت (مدرس عقيدة أهل السنة والجماعة)</div>
+            </div>
+        </div>
+        <div id="chatHistory"></div>
+        <div class="chat-input-container">
+            <input type="text" id="userAnswer" placeholder="Eto no manoratra ... الكتب هنا" autocomplete="off">
+            <button onclick="checkAnswer()" id="submitButton" disabled>
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const questionsByLevel = {
+            zazavao: [
+                {
+                    question: "Telo ireo fahalalana fototra izay tokony ho fantan'ny mpino silamo tsirairay avy, dia ny fahafantarany ny tompony sy ny fahafantarany ny mpaminaniny ary ny fahafantarany ny finoany.<br>Fanontaniana: Tanisao ireo fahalalana fototra ?",
+                    answer: "Fahafantarana ny tompo sy ny mpaminany ary ny finoana", 
+                    encouragements: ["Tohizo fa tsara"],
+                    feedbackWrong: "Fahafantarana ny tompo sy ny mpaminany ary ny finoana"
+                },
+                {
+                    question: "Voalohany: Fahafantarana an'i Allah; izany hoe: fahafantarana fa Izy no ilay nahary an'izao tontolo izao, ary tsy misy andriamanitra afa-tsy Izy, tsy mitaha amin'ny na iza na iza ny mahazanahary azy sy ireo anara-masiny ary ireo laza tsarany. <br>Fanontaniana: Fantatrao marina ve iza i Allah ?",
+                    answer: "Eny",
+                    encouragements: ["Allah dia ilay nahary an'izao tontolo izao, ilay tsy misy andriamanitra afa-tsy Izy, ilay tsy mitaha amin'ny na iza na iza."],
+                    feedbackWrong: "Allah dia ilay nahary an'izao tontolo izao, ilay tsy misy andriamanitra afa-tsy Izy, ilay tsy mitaha amin'ny na iza na iza."
+                },
+                {
+                    question: "Faharoa: Fahafantarana an'i Mohamady (S.A.W); izany hoe fahafantarana fa izy dia iraka nalefan'i Allah, ary izy no mpaminany farany, ary tsy maintsy amintsika ny manaraka ny sori-dalany. <br>Fanontaniana: Iza no mpaminany farany tonga taorian'i Mohamady ?",
+                    answer: "Tsy misy",
+                    encouragements: ["Marina tokoa ny valinteninao."],
+                    feedbackWrong: "Tsy misy. Satria izy no mpaminany farany."
+                },
+                        {
+                    question: "Fahatelo: Fahafantarana ny finoana silamo; ny atao hoe islamo dia fanoloran-tena ho an'i Allah amin'ny alalan'ny fanokanana Azy, sy fanekena Azy amin'ny alalan'ny fankatoavana Azy, ary fanalavirana ireo sampy sy ireo mpanompo sampy.<br>Fanontaniana: Inona no atao hoe islamo ?",
+                    answer: "Islamo dia fanoloran-tena ho an'i Allah amin'ny alalan'ny fanokanana Azy, sy fanekena Azy amin'ny alalan'ny fankatoavana Azy, ary fanalavirana ireo sampy sy ireo mpanompo sampy.", 
+                    encouragements: ["Tehaka ren-tany aman-danitra ho anao."],
+                    feedbackWrong: "Islamo dia fanoloran-tena ho an'i Allah amin'ny alalan'ny fanokanana Azy, sy fanekena Azy amin'ny alalan'ny fankatoavana Azy, ary fanalavirana ireo sampy sy ireo mpanompo sampy."
+                },
+                {
+                    question: "Mijoro amin'ny andry dimy ny finoana silamo, dia ny:<br>1. Fijoroana ho vavolom-belona fa tsy misy andriamanitra afa-tsy Allah ary i Mohamady dia irany.<br>2. Fanaovana Soalà (fanompoam-pivavahana)<br>3. Famoahana Zakà (ampahefapolo-karena omena ireo sahirana)<br>4. Fanaovana Ramadany<br>5. Fanaovana Hajy (fivahinianana masina mankany Makkah)<br>Fanontaniana: Inona no andry faharoan'ny finoana silamo ?",
+                    answer: "Soalà",
+                    encouragements: ["Marina ny tokoa izany."],
+                    feedbackWrong: "Soalà"
+                },
+                {
+                    question: "Ireo zavatra manala olona anatin'ny islamo:<br>1. Shirky (fanompoan-tsampy na koa fampitambarana an'i Allah amin'ny andriamani-tsy izy)<br>2. Fakana olona na zavatra ho mpanelanelana azy sy i Allah. <br>3. Tsy fanekena fa hoe ireo mpanompo sampy dia tsy mpino<br>4.  Fiheverana fa hoe tari-dalan'ny mpaminany dia tsy tsara fa ny an'ny ranona no tsara.<br>5.  Fankahalana ireo fampianarana nentin'ny Mpaminany (S.A.W)<br>6. Famazivaziana raharaham-pinoana<br> 7.  Mosavy (vôriky)<br>8.  Fanohanana ireo tsy mpino hanohitra ireo mpino silamo<br>9.  Fiheverana fa hoe azo atao ny miala amin'ny sori-dalan'ny Mpaminany (S.A.W).<br>10.  Tsy firaharahiana ireo adidy ara-pinoana (ohatra: finiavana ny tsy hanao soalà)<br>Fanontaniana: Manala anatin'ny islamo ve ny fitalahoana amin'ny razana?",
+                    answer: "Eny",
+                    encouragements: ["Marina ny tokoa izany."],
+                    feedbackWrong: "Eny. Satria shirky izany."
+                },
+                  {
+                    question: "Ny atao hoe «imany» (finoana, foi) dia fitokiana izay rehetra nolazain'i Allah sy ny mpaminaniny, sy fanekena ireo zavatra nodidiany sy ny fotom-pinoana nampianariny. <br>Fanontaniana: Inona no atao hoe imany ?",
+                    answer: "Imany dia fitokiana izay rehetra nolazain'i Allah sy ny mpaminaniny, sy fanekena ireo zavatra novidiany sy ny fotom-pinoana nampianariny.",
+                    encouragements: ["Tehaka ren-tany aman-danitra ho anao."],
+                    feedbackWrong: "Imany dia fitokiana izay rehetra nolazain'i Allah sy ny mpaminaniny, sy fanekena ireo zavatra novidiany sy ny fotom-pinoana nampianariny."
+                },
+                          {
+                    question: "Mijoro amin'ny andry enina ny imany, dia ny:<br>1. Finoana an'i Allah<br>2. Finoana ireo anjely<br>3. Finoana ireo boky masina<br>4. Finoana ireo mpaminany<br>5. Finoana ny andro farany<br>6. Finoana ny lahatra tsara sy ny lahatra ratsy<br>Fanontaniana: Mino ny andro farany ve ny mpino silamo ?",
+                    answer: "Eny",
+                    encouragements: ["Marina tokoa izany."],
+                    feedbackWrong: "Eny. Mino ny andro farany ny mpino silamo."
+                },
+                   {
+                    question: "Voalohany: Finoana an'i Allah; izany hoe finoana ny fisian'i Allah sy ny mahazanahary azy sy ireo anara-masiny ary ireo laza tsarany. <br>Fanontaniana: Inona no tiana holazaina amin'ny hoe mino an'i Allah.",
+                    answer: "Fitokiana ny fisian'i Allah sy ny mahazanahary azy sy ireo anara-masiny ary ireo laza tsarany",
+                    encouragements: ["Tehaka ren-tany aman-danitra ho anao"],
+                    feedbackWrong: "Fitokiana ny fisian'i Allah sy ny mahazanahary azy sy ireo anara-masiny ary ireo laza tsarany"
+                },
+                  {
+                    question: "Faharoa: Finoana ireo anjely; izany hoe finoana ny fisian'izy ireo sy ireo andraikitra nampisahanin'i Allah azy ireo. Misy amin'izy ireo mpitondra hafatra mankany amin'ireo mpaminany, dia i Jibrilo (Gabriela) izany. Misy amin'izy ireo mpiandraikitra ny orana sy ny fipariahany dia i Mikailo (Mikaela) izany. Misy amin'izy ireo mpitsoka anjomara dia i Israfilo (Rafaela) izany. Misy amin'izy ireo no mpaka fofon'aina dia i Malakolimaoty sy ireo tariny izany. <br>Fanontaniana: Anjely ve lahy sa vavy?",
+                    answer: "Sady tsy lahy no tsy vavy",
+                    encouragements: ["Marina ny valinteninao."],
+                    feedbackWrong: "Ny anjely dia sady tsy lahy no tsy vavy."
+                },
+                  {
+                    question: "Fahatelo: Finoana ireo boky masina; izany hoe finoana ireo boky izay nampidinin'i Allah tamin'ireo irany. Anisan'izany ny Taoraty izay nampidinina tamin'i Mosa (Mosesy), sy ny Evanjely izay nampidinina tamin'i Insa (Jesosy), sy Zabora izay nampidinina tamin'i Daodo (Davida), ary ny Korany izay nampidinina tamin'i Mohamady (S.A.W), izay avo voninahitra indrindra amin'ireo boky masina sy namarana azy ireo. Amin'ireo boky masina izay avy any an-danitra, dia ny Korany irery ihany no voaharo amin'ny fanovana.<br>Fanontaniana: Iza amin'ireo boky masina no avo voninahitra indrindra ?",
+                    answer: "Korany",
+                    encouragements: ["Marina ny valinteninao"],
+                    feedbackWrong: "Korany"
+                },
+                   {
+                    question: "Fahefatra: Finoana ireo iraka; izany hoe finoana fa nandefa iraka ho an'ny olombelona i Allah, ka ny nalefa farany tamin'izy ireo dia i Mohamady (S.A.W), ary izy no avo voninahitra indrindra amin'izy ireo. <br>Fanontaniana: Tia ireo irakan'i Allah ve ny mpino silamo.",
+                    answer: "Eny",
+                    encouragements: ["Marina ny valinteninao"],
+                    feedbackWrong: "Eny. Ny mpino silamo dia tia ireo mpaminany ary mino azy rehetra."
+                },
+                 {
+                    question: "Fahadimy: Finoana ny andro farany; izany hoe finoana ny andro fitsanganana amin’ny maty sy fitsarana ary fanomezam-balisoa.<br>Fanontaniana: Oviana ny andro farany ?",
+                    answer: "Allah irery ihany no mahalala izany",
+                    encouragements: ["Marina ny valinteninao"],
+                    feedbackWrong: "Allah irery ihany no mahalala izany."
+                },
+                      {
+                    question: "Fahenina: Finoana ny lahatra; izany hoe finoana fa Allah dia mahalala sy manoratra ny zavatra rehetra, ary ny zavatra rehetra dia mitranga araka ny sitrapony, ary Izy no namorona ny zavatra rehetra.<br>Fanontaniana: Inona no tiana holazaina amin'ny hoe finoana ny lahatra ?",
+                    answer: "Izany hoe finoana fa Allah dia mahalala sy manoratra ny zavatra rehetra, ary ny zavatra rehetra dia mitranga araka ny sitrapony, ary Izy no namorona ny zavatra rehetra.",
+                    encouragements: ["Tehaka ren-tany aman-danitra ho anao"],
+                    feedbackWrong: "Izany hoe finoana fa Allah dia mahalala sy manoratra ny zavatra rehetra, ary ny zavatra rehetra dia mitranga araka ny sitrapony, ary Izy no namorona ny zavatra rehetra."
+                }
+            ],
+            antonony: [
+                {
+                    question: "Quel est le plus grand océan du monde ? 🌊",
+                    answer: "pacifique",
+                    encouragements: ["Très bien ! L'océan Pacifique est le plus grand ! 🌏"],
+                    feedbackWrong: "La bonne réponse est : Pacifique, c'est le plus grand océan du monde ! 🌊"
+                },
+                {
+                    question: "Combien de continents y a-t-il sur Terre ? 🌍",
+                    answer: "7",
+                    encouragements: ["Exactement ! Il y a 7 continents sur Terre ! 🗺️"],
+                    feedbackWrong: "La bonne réponse est : 7, il y a 7 continents sur Terre ! 🗺️"
+                },
+                {
+                    question: "Quel élément chimique a pour symbole O ? 🧪",
+                    answer: "oxygène",
+                    encouragements: ["Correct ! L'oxygène a pour symbole O ! 💨"],
+                    feedbackWrong: "La bonne réponse est : oxygène, c'est essentiel pour la vie sur Terre ! 🌍"
+                }
+            ],
+            arabe: {
+                zazavao: [
+                    {
+                        question: "هناك ثلاثة أصول يجب على المسلم معرفتها، وهي: معرفة ربه ومعرفة نبيه ومعرفة دينه. السؤال: ما هي الأصول الثلاثة؟",
+                        answer: "معرفة ربه ومعرفة نبيه ومعرفة دينه", 
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "معرفة ربه ومعرفة نبيه ومعرفة دينه"
+                    },
+                    {
+                        question: "الأول معرفة الله: أي معرفة أن الله هو خالق الكون، وأنه لا إله إلا هو، وأنه واحد في ربوبيته وأسمائه وصفاته. السؤال: هل تعريف الله حقا؟",
+                        answer: "الله هو خالق الكون، وأنه لا إله إلا هو، وأنه واحد في ربوبيته وأسمائه وصفاته",
+                        encouragements: ["بارك الله فيك"],
+                        feedbackWrong: "الله هو خالق الكون، وأنه لا إله إلا هو، وأنه واحد في ربوبيته وأسمائه وصفاته"
+                    },
+                    {
+                        question: "الثاني معرفة محمد: أي معرفة أن محمدًا صلى الله عليه وسلم هو رسول الله، وأنه خاتم الأنبياء، ويجب اتباع سنته. السؤال: هل يوجد نبي بعد محمد ؟",
+                        answer: "لا",
+                        encouragements: ["صلى الله عليه وسلم"],
+                        feedbackWrong: "هداك الله. لا يوجد نبي بعد محمد صلى الله عليه وسلم"
+                    },
+                           {
+                        question: " الثالث معرفة الإسلام: والإسلام هو الاستسلام لله بالتوحيد، والانقياد له بالطاعة، والبراءة من الشرك وأهله. السؤال: ما هو تعريف الإسلام ؟",
+                        answer: "الإسلام هو الاستسلام لله بالتوحيد، والانقياد له بالطاعة، والبراءة من الشرك وأهله",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "هداك الله ! الإسلام هو الاستسلام لله بالتوحيد، والانقياد له بالطاعة، والبراءة من الشرك وأهله"
+                    },
+                           {
+                        question: "ويقوم الإسلام على خمسة أركان هي:<br>١. الشهادة أن لا إله إلا الله وأن محمد رسول الله<br>٢. إقام الصلاة<br>٣. إيتاء الزكاة<br>٤. صوم رمضان<br>٥. حج البيت لمن استطاع إليه سبيلا. السؤال: ما هو الركن الثاني من أركان الإسلام؟",
+                        answer: "الصلاة",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "هداك الله ! الركن الثاني هو الصلاة"
+                    },
+                    {
+                        question: "نواقض الإسلام:<br>١. الشرك بالله<br>٢. جعل وسائط بين العبد والله<br>٣. عدم تكفير المشركين<br>٤. الاعتقاد بأن هدي غير النبي أفضل. (مثل: الكفر بأحد أركان الإيمان)<br>٥. بغض شيء مما جاء به الرسول<br>٦. الاستهزاء بالدين<br>٧. السحر<br>٨. موالاة الكفار ضد المسلمين<br>٩. اعتقاد جواز الخروج عن شريعة محمد<br>١٠. الإعراض عن دين الله (مثل ترك الصلاة عمدًا)<br>السؤال: هل الدعاء من الميت يخرج عن الإسلام؟",
+                        answer: "نعم",
+                        encouragements: ["نعم، توجيه الدعاء إلى الميت يخرج عن الإسلام، لأنه يعتبر شركًا في العبادة"],
+                        feedbackWrong: "نعم، توجيه الدعاء إلى الميت يخرج عن الإسلام، لأنه يعتبر شركًا في العبادة"
+                    },
+                     {
+                        question: "الإيمان هو التصديق بكل ما أخبر الله به ورسوله، قولًا وعملاً وعقيدة. يزيد بالطاعة وينقص بالمعصية. السؤال: ما هو تعريف الإيمان؟",
+                        answer: "الإيمان هو التصديق بكل ما أخبر الله به ورسوله، قولًا وعملاً وعقيدة",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "هداك الله ! الإيمان هو التصديق بكل ما أخبر الله به ورسوله، قولًا وعملاً وعقيدة"
+                    },
+                      {
+                        question: "يتكون الإيمان من ستة أركان هي:<br>  ١. الإيمان بالله<br>٢. الإيمان بالملائكة<br>٣. الإيمان بالكتب السماوية<br>٤. الإيمان بالرسل<br>٥. الإيمان باليوم الآخر<br>٦. الإيمان بالقدر خيره وشره<br>السؤال: هل المسلم يؤمن باليوم الآخر؟",
+                        answer: "نعم",
+                        encouragements: ["بارك الله فيك"],
+                        feedbackWrong: "هداك الله ! نعم، المسلم يؤمن باليوم الآخر"
+                    },
+                      {
+                        question: "الإيمان بالله: التصديق بوجود الله وربوبيته وأسمائه وصفاته. السؤال: ما المقصود بالإيمان بالله؟",
+                        answer: "الإيمان بالله هو التصديق بوجود الله وربوبيته وأسمائه وصفاته",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "هداك الله ! الإيمان بالله هو التصديق بوجود الله وربوبيته وأسمائه وصفاته."
+                    },
+                       {
+                        question: "الإيمان بالملائكة هو التصديق بوجود الملائكة وقيامهم بأوامر الله. منهم الموكل بالوحي من الله إلى رسله وهو جبريل عليه السلام، ومنهم الموكل بالمطر وتصاريفه وهو ميكائيل عليه السلام، ومنهم الموكل بالصور ونفخه وهو إسرافيل، ومنهم الموكل بقبض الأرواح وهو ملك الموت وأعوانه. السؤال: هل الملائكة ذكور أم إناث ؟",
+                        answer: "الملائكة لا توصف بالذكورة ولا بالأنوثة",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "الملائكة لا توصف بالذكورة ولا بالأنوثة"
+                    },
+                           {
+                        question: "الإيمان بالكتب السماوية يعني التصديق بكل الكتب التي أنزلها الله على رسله، ومنها التوراة التي أنزلها على موسى، والإنجيل الذي أنزل على عيسى، والزبور الذي أنزل على داود، والقرآن الذي أنزل على محمد، وهو أعظمها وأفضلها وخاتمها. القرآن محفوظ من التحريف، بينما تعرضت باقي الكتب السماوية للتحريف. السؤال: ما أعظم الكتب السماوية ؟",
+                        answer: "القرآن",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "هداك الله ! القرآن هو أعظم الكتب السماوية"
+                    },
+                           {
+                        question: "الإيمان بالرسل: التصديق بأن الله أرسل رسلًا للبشر، وآخرهم وأعظمهم محمد صلى الله عليه وسلم. السؤال: هل المسلم يحب الرسل ؟",
+                        answer: "نعم",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "نعم، المسلم يحب جميع الرسل الذين بعثهم الله ويؤمن بهم جميعًا"
+                    },
+                         {
+                        question: "الإيمان باليوم الآخر: التصديق بيوم القيامة وما يحدث فيه من حساب وجزاء. السؤال: متى يوم القيامة ؟",
+                        answer: "لا يعلم موعده إلا الله",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "لا يعلم موعده إلا الله"
+                    },
+                        {
+                        question: "الإيمان بالقدر يعني أن الله علم وكتب كل شيء، وكل شيء يحدث بمشيئته، وهو الذي خلق كل شيء. السؤال: ما معنى الإيمان بالقدر ؟",
+                        answer: "الإيمان بالقدر يعني أن الله علم وكتب كل شيء، وكل شيء يحدث بمشيئته، وهو الذي خلق كل شيء",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "هداك الله ! الإيمان بالقدر يعني أن الله علم وكتب كل شيء، وكل شيء يحدث بمشيئته، وهو الذي خلق كل شيء"
+                    }
+                ],
+                antonony: [
+                    {
+                        question: " معنى كلمة (لا إله إلا الله) هو أنَّ لا معبود بحق سوى الله. السؤال: ما معنى (لا إله إلا الله)؟",
+                        answer: "لا معبود بحق سوى",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "هداك الله ! معنى كلمة (لا إله إلا الله) هو أنَّ لا معبود بحق سوى الله"
+                    },
+                    {
+                        question: "أما شروط (لا إله إلا الله) فهي:<br>١. العلم (أي معرفة معناها ومعرفة أن لا معبود بحق إلا الله)<br>٢. اليقين (أي الإيمان بها يقيناً جازماً، دون أدنى شك.)<br>٣. القبول (أي قبول ما تقتضيه الكلمة بالقلب واللسان)<br>٤. الانقياد (أي الانقياد التام لما تقتضيه من أحكام وعبادات.)<br>٥. الصدق (أي قولها بصدق من القلب، يطابق القول الفعل.)<br>٦. الإخلاص (أي تصفية العمل لله وحده، خالياً من الشرك.)<br>٧. المحبة (أي: محبة الله ورسوله والتمسك بما تقتضيه الكلمة من طاعة.)<br>السؤال: من شروط (لا إله إلا الله) الإخلاص، ما المقصود بالإخلاص ؟",
+                        answer: "تصفية العمل لله وحده، خالياً من الشرك",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "تصفية العمل لله وحده، خالياً من الشرك"
+                    },
+                    {
+                        question: "مقتضيات شهادة أن محمدا رسول الله:<br>١. طاعته فيما أمر<br>٢. تصديقه فيما أخبر<br>٣. اجتناب ما نهى عنه وزجر<br>٤. ألا يعبد الله إلا بما شرع<br>السؤال: كم مقتضيات شهادة أن محمدا رسول الله ؟ (اكتب الإجابة بالرقم الإنجليزي)",
+                        answer: "4",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "4"
+                    },
+                           {
+                        question: "التوحيد هو إفراد الله بما يختص به من الألوهية والربوبية والأسماء والصفات. السؤال: عرّف التوحيد ؟",
+                        answer: "التوحيد هو إفراد الله بما يختص به من الألوهية والربوبية والأسماء والصفات",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "التوحيد هو إفراد الله بما يختص به من الألوهية والربوبية والأسماء والصفات"
+                    },
+                           {
+                        question: "ينقسم التوحيد إلى ثلاثة أقسام:<br>١. توحيد الربوبية<br>٢. توحيد الألوهية<br>٣. توحيد الأسماء والصفات<br>السؤال: إلى كم قسم ينقسم التوحيد ؟ (اكتب الإجابة بالرقم الإنجليزي)",
+                        answer: "3",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "3"
+                    },
+                     {
+                        question: "توحيد الربوبية هو إفراد الله بأفعاله كالخلق والتدبير. السؤال: عرّف توحيد الربوبية؟",
+                        answer: "توحيد الربوبية هو إفراد الله بأفعاله كالخلق والتدبير",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "توحيد الربوبية هو إفراد الله بأفعاله كالخلق والتدبير"
+                    },
+                       {
+                        question: "توحيد الألوهية هو إفراد الله بالعبادة. السؤال: عرّف توحيد الألوهية ؟",
+                        answer: "توحيد الألوهية هو إفراد الله بالعبادة",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "توحيد الألوهية هو إفراد الله بالعبادة"
+                    },
+                          {
+                        question: "توحيد الأسماء والصفات هو إفراد الله بأسمائه الحسنى وصفاته العلى. السؤال: عرّف توحيد الأسماء والصفات",
+                        answer: "توحيد الأسماء والصفات هو إفراد الله بأسمائه الحسنى وصفاته العلى",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "توحيد الأسماء والصفات هو إفراد الله بأسمائه الحسنى وصفاته العلى"
+                    },
+                     {
+                        question: "الشرك هو اتخاذ مع الله شريكًا في العبادة أو الصفات. وهو أكبر الذنوب. السؤال: ما أكبر الذنوب ؟",
+                        answer: "الشرك",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "أكبر الذنوب هو الشرك"
+                    },
+                       {
+                        question: "وينقسم الشرك إلى قسمين: الشرك الأكبر والشرك الأصغر. السؤال: إلى كم قسم ينقسم الشرك ؟ (اكتب الإجابة بالرقم الإنجليزي)",
+                        answer: "2",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "2"
+                    },
+                        {
+                        question: "الأول: الشرك الأكبر (يعنى عبادة غير الله أو اعتقاد المشاركة مع الله، ويكفر صاحبه, مثل: عبادة الأصنام)<br>الثاني: الشرك الأصغر (يعني كل فعل أو قول يُظهر نوعًا من التشريك لله، لكنه لا يُخرج الشخص من الإسلام. أمثلة: الرياء، الحلف بغير الله، تعليق التمائم والحروز، التطيّر، سب الدهر، قول «لولا الله وفلان»، قول «ما شاء الله وشئت»،  الاستسقاء بالنجوم، الاعتقاد أن النجوم أو الكواكب تتحكم في نزول المطر)",
+                        answer: "لا",
+                        encouragements: ["لا، الحلف بغير الله يعد من الشرك الأصغر"],
+                        feedbackWrong: "لا، الحلف بغير الله يعد من الشرك الأصغر"
+                    },
+                            {
+                        question: "البدعة هي كل عمل ديني لا أصل له في الكتاب والسنة أو في عمل الخلفاء الراشدين، وهي محرمَة في الإسلام، مثل الاحتفال بالمولد النبوي. سؤال: ما حكم البدعة؟",
+                        answer: "محرمة",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "محرمة"
+                    }
+                ],
+                henjana: [
+                    {
+                        question: " العبادة هي اسم شامل لكل ما يحبه الله ويرضاه من الأقوال والأفعال الظاهرة والباطنة. السؤال: عرّف العبادة",
+                        answer: "العبادة هي اسم شامل لكل ما يحبه الله ويرضاه من الأقوال والأفعال الظاهرة والباطنة",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "العبادة هي اسم شامل لكل ما يحبه الله ويرضاه من الأقوال والأفعال الظاهرة والباطنة"
+                    },
+                    {
+                        question: "وتنقسم العبادة إلى أربعة أنواع:<br>١. عبادة قلبية (مثل: تقوى الله والتوكل عليه)<br>٢. وعبادة قولية (مثل: الذكر والدعاء وقراءة القرآن)<br>٣. وعبادة بدنية (مثل: الصلاة والصيام)،<br>٤. عبادة مالية (مثل: الزكاة والصدقة). السؤال: الحج (عبادة مالية أم بدنية)",
+                        answer: "الحج عبادة مالية وبدنية",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "الحج عبادة مالية وبدنية"
+                    },
+                    {
+                        question: "وشروط قبول العبادة هي الإخلاص والمتابعة، أي أن يكون العمل خالصًا لله، وأن يكون موافقًا لما جاء به النبي صلى الله عليه وسلم. السؤال: ما شروط قبول العبادة ؟",
+                        answer: "الإخلاص والمتابعة",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "الإخلاص والمتابعة"
+                    },
+                           {
+                        question: "وللعبادة ثلاثة أركان: محبة العبد لله، ورجاؤه في ثواب الله، وخوفه من عذاب الله. السؤال: كم أركان العبادة ؟ (اكتب الإجابة بالرقم الإحنليزية)",
+                        answer: "3",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "3"
+                    },
+                           {
+                        question: "أهل السنة والجماعة هم المسلمون الذين يتبعون القرآن والسنة كما فهمها الصحابة والتابعون، ويؤمنون بأسماء الله وصفاته دون تحريف، ويخالفون أهل البدع. السؤال: ما عكس أهل السنة والجماعة؟",
+                        answer: "أهل البدعة",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "أهل البدعة"
+                    },
+                     {
+                        question: "الصحابة هم أفضل الأمة بعد الأنبياء. سبهم أو بغضهم بسبب الدين يُعتبر كفرًا ونفاقًا، أما لأمر دنيوي فقد يُعتبر فسقًا. محبة الصحابة جزء من الإيمان، وبغضهم من الكفر والنفاق. السؤال: هل محبة الصحابة جزء من الإيمان؟",
+                        answer: "نعم",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "نعم، محبة الصحابة جزء من الإيمان"
+                    },
+                       {
+                        question: "الفرق بين المسلم والمؤمن والمحسن:<br>١. المسلم: من يلتزم بأعمال الإسلام الظاهرة<br>٢. المؤمن: من يصدق بالقلب ويعمل بما يؤمن به<br>٣. المحسن: من يعبد الله بإحسان وكأنه يراه. السؤال: أيهم أعلى مراتب الدين ؟",
+                        answer: "المحسن",
+                        encouragements: ["ممتاز ! المحسن هو أعلى مراتب الدين، يليه المؤمن ثم المسلم"],
+                        feedbackWrong: "المحسن هو أعلى مراتب الدين، يليه المؤمن ثم المسلم"
+                    },
+                          {
+                        question: "التوسل هو طلب الوساطة والدعاء للتقرب إلى الله. السؤال: عرّف التوسل",
+                        answer: "التوسل هو طلب الوساطة والدعاء للتقرب إلى الله",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "هداك الله ! التوسل هو طلب الوساطة والدعاء للتقرب إلى الله"
+                    },
+                     {
+                        question: "ينقسم التوسل إلى نوعين: التوسل المشروع والتوسل الممنوع. السؤال: إلى كم ينقسم التوسل؟ (اكتب الإجابة بالرقم الإنجليزي)",
+                        answer: "2",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "2"
+                    },
+                       {
+                        question: "التوسل المشروع:<br>١. التوسل بأسماء الله وصفاته (مثل: اللهم برحمتك)<br>٢. التوسل بالإيمان والأعمال الصالحة (مثل: اللهم بإيماني)<br> ٣. التوسل بدعاء شخص حي صالح <br> السؤال: هل يجوز التوسل بدعاء شخص حي صالح ؟",
+                        answer: "نعم، يجوز",
+                        encouragements: ["أحسنت"],
+                        feedbackWrong: "نعم، يجوز التوسل بدعاء شخص حي صالح"
+                    },
+                        {
+                        question: "التوسل الممنوع:<br> ١. التوسل بدعاء الأموات والاستغاثة بهم (شرك)<br> ٢. التوسل بجاه أو ذات المخلوقين (بدعة)<br>السؤال: هل يجوز التوسل بدعاء شخص ميت صالح؟",
+                        answer: "لا بجوز",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "هداك الله ! لا يجوز التوسل بدعاء شخص ميت صالح"
+                    },
+                            {
+                        question: "التبرك هو طلب البركة من شيء أو شخص. وهو نوعان:<br>١. التبرك المشروع: مثل التبرك بماء زمزم، والحجر الأسود، وأماكن مقدسة<br>٢. التبرك الممنوع: مثل التبرك بقبور الصالحين أو أشياء لم يرد فيها نص شرعي. السؤال: هل يجوز التبرك بقبور الصالحين؟",
+                        answer: "لا يجوز",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "لا يجوز"
+                    },
+                       {
+                        question: "الحكم بالتكفير أو التفسيق لا يكون إلا بناءً على دليل قاطع من الكتاب والسنة، مع التأكد من استيفاء شروطه. لا يجوز التكفير إلا إذا توافرت الشروط مثل العلم بالمخالفة، وعدم الإكراه أو الجهل. السؤال: ما حكم التكفير؟",
+                        answer: "لا يجوز التكفير إلا إذا توافرت الشروط",
+                        encouragements: ["ممتاز"],
+                        feedbackWrong: "لا يجوز التكفير إلا إذا توافرت الشروط"
+                    }
+                ]
+            }            
+        };
+
+        let currentQuestionIndex = 0;
+        let selectedLevel = null;
+        let questions = [];
+        let isSelectingLevel = true;
+        let language = 'mg';
+
+        function getTimestamp() {
+            return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+
+        function addMessage(content, className) {
+            const chatHistory = document.getElementById('chatHistory');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${className}`;
+            messageDiv.innerHTML = `
+                ${content}
+                <span class="timestamp">${getTimestamp()}</span>
+            `;
+            chatHistory.appendChild(messageDiv);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        function checkAnswer() {
+            const userAnswer = document.getElementById('userAnswer').value.toLowerCase().trim();
+            if (!userAnswer) return;
+
+            addMessage(userAnswer, 'user-response');
+            document.getElementById('userAnswer').value = '';
+            document.getElementById('submitButton').disabled = true;
+
+            if (isSelectingLevel) {
+                handleLevelSelection(userAnswer);
+                return;
+            }
+
+            const currentQuestion = questions[currentQuestionIndex];
+
+            setTimeout(() => {
+                if (userAnswer === currentQuestion.answer.toLowerCase()) {
+                    const encouragement = currentQuestion.encouragements[Math.floor(Math.random() * currentQuestion.encouragements.length)];
+                    addMessage(encouragement, 'feedback');
+                    setTimeout(() => {
+                        nextQuestion();
+                    }, 1000);
+                } else {
+                const incorrectMessage = language === 'mg' ? "Diso ☹️." : "خطأ 😕";
+            addMessage(incorrectMessage, 'feedback');
+                    addMessage(currentQuestion.feedbackWrong, 'feedback'); // Donne l'explication correcte
+                    setTimeout(() => {
+                        nextQuestion();
+                    }, 2000); // Temps d'attente avant de passer à la question suivante
+                }
+            }, 1000);
+        }
+
+        function handleLevelSelection(userAnswer) {
+    if (userAnswer.includes("عربية") || userAnswer.includes("عربي") || userAnswer.includes("arabe") || userAnswer.includes("arabic") || userAnswer.includes("arabo")) {
+        language = 'ar';
+        addMessage("لقد اخترت اللغة العربية! اختر مستواك: مبتدئ، متوسط أو متقدم🤔", 'question');
+        isSelectingLevel = true;
+        document.getElementById('submitButton').disabled = false;
+        return;
+            } else if (userAnswer.includes("malagasy") || userAnswer.includes("gasy") || userAnswer.includes("malgache") || userAnswer.includes("ملغاشية")) {
+                language = 'mg';
+                addMessage("Nisafidy fiteny malagasy ianao ! Aiza amin'ireto sokajy telo ireto indray àry no misy anao : zazavao sa antonony sa henjana. 🤔", 'question');
+                isSelectingLevel = true;
+                document.getElementById('submitButton').disabled = false;
+              return;
+            } 
+    
+            if (isSelectingLevel) {
+                if (language === 'mg') {
+                    if (userAnswer.includes("zazavao")) {
+                        selectedLevel = "zazavao";
+                        setQuestionsBasedOnLevel(selectedLevel);
+                        addMessage("Lesona ho an'ireo zazavao no nosafidianao.", 'question');
+                        isSelectingLevel = false;
+                        currentQuestionIndex = 0;
+                        addMessage(questions[currentQuestionIndex].question, 'question');
+                        document.getElementById('submitButton').disabled = false;
+                    } else if (userAnswer.includes("antonony")) {
+                        selectedLevel = "antonony";
+                        setQuestionsBasedOnLevel(selectedLevel);
+                        addMessage("Lesona ho an'ireo efa somary ambony fari-pahalalana no nosafidianao", 'question');
+                        isSelectingLevel = false;
+                        currentQuestionIndex = 0;
+                        addMessage(questions[currentQuestionIndex].question, 'question');
+                        document.getElementById('submitButton').disabled = false;
+                    } else if (userAnswer.includes("henjana")) {
+                        selectedLevel = "henjana";
+                        setQuestionsBasedOnLevel(selectedLevel);
+                        addMessage("Lesona ho an'ireo efa henjana no nosafidianao", 'question');
+                        isSelectingLevel = false;
+                        currentQuestionIndex = 0;
+                        addMessage(questions[currentQuestionIndex].question, 'question');
+                        document.getElementById('submitButton').disabled = false;
+                    } else {
+                        addMessage("'zazavao' sa 'antonony' sa 'henjana'. 🤔", 'question');
+                        document.getElementById('submitButton').disabled = false; 
+                    }                             
+                } 
+else if (language === 'ar') {
+                    if (userAnswer.includes("مبتدئ")) {
+                        selectedLevel = "zazavao";
+                        setQuestionsBasedOnLevel(selectedLevel);
+                        addMessage("لقد اخترت الدروس للمبتدئين🔰", 'question');
+                        isSelectingLevel = false;
+                        currentQuestionIndex = 0;
+                        addMessage(questions[currentQuestionIndex].question, 'question');
+                        document.getElementById('submitButton').disabled = false;
+                    } else if (userAnswer.includes("متوسط")) {
+                        selectedLevel = "antonony";
+                        setQuestionsBasedOnLevel(selectedLevel);
+                        addMessage("لقد اخترت الدروس للمتوسطين🚀", 'question');
+                        isSelectingLevel = false;
+                        currentQuestionIndex = 0;
+                        addMessage(questions[currentQuestionIndex].question, 'question');
+                        document.getElementById('submitButton').disabled = false;
+                    } else if (userAnswer.includes("متقدم")) {
+                        selectedLevel = "henjana";
+                        setQuestionsBasedOnLevel(selectedLevel);
+                        addMessage("لقد اخترت الدروس للمتقدمين🚀", 'question');
+                        isSelectingLevel = false;
+                        currentQuestionIndex = 0;
+                        addMessage(questions[currentQuestionIndex].question, 'question');
+                        document.getElementById('submitButton').disabled = false;
+                    } else {
+                        addMessage("يرجى الرد بـ 'مبتدئ'، 'متوسط' أو 'متقدم'. 🤔", 'question');
+                        document.getElementById('submitButton').disabled = false; 
+                    }             
+                } 
+            } 
+        } 
+
+        function setQuestionsBasedOnLevel(level) {
+            if (language === 'mg') {
+                if (level === "zazavao") {
+                    questions = [...questionsByLevel.zazavao]; // Pas de mélange ici
+                } else if (level === "antonony") {
+                    questions = [...questionsByLevel.antonony]; // Pas de mélange ici
+                }
+                else if (level === "henjana") {
+                    questions = [...questionsByLevel.henjana]; // Pas de mélange ici
+                }
+            } else if (language === 'ar') {
+                if (level === "zazavao") {
+                    questions = [...questionsByLevel.arabe.zazavao]; // Pas de mélange ici
+                } else if (level === "antonony") {
+                    questions = [...questionsByLevel.arabe.antonony]; // Pas de mélange ici
+                }
+                else if (level === "henjana") {
+                    questions = [...questionsByLevel.arabe.henjana]; // Pas de mélange ici
+                }
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                addMessage(questions[currentQuestionIndex].question, 'question');
+                document.getElementById('submitButton').disabled = false; 
+            } else {
+                addMessage(language === 'mg'
+                    ? "Tapitra. Allah anie hampitombo ny fahalalako sy ny fahalalanao 🤲."
+                    : "انتهى. زادني الله وإياك علمًا 🤲. وصلى الله على نبينا محمد.", 'question');
+                document.getElementById('userAnswer').style.display = 'none';
+                document.getElementById('submitButton').style.display = 'none';
+            }
+        }
+
+        document.getElementById('userAnswer').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !document.getElementById('submitButton').disabled) {
+                checkAnswer();
+            }
+        });
+
+        window.onload = function() {
+            addMessage("السلام عليكم 👋، أنا زوتو بوت 🤖، وسأعلمك عقيدة أهل السنة والجماعة 🕌. قبل البدء، يرجى اختيار لغتك: (عربية) أو (ملغاشية) ؟ <br>Assalamou anlaykoum 👋, Zoto Robot 🤖 no anarako, mpampianatra fotom-pinoana sonita 🕌. Safidio aloha ny fiteny izay vao manomboka isika: (malagasy) sa (arabo) ?", 'question');
+            document.getElementById('submitButton').disabled = false; // Autoriser le bouton après le chargement
+        }
+    </script>
+</body>
+</html>
