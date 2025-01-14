@@ -282,8 +282,6 @@
     align-items: center; 
     z-index: 200; /* Assurez-vous qu'il est au-dessus des autres éléments */
 }
-
-/* Style spécifique pour le contenu du pop-up */
 .popup-content {
     padding: 2rem; 
     max-width: 400px; 
@@ -346,6 +344,24 @@
         </div>
     </div>
 
+<section id="livres" class="section">
+            <h2>📚 Livres</h2>
+            <div class="grid">
+                <div class="card">
+                <h3 class="app-title">Jouz Amma</h3>
+               <a href="https://drive.google.com/uc?export=download&id=1e0AMC16_SU-y4VbC0joc3eSpblHMJXQ6" class="button">Télécharger</a>
+                </div>
+                <div class="card">
+                    <h3 class="app-title">Conversations en arabe</h3>
+                    <a href="https://payhip.com/b/CYPAE" class="button">Acheter</a>
+                </div>
+                <div class="card">
+                    <h3 class="app-title">Conversations en anglais</h3>
+                    <a href="https://payhip.com/b/4PNzg" class="button">Acheter</a>
+                </div>
+            </div>
+        </section>
+        
     <div class="container">
         <section id="applications" class="section">
             <h2>📱 Applications Mobile</h2>
@@ -419,19 +435,6 @@
             </div>
         </section>
 
-        <section id="livres" class="section">
-            <h2>📚 Livres</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3 class="app-title">Conversations en arabe</h3>
-                    <a href="https://payhip.com/b/CYPAE" class="button">Acheter</a>
-                </div>
-                <div class="card">
-                    <h3 class="app-title">Conversations en anglais</h3>
-                    <a href="https://payhip.com/b/4PNzg" class="button">Acheter</a>
-                </div>
-            </div>
-        </section>
 
         <section id="youtube" class="section">
             <h2>📺 Chaînes YouTube</h2>
@@ -534,6 +537,10 @@
                     },
                 ],
                 books: [
+                 {
+                        title: "Jozo Amma amin'ny teny malagasy; miorina amin'ny tafsirin'i Tabari",
+                        link: "Hitelesariza"
+                    },
                     {
                         title: "Fianarana miresaka amin'ny teny arabo",
                         link: "Hividy"
@@ -634,6 +641,10 @@
                     },
                 ],
                 books: [
+                   {
+                        title: "Jouz Amma en malgache, selon l'exégèse de Tabari",
+                        link: "Télécharger"
+                    },
                     {
                         title: "Conversations en arabe",
                         link: "Acheter"
@@ -734,6 +745,10 @@
                     },
                 ],
                 books: [
+                {
+                        title: "Jouz Amma in Malagasy, according to Tabari's exegesis",
+                        link: "Download"
+                    },
                     {
                         title: "Conversations in Arabic",
                         link: "Purchase"
@@ -834,6 +849,10 @@
                     },
                 ],
                 books: [
+                 {
+                        title: "جزء عم بالملغاشية استنادا إلى تفسير الطبري",
+                        link: "تحميل"
+                    },
                     {
                         title: "محادثات باللغة العربية",
                         link: "شراء"
@@ -866,17 +885,17 @@
         function changeLanguage(lang) {
             const language = languages[lang];
             if (language) {
-                // Met à jour le titre et la description
+                
                 document.getElementById('portfolio-title').innerText = language.title;
                 document.getElementById('portfolio-description').innerText = language.description;
 
-                // Met à jour le menu
+                
                 const menuItems = document.querySelectorAll('nav ul li a');
                 language.menu.forEach((menuItem, index) => {
                     menuItems[index].innerText = menuItem;
                 });
 
-                // Ajoute ou supprime la classe RTL
+                
                 const nav = document.querySelector('nav');
                 if (lang === 'ar') {
                     nav.classList.add('rtl');
@@ -884,7 +903,7 @@
                     nav.classList.remove('rtl');
                 }
 
-                // Met à jour les sections (h2)
+            
                 document.querySelector('#applications h2').innerText = language.sections.apps;
                 document.querySelector('#chatbot h2').innerText = language.sections.chatbot;
                 document.querySelector('#sites h2').innerText = language.sections.sites;
@@ -892,7 +911,7 @@
                 document.querySelector('#livres h2').innerText = language.sections.books;
                 document.querySelector('#youtube h2').innerText = language.sections.youtube;
 
-                // Met à jour les sections des applications
+                
                 const appCards = document.querySelectorAll('#applications .app-title, #applications .app-description, #applications .button');
                 language.apps.forEach((app, index) => {
                     appCards[index * 3].innerText = app.title;
@@ -900,7 +919,7 @@
                     appCards[index * 3 + 2].innerText = app.link;
                 });
 
-                // Met à jour la section du chatbot
+                
                 const chatbot = document.querySelector('#chatbot .app-title');
                 const chatbotDesc = document.querySelector('#chatbot .app-description');
                 const chatbotButton = document.querySelector('#chatbot .button');
@@ -908,7 +927,7 @@
                 chatbotDesc.innerText = language.chatbot.description;
                 chatbotButton.innerText = language.chatbot.link;
 
-                // Met à jour les sections des sites
+                
                 const siteCards = document.querySelectorAll('#sites .app-title, #sites .app-description, #sites .button');
                 language.sites.forEach((site, index) => {
                     siteCards[index * 3].innerText = site.title;
@@ -916,7 +935,7 @@
                     siteCards[index * 3 + 2].innerText = site.link;
                 });
 
-                // Met à jour les sections des outils
+                
                 const toolCards = document.querySelectorAll('#outils .app-title, #outils .app-description, #outils .button');
                 language.tools.forEach((tool, index) => {
                     toolCards[index * 3].innerText = tool.title;
@@ -924,26 +943,26 @@
                     toolCards[index * 3 + 2].innerText = tool.link;
                 });
 
-                // Met à jour les sections des livres
+                
                 const bookCards = document.querySelectorAll('#livres .app-title, #livres .button');
                 language.books.forEach((book, index) => {
                     bookCards[index * 2].innerText = book.title;
                     bookCards[index * 2 + 1].innerText = book.link;
                 });
 
-                // Met à jour les sections YouTube
+                
                 const youtubeCards = document.querySelectorAll('#youtube .app-title, #youtube .button');
                 language.youtube.forEach((youtube, index) => {
                     youtubeCards[index * 2].innerText = youtube.title;
                     youtubeCards[index * 2 + 1].innerText = youtube.link;
                 });
 
-                 // Fermez le popup après la sélection de la langue
+                 
         closePopup();
     }
 }
         
-        // Ferme le popup
+        
 function closePopup() {
     document.getElementById('languagePopup').style.display = 'none';
 }
