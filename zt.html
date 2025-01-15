@@ -280,8 +280,10 @@
     height: 100%;
     justify-content: center; 
     align-items: center; 
-    z-index: 200; /* Assurez-vous qu'il est au-dessus des autres éléments */
+    z-index: 200; 
 }
+
+
 .popup-content {
     padding: 2rem; 
     max-width: 400px; 
@@ -350,6 +352,10 @@
                 <div class="card">
                 <h3 class="app-title">Jouz Amma</h3>
                <a href="https://drive.google.com/uc?export=download&id=1e0AMC16_SU-y4VbC0joc3eSpblHMJXQ6" class="button">Télécharger</a>
+                </div>
+                <div class="card">
+                <h3 class="app-title">Vocabulaire</h3>
+               <a href="https://drive.google.com/uc?export=download&id=15chak0J4Jv0LiZUWCv4p3KngBPRHUOQi" class="button">Télécharger</a>
                 </div>
                 <div class="card">
                     <h3 class="app-title">Conversations en arabe</h3>
@@ -451,6 +457,14 @@
                     <h3 class="app-title">Apprendre le Coran</h3>
                     <a href="https://www.youtube.com/playlist?list=PLXNIvIDoEdztSzGHWMEcOeTTwaSwRPPmD" class="button">Regarder</a>
                 </div>
+            <div class="card">
+                    <h3 class="app-title">Résumé des règles du jeûne</h3>
+                    <a href="https://youtu.be/WO2vG6buMhY?si=jwJdnjaJbqUc-9SV" class="button">Regarder</a>
+                </div>
+            <div class="card">
+                    <h3 class="app-title">Linguistique</h3>
+                    <a href="https://www.youtube.com/playlist?list=PLXNIvIDoEdztSzGHWMEcOeTTwaSwRPPmD" class="button">Regarder</a>
+                </div>
             </div>
         </section>
     </div>
@@ -467,15 +481,15 @@
                 menu: [
                     "📱 Rindrankajy",
                     "🤖 Roboto",
-                    "🌐 Flipnet",
+                    "🌐 Karomailaka",
                     "🛠 Fitaovana an-tserasera",
                     "📚 Boky",
-                    "📺 Fantsona YouTube"
+                    "📺 Fantsona Youtube"
                 ],
                 sections: {
                     apps: "📱 Rindrankajy",
                     chatbot: "🤖 Roboto",
-                    sites: "🌐 Flipnet",
+                    sites: "🌐 Karomailaka",
                     tools: "🛠 Fitaovana an-tserasera",
                     books: "📚 Boky",
                     youtube: "📺 Fantsona YouTube",
@@ -542,6 +556,10 @@
                         link: "Hitelesariza"
                     },
                     {
+                        title: "Voambolana ho an'ny zazavao",
+                        link: "Hitelesariza"
+                    },
+                    {
                         title: "Fianarana miresaka amin'ny teny arabo",
                         link: "Hividy"
                     },
@@ -561,6 +579,14 @@
                     },
                     {
                         title: "Fianarana tsianjery Korany",
+                        link: "Hanaraka"
+                    },
+                    {
+                        title: "Fintin-dalàna mifehy ny fifadian-kanina",
+                        link: "Hanaraka"
+                    },
+                    {
+                        title: "Haitsikerafiteny",
                         link: "Hanaraka"
                     },
                 ],
@@ -645,6 +671,10 @@
                         title: "Jouz Amma en malgache, selon l'exégèse de Tabari",
                         link: "Télécharger"
                     },
+                                       {
+                        title: "Vocabulaire malgache-arabe pour les débutants",
+                        link: "Télécharger"
+                    },
                     {
                         title: "Conversations en arabe",
                         link: "Acheter"
@@ -665,6 +695,14 @@
                     },
                     {
                         title: "Apprendre le Coran",
+                        link: "Regarder"
+                    },
+                    {
+                        title: "Résumé des règles du jeûne",
+                        link: "Regarder"
+                    },
+                    {
+                        title: "Linguistique",
                         link: "Regarder"
                     },
                 ],
@@ -749,6 +787,10 @@
                         title: "Jouz Amma in Malagasy, according to Tabari's exegesis",
                         link: "Download"
                     },
+                                    {
+                        title: "Malagasy-Arabic vocabulary for the beginners",
+                        link: "Download"
+                    },
                     {
                         title: "Conversations in Arabic",
                         link: "Purchase"
@@ -769,6 +811,14 @@
                     },
                     {
                         title: "Learn the Quran",
+                        link: "Watch"
+                    },
+                      {
+                        title: "Summary of the Rules of Fasting.",
+                        link: "Watch"
+                    },
+                      {
+                        title: "Linguistics",
                         link: "Watch"
                     },
                 ],
@@ -853,6 +903,10 @@
                         title: "جزء عم بالملغاشية استنادا إلى تفسير الطبري",
                         link: "تحميل"
                     },
+                                     {
+                        title: "المفرادات الملغاشية للمبتدئين",
+                        link: "تحميل"
+                    },
                     {
                         title: "محادثات باللغة العربية",
                         link: "شراء"
@@ -875,6 +929,14 @@
                         title: "تعلم القرآن",
                         link: "شاهد"
                     },
+                    {
+                        title: "المختصر في أحكام الصيام",
+                        link: "شاهد"
+                    },
+                    {
+                        title: "اللسانيات",
+                        link: "شاهد"
+                    },
                 ],
             },
         };
@@ -885,17 +947,16 @@
         function changeLanguage(lang) {
             const language = languages[lang];
             if (language) {
-                
+                // Met à jour le titre et la description
                 document.getElementById('portfolio-title').innerText = language.title;
                 document.getElementById('portfolio-description').innerText = language.description;
 
-                
-                const menuItems = document.querySelectorAll('nav ul li a');
+                                const menuItems = document.querySelectorAll('nav ul li a');
                 language.menu.forEach((menuItem, index) => {
                     menuItems[index].innerText = menuItem;
                 });
 
-                
+            
                 const nav = document.querySelector('nav');
                 if (lang === 'ar') {
                     nav.classList.add('rtl');
@@ -903,7 +964,7 @@
                     nav.classList.remove('rtl');
                 }
 
-            
+                
                 document.querySelector('#applications h2').innerText = language.sections.apps;
                 document.querySelector('#chatbot h2').innerText = language.sections.chatbot;
                 document.querySelector('#sites h2').innerText = language.sections.sites;
