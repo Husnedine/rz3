@@ -202,6 +202,40 @@
             }
             .card { padding: 1rem; }
         }
+        .section#email {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(203, 178, 106, 0.3);
+    text-align: center;
+}
+
+#email h2 {
+    font-family: 'Aref Ruqaa', serif;
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#email a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+    border: 2px solid var(--secondary);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+#email a:hover {
+    background: var(--secondary);
+    color: var(--cream);
+    transform: translateY(-1px);
+}
     </style>
 </head>
 <body>
@@ -292,11 +326,6 @@
                     <h3 class="app-title">SilamBoki.Net</h3>
                     <p class="app-description">Bibliothèque islamique de Madagascar</p>
                     <a href="https://husnedine.github.io/rz3/SilamBoki" class="button">Visiter</a>
-                </div>           
-                <div class="card">
-                    <h3 class="app-title">SilamZoto.Net</h3>
-                    <p class="app-description">Page regroupant tous les œuvres islamiques de Zoto Ribhi</p>
-                    <a href="https://husnedine.github.io/rz3/SilamZoto" class="button">Visiter</a>
                 </div>                
                 <div class="card">
                     <h3 class="app-title">Jouz Amma</h3>
@@ -363,9 +392,9 @@
             </div>
         </section>
         
-                <section id="email" class="section">
+<section id="email" class="section">
     <a href="mailto:ezrdn@mbox.re">✉️ ezrdn@mbox.re</a>
-        </section>
+</section>
     </div>
 
     <footer>
@@ -429,11 +458,6 @@ const languages = {
             {
                 title: "SilamBoki.Net",
                 description: "Tranomboky islamika malagasy",
-                link: "Hitsidika"
-            },
-            {
-                title: "SilamZoto.Net",
-                description: "Pejy mitahiry ireo rakitrasa islamikan'i Zoto Ribhi",
                 link: "Hitsidika"
             },
             {
@@ -569,11 +593,6 @@ const languages = {
                 link: "Visiter"
             },
             {
-                title: "SilamZoto.Net",
-                description: "Page regroupant tous les œuvres islamiques de Zoto Ribhi",
-                link: "Visiter"
-            },
-            {
                 title: "Jouz Amma",
                 description: "Jouz Amma en malgache, selon l'exégèse de Tabari",
                 link: "Visiter"
@@ -706,11 +725,6 @@ const languages = {
                 link: "Visit"
             },
             {
-                title: "SilamZoto.Net",
-                description: "Home gathering all of Zoto Ribhi's islamic works",
-                link: "Visit"
-            },
-            {
                 title: "Jouz Amma",
                 description: "Jouz Amma in Malagasy, according to Tabari's exegesis",
                 link: "Visit"
@@ -840,11 +854,6 @@ const languages = {
             {
                 title: "سلامبوك",
                 description: "مكتبة إسلامية مدغشقرية",
-                link: "زيارة"
-            },
-            {
-                title: "سلامزوت",
-                description: "صفحة تجمع جميع أعمال إسلامية زوتو",
                 link: "زيارة"
             },
             {
