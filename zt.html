@@ -3,325 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site regroupant tous les ouvrages de Zoto Ribhi">
+    <meta name="description" content="Page d'accueil regroupant tous les ouvrages de Zoto Ribhi">
     <meta name="keywords" content="Zoto Ribhi, Ouvrages, Applications, Chatbot, Livres, YouTube">
-    <meta name="google-site-verification" content="o-WCGlI5P7jyc0J6zI3Dwq-CZ_rd-wyYOLLIG5g7aWI">
     <title>Zoto Web</title>
     <style>
-        :root {
-            --primary: #234F1E;
-            --secondary: #3A7734;
-            --accent: #8FB339;
-            --gold: #CBB26A;
-            --cream: #F7F4E9;
-            --dark: #1A3A17;
-            --background: #FDFBF7;
-            --popup-bg: rgba(0, 0, 0, 0.95);
-            --popup-color: var(--cream);
-            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.12);
-            --transition: all 0.3s ease;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+:root {
+    --primary: #1a4731;
+    --secondary: #2d6a4f;
+    --accent: #40916c;
+    --gold: #d4a373;
+    --cream: #faf6f1;
+    --dark: #1b4332;
+    --background: #f8f9fa;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap');
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
 
-        body {
-            font-family: 'Amiri', serif;
-            line-height: 1.6;
-            color: var(--dark);
-            background: var(--background);
-            background-image: 
-                linear-gradient(45deg, var(--cream) 25%, transparent 25%),
-                linear-gradient(-45deg, var(--cream) 25%, transparent 25%),
-                linear-gradient(45deg, transparent 75%, var(--cream) 75%),
-                linear-gradient(-45deg, transparent 75%, var(--cream) 75%);
-            background-size: 20px 20px;
-            background-position: 0 0, 0 10px, 10px -10px, -10px 0;
-        }
+body {
+    font-family: 'Poppins', 'Amiri', serif;
+    line-height: 1.8;
+    color: var(--dark);
+    background: var(--background);
+    min-height: 100vh;
+}
 
-        header {
-            background: 
-                linear-gradient(135deg, var(--primary), var(--dark)),
-                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.05) 10px, rgba(255, 255, 255, 0.05) 20px);
-            color: var(--cream);
-            text-align: center;
-            padding: 2.5rem 1rem;
-            box-shadow: var(--shadow-lg);
-            border-bottom: 3px solid var(--gold);
-            position: relative;
-            overflow: hidden;
-        }
+header {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: var(--cream);
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
 
-        header::before, header::after {
-            content: '';
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath fill='%23CBB26A' fill-opacity='0.15' d='M20 20h40v40H20V20zm5 5h30v30H25V25z'/%3E%3C/svg%3E");
-            opacity: 0.2;
-        }
-
-        h1 {
-            font-family: 'Aref Ruqaa', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        nav {
-            background: var(--secondary);
-            padding: 0.5rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: var(--shadow-md);
-            border-bottom: 2px solid var(--gold);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0.25rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        nav ul li a {
-            color: var(--cream);
-            text-decoration: none;
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: var(--transition);
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(203, 178, 106, 0.3);
-            font-size: 0.9rem;
-        }
-
-        nav ul li a:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: var(--gold);
-            transform: translateY(-1px);
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 1.5rem auto;
-            padding: 0 1rem;
-        }
-
-        .section {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: var(--shadow-md);
-            border: 1px solid rgba(203, 178, 106, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--gold), var(--accent));
-        }
-
-        .section::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50px;
-            height: 50px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath fill='%23CBB26A' fill-opacity='0.15' d='M40 0A40 40 0 1 1 0 40 40 40 0 0 1 40 0zm0 10a30 30 0 1 0 30 30A30 30 0 0 0 40 10z'/%3E%3C/svg%3E");
-            opacity: 0.2;
-        }
-
-        h2 {
-            font-family: 'Aref Ruqaa', serif;
-            color: var(--primary);
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            border-bottom: 2px solid var(--gold);
-            padding-bottom: 0.4rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .card {
-            background: white;
-            border-radius: 6px;
-            padding: 1.25rem;
-            text-align: center;
-            transition: var(--transition);
-            border: 1px solid rgba(203, 178, 106, 0.3);
-            box-shadow: var(--shadow-sm);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), var(--gold));
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--gold);
-        }
-
-        .card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .card h3 {
-            font-family: 'Aref Ruqaa', serif;
-            color: var(--primary);
-            font-size: 1.1rem;
-            margin-bottom: 0.6rem;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 0.4rem 1rem;
-            background: var(--secondary);
-            color: var(--cream);
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 500;
-            transition: var(--transition);
-            margin-top: 0.8rem;
-            border: 1px solid transparent;
-            font-size: 0.9rem;
-        }
-
-        .button:hover {
-            background: var(--primary);
-            border-color: var(--gold);
-            transform: translateY(-1px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background: var(--primary);
-            color: var(--cream);
-            margin-top: 2rem;
-            position: relative;
-            border-top: 2px solid var(--gold);
-        }
-
-        footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--accent), var(--gold));
-        }
-
-        .rtl {
-            direction: rtl;
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.3rem; }
-            .section { padding: 1.25rem; }
-            .grid { gap: 0.8rem; }
-            nav ul { gap: 0.2rem; }
-            nav ul li a { 
-                padding: 0.3rem 0.6rem;
-                font-size: 0.85rem;
-            }
-            .card { padding: 1rem; }
-        }
-
-        .popup {
-            background: var(--popup-bg);
-            backdrop-filter: blur(8px);
-    display: none; /* Masquer par défaut */
-    position: fixed; /* Position fixe */
+header::before {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
-    height: 100%;
-    justify-content: center; 
-    align-items: center; 
-    z-index: 200; 
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjAgMjBMMCAwaDQwTDIwIDIwem0wIDBMMCA0MGg0MEwyMCAyMHoiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xKSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+');
+    opacity: 0.1;
 }
 
-
-.popup-content {
-    padding: 2rem; 
-    max-width: 400px; 
-    width: 100%; 
-    text-align: center; 
-    border-radius: 10px;
-    box-shadow: var(--shadow-lg);
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
-        }
 
-        .popup-content {
-            background: var(--background);
-            border: 2px solid var(--gold);
-            border-radius: 8px;
-        }
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
 
-        .language-button {
-            background: var(--secondary);
-            color: var(--cream);
-            border: 1px solid var(--gold);
-            border-radius: 4px;
-            padding: 0.4rem 1rem;
-            margin: 0.3rem;
-            font-size: 0.9rem;
-            transition: var(--transition);
-        }
+nav {
+    background: var(--secondary);
+    position: relative; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
 
-        .language-button:hover {
-            background: var(--primary);
-            transform: translateY(-1px);
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    transition: var(--transition);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Supprimez la marge supérieure */
+    padding: 4rem 2rem 2rem; /* Ajoutez du padding supérieur pour éviter que le contenu ne soit caché */
+}
+
+.section {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--secondary);
+    color: var(--cream);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: var(--transition);
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.button:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--gold);
+    display: inline-block;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Poppins', 'Aref Ruqaa', serif;
+    margin-bottom: 1rem;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+footer {
+    background: var(--primary);
+    color: var(--cream);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    nav ul { 
+        flex-direction: column; 
+    }
+    
+    nav a { 
+        text-align: center;
+        justify-content: center;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+}
+
+.rtl { 
+    direction: rtl; 
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.card {
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.1s);
+}
+
+/* Style amélioré pour la section email */
+#email.section {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--cream);
+    padding: 3rem 2rem;
+}
+
+#email.section a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+#email.section a:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
     </style>
 </head>
 <body>
     <header>
         <h1 id="portfolio-title">Zoto Web</h1>
-        <p id="portfolio-description">Site regroupant tous les ouvrages de Zoto Ribhi</p>
+        <p id="portfolio-description">Page d'accueil regroupant tous les ouvrages de Zoto Ribhi</p>
     </header>
 
     <nav>
@@ -332,31 +287,21 @@
             <li><a href="#outils">🛠 Outils en Ligne</a></li>
             <li><a href="#livres">📚 Livres</a></li>
             <li><a href="#youtube">📺 Chaînes YouTube</a></li>
+            <li><a href="#email">📧 Contact</a></li>
         </ul>
     </nav>
 
-    <div class="popup" id="languagePopup">
-        <div class="popup-content">
-            <center> <h2>اختر اللغة <br> (Misafidia fiteny)<br> (Choisissez la langue) <br> (Choose the language)</h2></center>
-            <div>
-                <button class="language-button" onclick="changeLanguage('mg')">Malagasy (MG)</button>
-                <button class="language-button" onclick="changeLanguage('fr')">Français (FR)</button>
-                <button class="language-button" onclick="changeLanguage('en')">English (EN)</button>
-                <button class="language-button" onclick="changeLanguage('ar')">العربية (AR)</button>
-            </div>
-        </div>
-    </div>
-
-<section id="livres" class="section">
+    <div class="container">
+        <section id="livres" class="section">
             <h2>📚 Livres</h2>
             <div class="grid">
                 <div class="card">
-                <h3 class="app-title">Jouz Amma</h3>
-               <a href="https://drive.google.com/uc?export=download&id=1e0AMC16_SU-y4VbC0joc3eSpblHMJXQ6" class="button">Télécharger</a>
+                    <h3 class="app-title">Jouz Amma</h3>
+                    <a href="https://drive.google.com/uc?export=download&id=1e0AMC16_SU-y4VbC0joc3eSpblHMJXQ6" class="button">Télécharger</a>
                 </div>
                 <div class="card">
-                <h3 class="app-title">Vocabulaire</h3>
-               <a href="https://drive.google.com/uc?export=download&id=15chak0J4Jv0LiZUWCv4p3KngBPRHUOQi" class="button">Télécharger</a>
+                    <h3 class="app-title">Vocabulaire</h3>
+                    <a href="https://drive.google.com/uc?export=download&id=15chak0J4Jv0LiZUWCv4p3KngBPRHUOQi" class="button">Télécharger</a>
                 </div>
                 <div class="card">
                     <h3 class="app-title">Conversations en arabe</h3>
@@ -368,8 +313,7 @@
                 </div>
             </div>
         </section>
-        
-    <div class="container">
+
         <section id="applications" class="section">
             <h2>📱 Applications Mobile</h2>
             <div class="grid">
@@ -398,16 +342,21 @@
         <section id="sites" class="section">
             <h2>🌐 Sites Web</h2>
             <div class="grid">
+            	<div class="card">
+                    <h3 class="app-title">Dictionnaire Trilingue Zoto</h3>
+                    <p class="app-description">Dictionnaire Arabe - Malgache - Français</p>
+                    <a href="https://aryarzoto.great-site.net/rakibolana" class="button">Visiter</a>
+                </div>
                 <div class="card">
                     <h3 class="app-title">Dico Junior</h3>
                     <p class="app-description">Dictionnaire quadrilingue pour enfants (MG-FR-EN-AR)</p>
                     <a href="https://husnedine.github.io/rz3/dicZ-ob" class="button">Visiter</a>
                 </div>
                 <div class="card">
-                    <h3 class="app-title">Dictionnaire Visuel</h3>
-                    <p class="app-description">Dictionnaire visuel quadrilingue</p>
-                    <a href="https://husnedine.github.io/rz3/vb2" class="button">Visiter</a>
-                </div>
+                    <h3 class="app-title">SilamBoki.Net</h3>
+                    <p class="app-description">Bibliothèque islamique de Madagascar</p>
+                    <a href="https://husnedine.github.io/rz3/SilamBoki" class="button">Visiter</a>
+                </div>                
                 <div class="card">
                     <h3 class="app-title">Jouz Amma</h3>
                     <p class="app-description">Jouz Amma en malgache</p>
@@ -417,6 +366,11 @@
                     <h3 class="app-title">Coran en français</h3>
                     <p class="app-description">Comparatif des traductions françaises</p>
                     <a href="https://husnedine.github.io/Quran/Coran-fr" class="button">Visiter</a>
+                </div>
+                  <div class="card">
+                    <h3 class="app-title">Guide du programme éducatif pour l’école d’éducation islamique à Madagascar</h3>
+                    <p class="app-description">Programme éducatif</p>
+                    <a href="https://husnedine.github.io/rz3/madarasa" class="button">Visiter</a>
                 </div>
             </div>
         </section>
@@ -442,7 +396,6 @@
             </div>
         </section>
 
-
         <section id="youtube" class="section">
             <h2>📺 Chaînes YouTube</h2>
             <div class="grid">
@@ -458,580 +411,633 @@
                     <h3 class="app-title">Apprendre le Coran</h3>
                     <a href="https://www.youtube.com/playlist?list=PLXNIvIDoEdztSzGHWMEcOeTTwaSwRPPmD" class="button">Regarder</a>
                 </div>
-            <div class="card">
+                <div class="card">
                     <h3 class="app-title">Résumé des règles du jeûne</h3>
                     <a href="https://youtu.be/WO2vG6buMhY?si=jwJdnjaJbqUc-9SV" class="button">Regarder</a>
                 </div>
-            <div class="card">
+                <div class="card">
                     <h3 class="app-title">Linguistique</h3>
                     <a href="https://www.youtube.com/playlist?list=PLXNIvIDoEdztSzGHWMEcOeTTwaSwRPPmD" class="button">Regarder</a>
                 </div>
             </div>
         </section>
+        
+<section id="email" class="section">
+    <a href="mailto:ezrdn@mbox.re">✉️ ezrdn@mbox.re</a>
+</section>
     </div>
 
     <footer>
         <p>© 2025 Zoto Ribhi. Tous droits réservés.</p>
     </footer>
-
-    <script>
-        const languages = {
-            mg: {
-                title: "Zoto Web",
-                description: "Tranonkala mitahiry ireo rakitrasan'i Zoto Ribhi",
-                menu: [
-                    "📱 Rindrankajy",
-                    "🤖 Roboto",
-                    "🌐 Karomailaka",
-                    "🛠 Fitaovana an-tserasera",
-                    "📚 Boky",
-                    "📺 Fantsona Youtube"
-                ],
-                sections: {
-                    apps: "📱 Rindrankajy",
-                    chatbot: "🤖 Roboto",
-                    sites: "🌐 Karomailaka",
-                    tools: "🛠 Fitaovana an-tserasera",
-                    books: "📚 Boky",
-                    youtube: "📺 Fantsona YouTube",
-                },
-                apps: [
-                    {
-                        title: "Rakibolana Zoto misoratenitelo",
-                        description: "Rindrankajy diksiônera Arabo - Malagasy - Frantsay",
-                        link: "Hitelesariza"
-                    },
-                    {
-                        title: "Fanononana malagasy",
-                        description: "Rindrankajy fianarana manonona teny gasy",
-                        link: "Hitelesariza"
-                    },
-                ],
-                chatbot: {
-                    title: "Zoto Bot",
-                    description: "Mpampianatra virtoaly natao hianarana ankida sonita.",
-                    link: "Hitsaty"
-                },
-                sites: [
-                    {
-                        title: "Dico Junior",
-                        description: "Rakibolan'ny ankizy madinika",
-                        link: "Hitsidika"
-                    },
-                    {
-                        title: "Rakibolana an-tsary",
-                        description: "Rakibolana natao ho an'ireo zazavao",
-                        link: "Hitsidika"
-                    },
-                    {
-                        title: "Jozo Amma",
-                        description: "Jozo Amma amin'ny teny malagasy; miorina amin'ny tafsirin'i Tabari",
-                        link: "Hitsidika"
-                    },
-                    {
-                        title: "ZotoCoran",
-                        description: "Pejy mampitaha ireo dika frantsain'ny Korany",
-                        link: "Hitsidika"
-                    },
-                ],
-                tools: [
-                    {
-                        title: "Zoto IPA",
-                        description: "Fitaovana afa-mamadika teny gasy ho lasa fônetika IPA.",
-                        link: "Hampiasa"
-                    },
-                    {
-                        title: "Zoto Sora-be",
-                        description: "Fitaovana afa-mamadika soratra malagasy maoderina ho lasa sora-be.",
-                        link: "Hampiasa"
-                    },
-                    {
-                        title: "Zoto Wakati",
-                        description: "Fitaovana ahafahana mijery fotoam-bavaka manerana an'i Madagasikara",
-                        link: "Hijery"
-                    },
-                ],
-                books: [
-                 {
-                        title: "Jozo Amma amin'ny teny malagasy; miorina amin'ny tafsirin'i Tabari",
-                        link: "Hitelesariza"
-                    },
-                    {
-                        title: "Voambolana ho an'ny zazavao",
-                        link: "Hitelesariza"
-                    },
-                    {
-                        title: "Fianarana miresaka amin'ny teny arabo",
-                        link: "Hividy"
-                    },
-                    {
-                        title: "Fianarana miresaka amin'ny teny anglisy",
-                        link: "Hividy"
-                    },
-                ],
-                youtube: [
-                    {
-                        title: "Fianarana mamaky teny malagasy",
-                        link: "Hanaraka"
-                    },
-                    {
-                        title: "Fianarana miteny arabo",
-                        link: "Hanaraka"
-                    },
-                    {
-                        title: "Fianarana tsianjery Korany",
-                        link: "Hanaraka"
-                    },
-                    {
-                        title: "Fintin-dalàna mifehy ny fifadian-kanina",
-                        link: "Hanaraka"
-                    },
-                    {
-                        title: "Haitsikerafiteny",
-                        link: "Hanaraka"
-                    },
-                ],
+    <script>	
+const languages = {
+    mg: {
+        title: "Zoto Web",
+        description: "Pejy fandraisana mitahiry ireo rakitrasan'i Zoto Ribhi",
+        menu: [
+            "📱 Rindrankajy",
+            "🤖 Roboto",
+            "🌐 Karomailaka",
+            "🛠 Fitaovana an-tserasera",
+            "📚 Boky",
+            "📺 Fantsona Youtube",
+            "📧 Adiresy mailaka"
+        ],
+        sections: {
+            apps: "📱 Rindrankajy",
+            chatbot: "🤖 Roboto",
+            sites: "🌐 Tanonkala",
+            tools: "🛠 Fitaovana an-tserasera",
+            books: "📚 Boky",
+            youtube: "📺 Fantsona YouTube",
+        },
+        apps: [
+            {
+                title: "Rakibolana Zoto misoratenitelo",
+                description: "Rindrankajy diksiônera Arabo - Malagasy - Frantsay (ahitana teny miisa 53751)",
+                link: "Hitelesariza"
             },
-            fr: {
-                title: "Zoto Web",
-                description: "Site regroupant tous les œuvres de Zoto Ribhi",
-                menu: [
-                    "📱 Applications Mobile",
-                    "🤖 Chatbot",
-                    "🌐 Flipnet",
-                    "🛠 Outils en Ligne",
-                    "📚 Livres",
-                    "📺 Chaînes YouTube"
-                ],
-                sections: {
-                    apps: "📱 Applications Mobile",
-                    chatbot: "🤖 Chatbot",
-                    sites: "🌐 Flipnet",
-                    tools: "🛠 Outils en Ligne",
-                    books: "📚 Livres",
-                    youtube: "📺 Chaînes YouTube",
-                },
-                apps: [
-                    {
-                        title: "Dictionnaire Zoto Trilingue",
-                        description: "Application dico Arabe - Malgache - Français",
-                        link: "Télécharger"
-                    },
-                    {
-                        title: "Prononciation Malgache",
-                        description: "Apprenez la prononciation correcte du malgache.",
-                        link: "Télécharger"
-                    },
-                ],
-                chatbot: {
-                    title: "Zoto Bot",
-                    description: "Professeur virtuel pour apprendre l'aqidah.",
-                    link: "Accéder"
-                },
-                sites: [
-                    {
-                        title: "Dico Junior",
-                        description: "Dico pour enfants",
-                        link: "Visiter"
-                    },
-                    {
-                        title: "Dictionnaire Visuel",
-                        description: "Dico pour débutants",
-                        link: "Visiter"
-                    },
-                    {
-                        title: "Jouz Amma",
-                        description: "Jouz Amma en malgache, selon l'exégèse de Tabari",
-                        link: "Visiter"
-                    },
-                    {
-                        title: "Coran en français",
-                        description: "Comparatif des traductions françaises",
-                        link: "Visiter"
-                    },
-                ],
-                tools: [
-                    {
-                        title: "Convertisseur IPA",
-                        description: "Conversion malgache vers phonétique IPA.",
-                        link: "Utiliser"
-                    },
-                    {
-                        title: "Convertisseur Sora-be",
-                        description: "Conversion en écriture Sora-be.",
-                        link: "Utiliser"
-                    },
-                    {
-                        title: "Wakati",
-                        description: "Heures de prière partout à Madagascar.",
-                        link: "Consulter"
-                    },
-                ],
-                books: [
-                   {
-                        title: "Jouz Amma en malgache, selon l'exégèse de Tabari",
-                        link: "Télécharger"
-                    },
-                                       {
-                        title: "Vocabulaire malgache-arabe pour les débutants",
-                        link: "Télécharger"
-                    },
-                    {
-                        title: "Conversations en arabe",
-                        link: "Acheter"
-                    },
-                    {
-                        title: "Conversations en anglais",
-                        link: "Acheter"
-                    },
-                ],
-                youtube: [
-                    {
-                        title: "Apprendre à lire les mots malgaches",
-                        link: "Regarder"
-                    },
-                    {
-                        title: "Expressions arabes",
-                        link: "Regarder"
-                    },
-                    {
-                        title: "Apprendre le Coran",
-                        link: "Regarder"
-                    },
-                    {
-                        title: "Résumé des règles du jeûne",
-                        link: "Regarder"
-                    },
-                    {
-                        title: "Linguistique",
-                        link: "Regarder"
-                    },
-                ],
+            {
+                title: "Fanononana malagasy",
+                description: "Rindrankajy fianarana manonona teny gasy",
+                link: "Hitelesariza"
             },
-            en: {
-                title: "Zoto Web",
-                description: "Website gathering all of Zoto Ribhi's works",
-                menu: [
-                    "📱 Mobile Apps",
-                    "🤖 Chatbot",
-                    "🌐 Flipnet",
-                    "🛠 Online Tools",
-                    "📚 Books",
-                    "📺 YouTube Channels"
-                ],
-                sections: {
-                    apps: "📱 Mobile Apps",
-                    chatbot: "🤖 Chatbot",
-                    sites: "🌐 Flipnet",
-                    tools: "🛠 Online Tools",
-                    books: "📚 Books",
-                    youtube: "📺 YouTube Channels",
-                },
-                apps: [
-                    {
-                        title: "Trilingual Zoto Dictionary",
-                        description: "French Malagasy Arabic Dictionary",
-                        link: "Download"
-                    },
-                    {
-                        title: "Malagasy Pronunciation",
-                        description: "Learn the correct pronunciation of Malagasy.",
-                        link: "Download"
-                    },
-                ],
-                chatbot: {
-                    title: "Zoto Bot",
-                    description: "Virtual teacher for learning aqidah.",
-                    link: "Access"
-                },
-                sites: [
-                    {
-                        title: "Dico Junior",
-                        description: "Dictionary for children",
-                        link: "Visit"
-                    },
-                    {
-                        title: "Visual Dictionary",
-                        description: "Visual dictionary for beginners",
-                        link: "Visit"
-                    },
-                    {
-                        title: "Jouz Amma",
-                        description: "Jouz Amma in Malagasy, according to Tabari's exegesis",
-                        link: "Visit"
-                    },
-                    {
-                        title: "Quran in French",
-                        description: "Comparative of French translations",
-                        link: "Visit"
-                    },
-                ],
-                tools: [
-                    {
-                        title: "IPA Converter",
-                        description: "Convert Malagasy to IPA phonetic.",
-                        link: "Use"
-                    },
-                    {
-                        title: "Sora-be Converter",
-                        description: "Conversion to Sora-be script.",
-                        link: "Use"
-                    },
-                    {
-                        title: "Wakati",
-                        description: "Prayer times everywhere in Madagascar.",
-                        link: "Check"
-                    },
-                ],
-                books: [
-                {
-                        title: "Jouz Amma in Malagasy, according to Tabari's exegesis",
-                        link: "Download"
-                    },
-                                    {
-                        title: "Malagasy-Arabic vocabulary for the beginners",
-                        link: "Download"
-                    },
-                    {
-                        title: "Conversations in Arabic",
-                        link: "Purchase"
-                    },
-                    {
-                        title: "Conversations in English",
-                        link: "Purchase"
-                    },
-                ],
-                youtube: [
-                    {
-                        title: "Learn to read Malagasy words",
-                        link: "Watch"
-                    },
-                    {
-                        title: "Arabic Expressions",
-                        link: "Watch"
-                    },
-                    {
-                        title: "Learn the Quran",
-                        link: "Watch"
-                    },
-                      {
-                        title: "Summary of the Rules of Fasting.",
-                        link: "Watch"
-                    },
-                      {
-                        title: "Linguistics",
-                        link: "Watch"
-                    },
-                ],
+        ],
+        chatbot: {
+            title: "Zoto Bot",
+            description: "Mpampianatra virtoaly natao hianarana ankida sonita.",
+            link: "Hitsaty"
+        },
+        sites: [
+            {
+                title: "Rakibolana Zoto Misoratenitelo",
+                description: "Rakibolana Arabo - Malagasy - Frantsay",
+                link: "Hitsidika"
             },
-            ar: {
-                title: "زوتو ويب",
-                description: "موقع يجمع جميع أعمال زوتو ربحي",
-                menu: [
-                    "📱 تطبيقات الجوال",
-                    "🤖 روبوت الدردشة",
-                    "🌐 التصفح السريع",
-                    "🛠 أدوات عبر الإنترنت",
-                    "📚 كتب",
-                    "📺 قنوات يوتيوب"
-                ],
-                sections: {
-                    apps: "📱 تطبيقات الجوال",
-                    chatbot: "🤖 روبوت الدردشة",
-                    sites: "🌐 التصفح السريع",
-                    tools: "🛠 أدوات عبر الإنترنت",
-                    books: "📚 كتب",
-                    youtube: "📺 قنوات يوتيوب",
-                },
-                apps: [
-                    {
-                        title: "معجم زوتو الثلاثي",
-                        description: "معجم عربي ملغاشي فرنسي",
-                        link: "تحميل"
-                    },
-                    {
-                        title: "النطق الملغاشي",
-                        description: "تعلم النطق الصحيح للغة الملغاشية.",
-                        link: "تحميل"
-                    },
-                ],
-                chatbot: {
-                    title: "زوتو بوت",
-                    description: "معلم افتراضي لتعلم العقيدة.",
-                    link: "دخول"
-                },
-                sites: [
-                    {
-                        title: "ديكو جونيور",
-                        description: "معجم الأطفال",
-                        link: "زيارة"
-                    },
-                    {
-                        title: "معجم بصري",
-                        description: "قاموس بصري للمبتدئيين",
-                        link: "زيارة"
-                    },
-                    {
-                        title: "جزء عم بالملغاشية",
-                        description: "جزء عم باللغة الملغاشية استنادًا إلى تفسير الطبري",
-                        link: "زيارة"
-                    },
-                    {
-                        title: "القرآن بالفرنسية",
-                        description: "مقارنة الترجمات الفرنسية",
-                        link: "زيارة"
-                    },
-                ],
-                tools: [
-                    {
-                        title: "محول فونيتيك",
-                        description: "تحويل الكلمات الملغاشية إلى الفونيتيك الدولي",
-                        link: "استخدم"
-                    },
-                    {
-                        title: "محول سورابي",
-                        description: "التحويل إلى خط سورابي",
-                        link: "استخدم"
-                    },
-                    {
-                        title: "واكاتي",
-                        description: "مواقيت الصلاة في جميع أنحاء مدغشقر",
-                        link: "تحقق"
-                    },
-                ],
-                books: [
-                 {
-                        title: "جزء عم بالملغاشية استنادا إلى تفسير الطبري",
-                        link: "تحميل"
-                    },
-                                     {
-                        title: "المفرادات الملغاشية للمبتدئين",
-                        link: "تحميل"
-                    },
-                    {
-                        title: "محادثات باللغة العربية",
-                        link: "شراء"
-                    },
-                    {
-                        title: "محادثات باللغة الإنجليزية",
-                        link: "شراء"
-                    },
-                ],
-                youtube: [
-                    {
-                        title: "تعلم قراءة الكلمات الملغاشية",
-                        link: "شاهد"
-                    },
-                    {
-                        title: "تعبيرات عربية",
-                        link: "شاهد"
-                    },
-                    {
-                        title: "تعلم القرآن",
-                        link: "شاهد"
-                    },
-                    {
-                        title: "المختصر في أحكام الصيام",
-                        link: "شاهد"
-                    },
-                    {
-                        title: "اللسانيات",
-                        link: "شاهد"
-                    },
-                ],
+            {
+                title: "Dico Junior",
+                description: "Rakibolan'ny ankizy madinika",
+                link: "Hitsidika"
             },
-        };
-        
+            {
+                title: "SilamBoki.Net",
+                description: "Tranomboky islamika malagasy",
+                link: "Hitsidika"
+            },
+            {
+                title: "Jozo Amma",
+                description: "Jozo Amma amin'ny teny malagasy; miorina amin'ny tafsirin'i Tabari",
+                link: "Hitsidika"
+            },
+            {
+                title: "ZotoCoran",
+                description: "Pejy mampitaha ireo dika frantsain'ny Korany",
+                link: "Hitsidika"
+            },
+            {
+                title: "Torolàlana momba ny fandaharam-pampianarana ho an'ny Madarasa eto Madagasikara",
+                description: "fandaharam-pampianarana",
+                link: "Hitsidika"
+            },
+        ],
+        tools: [
+            {
+                title: "Zoto IPA",
+                description: "Fitaovana afa-mamadika teny gasy ho lasa fônetika IPA.",
+                link: "Hampiasa"
+            },
+            {
+                title: "Zoto Sora-be",
+                description: "Fitaovana afa-mamadika soratra malagasy maoderina ho lasa sora-be.",
+                link: "Hampiasa"
+            },
+            {
+                title: "Zoto Wakati",
+                description: "Fitaovana ahafahana mijery fotoam-bavaka manerana an'i Madagasikara",
+                link: "Hijery"
+            },
+        ],
+        books: [
+            {
+                title: "Jozo Amma amin'ny teny malagasy; miorina amin'ny tafsirin'i Tabari",
+                link: "Hitelesariza"
+            },
+            {
+                title: "Voambolana ho an'ny zazavao",
+                link: "Hitelesariza"
+            },
+            {
+                title: "Fianarana miresaka amin'ny teny arabo",
+                link: "Hividy"
+            },
+            {
+                title: "Fianarana miresaka amin'ny teny anglisy",
+                link: "Hividy"
+            },
+        ],
+        youtube: [
+            {
+                title: "Fianarana mamaky teny malgache",
+                link: "Hanaraka"
+            },
+            {
+                title: "Fianarana miteny arabo",
+                link: "Hanaraka"
+            },
+            {
+                title: "Fianarana tsianjery Korany",
+                link: "Hanaraka"
+            },
+            {
+                title: "Fintin-dalàna mifehy ny fifadian-kanina",
+                link: "Hanaraka"
+            },
+            {
+                title: "Haitsikerafiteny",
+                link: "Hanaraka"
+            },
+        ],
+    },
+    fr: {
+        title: "Zoto Web",
+        description: "Page d'accueil regroupant tous les œuvres de Zoto Ribhi",
+        menu: [
+            "📱 Applications Mobile",
+            "🤖 Chatbot",
+            "🌐 Sites Web",
+            "🛠 Outils en Ligne",
+            "📚 Livres",
+            "📺 Chaînes YouTube",
+            "📧 Email"
+        ],
+        sections: {
+            apps: "📱 Applications Mobile",
+            chatbot: "🤖 Chatbot",
+            sites: "🌐 Sites Web",
+            tools: "🛠 Outils en Ligne",
+            books: "📚 Livres",
+            youtube: "📺 Chaînes YouTube",
+        },
+        apps: [
+            {
+                title: "Dictionnaire Trilingue",
+                description: "Application dico Arabe - Malgache - Français (53751 mots)",
+                link: "Télécharger"
+            },
+            {
+                title: "Prononciation Malgache",
+                description: "Apprenez la prononciation correcte du malgache.",
+                link: "Télécharger"
+            },
+        ],
+        chatbot: {
+            title: "Zoto Bot",
+            description: "Professeur virtuel pour apprendre l'aqidah.",
+            link: "Accéder"
+        },
+        sites: [
+            {
+                title: "Dictionnaire Trilingue Zoto",
+                description: "Dictionnaire Arabe - Malgache- Français",
+                link: "Visiter"
+            },
+            {
+                title: "Dico Junior",
+                description: "Dico pour enfants",
+                link: "Visiter"
+            },
+            {
+                title: "SilamBoki.Net",
+                description: "Bibliothèque islamique de Madagascar",
+                link: "Visiter"
+            },
+            {
+                title: "Jouz Amma",
+                description: "Jouz Amma en malgache, selon l'exégèse de Tabari",
+                link: "Visiter"
+            },
+            {
+                title: "Coran en français",
+                description: "Comparatif des traductions françaises",
+                link: "Visiter"
+            },
+            {
+                title: "Guide du programme éducatif pour l’école d’éducation islamique à Madagascar",
+                description: "Programme éducatif",
+                link: "Visiter"
+            },
+        ],
+        tools: [
+            {
+                title: "Convertisseur IPA",
+                description: "Conversion malgache vers phonétique IPA.",
+                link: "Utiliser"
+            },
+            {
+                title: "Convertisseur Sora-be",
+                description: "Conversion en écriture Sora-be.",
+                link: "Utiliser"
+            },
+            {
+                title: "Wakati",
+                description: "Heures de prière partout à Madagascar.",
+                link: "Consulter"
+            },
+        ],
+        books: [
+            {
+                title: "Jouz Amma en malgache, selon l'exégèse de Tabari",
+                link: "Télécharger"
+            },
+            {
+                title: "Vocabulaire malgache-arabe pour les débutants",
+                link: "Télécharger"
+            },
+            {
+                title: "Conversations en arabe",
+                link: "Acheter"
+            },
+            {
+                title: "Conversations en anglais",
+                link: "Acheter"
+            },
+        ],
+        youtube: [
+            {
+                title: "Apprendre à lire les mots malgaches",
+                link: "Regarder"
+            },
+            {
+                title: "Expressions arabes",
+                link: "Regarder"
+            },
+            {
+                title: "Apprendre le Coran",
+                link: "Regarder"
+            },
+            {
+                title: "Résumé des règles du jeûne",
+                link: "Regarder"
+            },
+            {
+                title: "Linguistique",
+                link: "Regarder"
+            },
+        ],
+    },
+    en: {
+        title: "Zoto Web",
+        description: "Home page gathering all of Zoto Ribhi's works",
+        menu: [
+            "📱 Mobile Apps",
+            "🤖 Chatbot",
+            "🌐 Websites",
+            "🛠 Online Tools",
+            "📚 Books",
+            "📺 YouTube Channels",
+            "📧 Email"
+        ],
+        sections: {
+            apps: "📱 Mobile Apps",
+            chatbot: "🤖 Chatbot",
+            sites: "🌐 Websites",
+            tools: "🛠 Online Tools",
+            books: "📚 Books",
+            youtube: "📺 YouTube Channels",
+        },
+        apps: [
+            {
+                title: "Trilingual Zoto Dictionary",
+                description: "Trilingual Arabic-Malagasy-French dictionary (53751 words)",
+                link: "Download"
+            },
+            {
+                title: "Malagasy Pronunciation",
+                description: "Learn correct Malagasy pronunciation.",
+                link: "Download"
+            },
+        ],
+        chatbot: {
+            title: "Zoto Bot",
+            description: "Virtual teacher for learning aqidah.",
+            link: "Access"
+        },
+        sites: [
+            {
+                title: "Zoto Trilingual Dictionary",
+                description: "Arabic - Malagasy - French Dictionary",
+                link: "Visit"
+            },
+            {
+                title: "Dico Junior",
+                description: "Dictionary for children",
+                link: "Visit"
+            },
+            {
+                title: "SilamBoki.Net",
+                description: "Islamic library of Madagascar",
+                link: "Visit"
+            },
+            {
+                title: "Jouz Amma",
+                description: "Jouz Amma in Malagasy, according to Tabari's exegesis",
+                link: "Visit"
+            },
+            {
+                title: "Quran in French",
+                description: "Comparison of French translations",
+                link: "Visit"
+            },
+            {
+                title: "Educational Program Guide for the Islamic Education School in Madagascar",
+                description: "Educational program",
+                link: "Visit"
+            },
+        ],
+        tools: [
+            {
+                title: "IPA Converter",
+                description: "Convert Malagasy to IPA phonetics.",
+                link: "Use"
+            },
+            {
+                title: "Sora-be Converter",
+                description: "Conversion to Sora-be script.",
+                link: "Use"
+            },
+            {
+                title: "Wakati",
+                description: "Prayer times everywhere in Madagascar.",
+                link: "Check"
+            },
+        ],
+        books: [
+            {
+                title: "Jouz Amma in Malagasy, according to Tabari's exegesis",
+                link: "Download"
+            },
+            {
+                title: "Malagasy-Arabic vocabulary for beginners",
+                link: "Download"
+            },
+            {
+                title: "Conversations in Arabic",
+                link: "Purchase"
+            },
+            {
+                title: "Conversations in English",
+                link: "Purchase"
+            },
+        ],
+        youtube: [
+            {
+                title: "Learn to read Malagasy words",
+                link: "Watch"
+            },
+            {
+                title: "Arabic Expressions",
+                link: "Watch"
+            },
+            {
+                title: "Learn the Quran",
+                link: "Watch"
+            },
+            {
+                title: "Summary of Fasting Rules",
+                link: "Watch"
+            },
+            {
+                title: "Linguistics",
+                link: "Watch"
+            },
+        ],
+    },
+    ar: {
+        title: "زوتو ويب",
+        description: "صفحة رئيسية تجمع جميع أعمال زوتو ربحي",
+        menu: [
+            "📱 تطبيقات الجوال",
+            "🤖 روبوت الدردشة",
+            "🌐 المواقع",
+            "🛠 أدوات عبر الإنترنت",
+            "📚 كتب",
+            "📺 قنوات يوتيوب",
+            "📧 البريد الإلكتروني"
+        ],
+        sections: {
+            apps: "📱 تطبيقات الجوال",
+            chatbot: "🤖 روبوت الدردشة",
+            sites: "🌐 المواقع",
+            tools: "🛠 أدوات عبر الإنترنت",
+            books: "📚 كتب",
+            youtube: "📺 قنوات يوتيوب",
+        },
+        apps: [
+            {
+                title: "معجم زوتو الثلاثي",
+                description: "معجم عربي ملغاشي فرنسي",
+                link: "تحميل"
+            },
+            {
+                title: "النطق الملغاشي",
+                description: "تعلم النطق الصحيح للغة الملغاشية.",
+                link: "تحميل"
+            },
+        ],
+        chatbot: {
+            title: "زوتو بوت",
+            description: "معلم افتراضي لتعلم العقيدة.",
+            link: "دخول"
+        },
+        sites: [
+            {
+                title: "معجم زوتو الثلاثي",
+                description: "معجم عربي - ملغاشي - فرنسي",
+                link: "زيارة"
+            },
+            {
+                title: "ديكو جونيور",
+                description: "معجم الأطفال",
+                link: "زيارة"
+            },
+            {
+                title: "سلامبوك",
+                description: "مكتبة إسلامية مدغشقرية",
+                link: "زيارة"
+            },
+            {
+                title: "جزء عم بالملغاشية",
+                description: "جزء عم باللغة الملغاشية استنادًا إلى تفسير الطبري",
+                link: "زيارة"
+            },
+            {
+                title: "القرآن بالفرنسية",
+                description: "مقارنة الترجمات الفرنسية",
+                link: "زيارة"
+            },
+            {
+                title: "دليل البرنامج التعليمي لمدرسة التربية الإسلامية في مدغشقر",
+                description: "عن برنامج تعليمية",
+                link: "زيارة"
+            },
+        ],
+        tools: [
+            {
+                title: "محول فونيتيك",
+                description: "تحويل الكلمات الملغاشية إلى الفونيتيك الدولي",
+                link: "استخدم"
+            },
+            {
+                title: "محول سورابي",
+                description: "التحويل إلى خط سورابي",
+                link: "استخدم"
+            },
+            {
+                title: "واكاتي",
+                description: "مواقيت الصلاة في جميع أنحاء مدغشقر",
+                link: "تحقق"
+            },
+        ],
+        books: [
+            {
+                title: "جزء عم بالملغاشية استنادا إلى تفسير الطبري",
+                link: "تحميل"
+            },
+            {
+                title: "المفرادات الملغاشية للمبتدئين",
+                link: "تحميل"
+            },
+            {
+                title: "محادثات باللغة العربية",
+                link: "شراء"
+            },
+            {
+                title: "محادثات باللغة الإنجليزية",
+                link: "شراء"
+            },
+        ],
+        youtube: [
+            {
+                title: "تعلم قراءة الكلمات الملغاشية",
+                link: "شاهد"
+            },
+            {
+                title: "تعبيرات عربية",
+                link: "شاهد"
+            },
+            {
+                title: "تعلم القرآن",
+                link: "شاهد"
+            },
+            {
+                title: "المختصر في أحكام الصيام",
+                link: "شاهد"
+            },
+            {
+                title: "اللسانيات",
+                link: "شاهد"
+            },
+        ],
+    },
+};
 
-      
+// Fonction pour détecter la langue de l'appareil et changer la langue du site
+function detectLanguage() {
+    const userLang = navigator.language || navigator.userLanguage; // Obtenir la langue de l'appareil
+    let lang;
 
-        function changeLanguage(lang) {
-            const language = languages[lang];
-            if (language) {
-                // Met à jour le titre et la description
-                document.getElementById('portfolio-title').innerText = language.title;
-                document.getElementById('portfolio-description').innerText = language.description;
+    if (userLang.startsWith('fr')) {
+        lang = 'fr';
+    } else if (userLang.startsWith('ar')) {
+        lang = 'ar';
+    } else {
+        lang = 'en'; // Par défaut en anglais
+    }
 
-                                const menuItems = document.querySelectorAll('nav ul li a');
-                language.menu.forEach((menuItem, index) => {
-                    menuItems[index].innerText = menuItem;
-                });
+    changeLanguage(lang);
+}
 
-            
-                const nav = document.querySelector('nav');
-                if (lang === 'ar') {
-                    nav.classList.add('rtl');
-                } else {
-                    nav.classList.remove('rtl');
-                }
+// Function to change the language as per the selected language
+function changeLanguage(lang) {
+    const language = languages[lang];
+    if (language) {
+        // Met à jour le titre et la description
+        document.getElementById('portfolio-title').innerText = language.title;
+        document.getElementById('portfolio-description').innerText = language.description;
 
-                
-                document.querySelector('#applications h2').innerText = language.sections.apps;
-                document.querySelector('#chatbot h2').innerText = language.sections.chatbot;
-                document.querySelector('#sites h2').innerText = language.sections.sites;
-                document.querySelector('#outils h2').innerText = language.sections.tools;
-                document.querySelector('#livres h2').innerText = language.sections.books;
-                document.querySelector('#youtube h2').innerText = language.sections.youtube;
+        // Met à jour le menu
+        const menuItems = document.querySelectorAll('nav ul li a');
+        language.menu.forEach((menuItem, index) => {
+            menuItems[index].innerText = menuItem;
+        });
 
-                
-                const appCards = document.querySelectorAll('#applications .app-title, #applications .app-description, #applications .button');
-                language.apps.forEach((app, index) => {
-                    appCards[index * 3].innerText = app.title;
-                    appCards[index * 3 + 1].innerText = app.description;
-                    appCards[index * 3 + 2].innerText = app.link;
-                });
+        // Ajoute ou supprime la classe RTL
+        const nav = document.querySelector('nav');
+        if (lang === 'ar') {
+            nav.classList.add('rtl');
+        } else {
+            nav.classList.remove('rtl');
+        }
 
-                
-                const chatbot = document.querySelector('#chatbot .app-title');
-                const chatbotDesc = document.querySelector('#chatbot .app-description');
-                const chatbotButton = document.querySelector('#chatbot .button');
-                chatbot.innerText = language.chatbot.title;
-                chatbotDesc.innerText = language.chatbot.description;
-                chatbotButton.innerText = language.chatbot.link;
+        // Met à jour les sections (h2)
+        document.querySelector('#applications h2').innerText = language.sections.apps;
+        document.querySelector('#chatbot h2').innerText = language.sections.chatbot;
+        document.querySelector('#sites h2').innerText = language.sections.sites;
+        document.querySelector('#outils h2').innerText = language.sections.tools;
+        document.querySelector('#livres h2').innerText = language.sections.books;
+        document.querySelector('#youtube h2').innerText = language.sections.youtube;
 
-                
-                const siteCards = document.querySelectorAll('#sites .app-title, #sites .app-description, #sites .button');
-                language.sites.forEach((site, index) => {
-                    siteCards[index * 3].innerText = site.title;
-                    siteCards[index * 3 + 1].innerText = site.description;
-                    siteCards[index * 3 + 2].innerText = site.link;
-                });
+        // Met à jour les sections des applications
+        const appCards = document.querySelectorAll('#applications .app-title, #applications .app-description, #applications .button');
+        language.apps.forEach((app, index) => {
+            appCards[index * 3].innerText = app.title;
+            appCards[index * 3 + 1].innerText = app.description;
+            appCards[index * 3 + 2].innerText = app.link;
+        });
 
-                
-                const toolCards = document.querySelectorAll('#outils .app-title, #outils .app-description, #outils .button');
-                language.tools.forEach((tool, index) => {
-                    toolCards[index * 3].innerText = tool.title;
-                    toolCards[index * 3 + 1].innerText = tool.description;
-                    toolCards[index * 3 + 2].innerText = tool.link;
-                });
+        // Met à jour la section du chatbot
+        const chatbot = document.querySelector('#chatbot .app-title');
+        const chatbotDesc = document.querySelector('#chatbot .app-description');
+        const chatbotButton = document.querySelector('#chatbot .button');
+        chatbot.innerText = language.chatbot.title;
+        chatbotDesc.innerText = language.chatbot.description;
+        chatbotButton.innerText = language.chatbot.link;
 
-                
-                const bookCards = document.querySelectorAll('#livres .app-title, #livres .button');
-                language.books.forEach((book, index) => {
-                    bookCards[index * 2].innerText = book.title;
-                    bookCards[index * 2 + 1].innerText = book.link;
-                });
+        // Met à jour les sections des sites
+        const siteCards = document.querySelectorAll('#sites .app-title, #sites .app-description, #sites .button');
+        language.sites.forEach((site, index) => {
+            siteCards[index * 3].innerText = site.title;
+            siteCards[index * 3 + 1].innerText = site.description;
+            siteCards[index * 3 + 2].innerText = site.link;
+        });
 
-                
-                const youtubeCards = document.querySelectorAll('#youtube .app-title, #youtube .button');
-                language.youtube.forEach((youtube, index) => {
-                    youtubeCards[index * 2].innerText = youtube.title;
-                    youtubeCards[index * 2 + 1].innerText = youtube.link;
-                });
+        // Met à jour les sections des outils
+        const toolCards = document.querySelectorAll('#outils .app-title, #outils .app-description, #outils .button');
+        language.tools.forEach((tool, index) => {
+            toolCards[index * 3].innerText = tool.title;
+            toolCards[index * 3 + 1].innerText = tool.description;
+            toolCards[index * 3 + 2].innerText = tool.link;
+        });
 
-                 
-        closePopup();
+        // Met à jour les sections des livres
+        const bookCards = document.querySelectorAll('#livres .app-title, #livres .button');
+        language.books.forEach((book, index) => {
+            bookCards[index * 2].innerText = book.title;
+            bookCards[index * 2 + 1].innerText = book.link;
+        });
+
+        // Met à jour les sections YouTube
+        const youtubeCards = document.querySelectorAll('#youtube .app-title, #youtube .button');
+        language.youtube.forEach((youtube, index) => {
+            youtubeCards[index * 2].innerText = youtube.title;
+            youtubeCards[index * 2 + 1].innerText = youtube.link;
+        });
     }
 }
-        
-        
-function closePopup() {
-    document.getElementById('languagePopup').style.display = 'none';
-}
 
-        window.onload = function () {
-            document.getElementById('languagePopup').style.display = 'flex';
-        };
+// Appelle la fonction de détection de langue lorsque la page est chargée
+window.onload = detectLanguage;
     </script>
 </body>
 </html>
