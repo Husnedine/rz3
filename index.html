@@ -70,7 +70,7 @@ header p {
 
 nav {
     background: var(--secondary);
-    position: absolute; /* Changez de sticky à absolute */
+    position: relative; 
     top: 0;
     left: 0;
     right: 0;
@@ -111,7 +111,7 @@ nav a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto; /* Supprimez la marge supérieure */
-    padding: 4rem 2rem; /* Ajoutez du padding supérieur */
+    padding: 4rem 2rem 2rem; /* Ajoutez du padding supérieur pour éviter que le contenu ne soit caché */
 }
 
 .section {
@@ -353,11 +353,6 @@ footer {
                     <a href="https://husnedine.github.io/rz3/dicZ-ob" class="button">Visiter</a>
                 </div>
                 <div class="card">
-                    <h3 class="app-title">Dictionnaire Visuel</h3>
-                    <p class="app-description">Dictionnaire visuel quadrilingue</p>
-                    <a href="https://husnedine.github.io/rz3/vb2" class="button">Visiter</a>
-                </div>
-                <div class="card">
                     <h3 class="app-title">SilamBoki.Net</h3>
                     <p class="app-description">Bibliothèque islamique de Madagascar</p>
                     <a href="https://husnedine.github.io/rz3/SilamBoki" class="button">Visiter</a>
@@ -483,11 +478,6 @@ const languages = {
             {
                 title: "Dico Junior",
                 description: "Rakibolan'ny ankizy madinika",
-                link: "Hitsidika"
-            },
-            {
-                title: "Rakibolana an-tsary",
-                description: "Rakibolana natao ho an'ireo zazavao",
                 link: "Hitsidika"
             },
             {
@@ -618,11 +608,6 @@ const languages = {
                 link: "Visiter"
             },
             {
-                title: "Dictionnaire Visuel",
-                description: "Dico pour débutants",
-                link: "Visiter"
-            },
-            {
                 title: "SilamBoki.Net",
                 description: "Bibliothèque islamique de Madagascar",
                 link: "Visiter"
@@ -750,11 +735,6 @@ const languages = {
                 link: "Visit"
             },
             {
-                title: "Visual Dictionary",
-                description: "Dictionary for beginners",
-                link: "Visit"
-            },
-            {
                 title: "SilamBoki.Net",
                 description: "Islamic library of Madagascar",
                 link: "Visit"
@@ -879,11 +859,6 @@ const languages = {
             {
                 title: "ديكو جونيور",
                 description: "معجم الأطفال",
-                link: "زيارة"
-            },
-            {
-                title: "معجم بصري",
-                description: "قاموس بصري للمبتدئيين",
                 link: "زيارة"
             },
             {
