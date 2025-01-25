@@ -110,8 +110,8 @@ nav a:hover {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto; /* Supprimez la marge supérieure */
-    padding: 4rem 2rem 2rem; /* Ajoutez du padding supérieur pour éviter que le contenu ne soit caché */
+    margin: 0 auto; 
+    padding: 4rem 2rem 2rem; 
 }
 
 .section {
@@ -231,7 +231,6 @@ footer {
     direction: rtl; 
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -246,7 +245,6 @@ footer {
     animation-delay: calc(var(--animation-order) * 0.1s);
 }
 
-/* Style amélioré pour la section email */
 #email.section {
     text-align: center;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -318,7 +316,7 @@ footer {
             <h2>📱 Applications Mobile</h2>
             <div class="grid">
                 <div class="card">
-                    <h3 class="app-title">Dictionnaire Trilingue MG-AR-FR</h3>
+                    <h3 class="app-title">Dictionnaire Trilingue MG-AR-F</h3>
                     <p class="app-description">Dictionnaire multilingue pour l'apprentissage des langues.</p>
                     <a href="https://d.apkpure.com/b/APK/com.zoto.mgar?version=latest" class="button">Télécharger</a>
                 </div>
@@ -355,7 +353,7 @@ footer {
                 <div class="card">
                     <h3 class="app-title">SilamBoki.Net</h3>
                     <p class="app-description">Bibliothèque islamique de Madagascar</p>
-                    <a href="https://husnedine.github.io/rz3/SilamBoki" class="button">Visiter</a>
+                    <a href="https://husnedine.github.io/rz3/tboky" class="button">Visiter</a>
                 </div>                
                 <div class="card">
                     <h3 class="app-title">Jouz Amma</h3>
@@ -942,9 +940,9 @@ const languages = {
     },
 };
 
-// Fonction pour détecter la langue de l'appareil et changer la langue du site
+
 function detectLanguage() {
-    const userLang = navigator.language || navigator.userLanguage; // Obtenir la langue de l'appareil
+    const userLang = navigator.language || navigator.userLanguage; 
     let lang;
 
     if (userLang.startsWith('fr')) {
@@ -958,7 +956,7 @@ function detectLanguage() {
     changeLanguage(lang);
 }
 
-// Function to change the language as per the selected language
+
 function changeLanguage(lang) {
     const language = languages[lang];
     if (language) {
@@ -966,13 +964,13 @@ function changeLanguage(lang) {
         document.getElementById('portfolio-title').innerText = language.title;
         document.getElementById('portfolio-description').innerText = language.description;
 
-        // Met à jour le menu
+
         const menuItems = document.querySelectorAll('nav ul li a');
         language.menu.forEach((menuItem, index) => {
             menuItems[index].innerText = menuItem;
         });
 
-        // Ajoute ou supprime la classe RTL
+
         const nav = document.querySelector('nav');
         if (lang === 'ar') {
             nav.classList.add('rtl');
@@ -980,7 +978,7 @@ function changeLanguage(lang) {
             nav.classList.remove('rtl');
         }
 
-        // Met à jour les sections (h2)
+
         document.querySelector('#applications h2').innerText = language.sections.apps;
         document.querySelector('#chatbot h2').innerText = language.sections.chatbot;
         document.querySelector('#sites h2').innerText = language.sections.sites;
@@ -988,7 +986,7 @@ function changeLanguage(lang) {
         document.querySelector('#livres h2').innerText = language.sections.books;
         document.querySelector('#youtube h2').innerText = language.sections.youtube;
 
-        // Met à jour les sections des applications
+
         const appCards = document.querySelectorAll('#applications .app-title, #applications .app-description, #applications .button');
         language.apps.forEach((app, index) => {
             appCards[index * 3].innerText = app.title;
@@ -996,7 +994,7 @@ function changeLanguage(lang) {
             appCards[index * 3 + 2].innerText = app.link;
         });
 
-        // Met à jour la section du chatbot
+
         const chatbot = document.querySelector('#chatbot .app-title');
         const chatbotDesc = document.querySelector('#chatbot .app-description');
         const chatbotButton = document.querySelector('#chatbot .button');
@@ -1004,7 +1002,7 @@ function changeLanguage(lang) {
         chatbotDesc.innerText = language.chatbot.description;
         chatbotButton.innerText = language.chatbot.link;
 
-        // Met à jour les sections des sites
+
         const siteCards = document.querySelectorAll('#sites .app-title, #sites .app-description, #sites .button');
         language.sites.forEach((site, index) => {
             siteCards[index * 3].innerText = site.title;
@@ -1012,7 +1010,7 @@ function changeLanguage(lang) {
             siteCards[index * 3 + 2].innerText = site.link;
         });
 
-        // Met à jour les sections des outils
+
         const toolCards = document.querySelectorAll('#outils .app-title, #outils .app-description, #outils .button');
         language.tools.forEach((tool, index) => {
             toolCards[index * 3].innerText = tool.title;
@@ -1020,14 +1018,14 @@ function changeLanguage(lang) {
             toolCards[index * 3 + 2].innerText = tool.link;
         });
 
-        // Met à jour les sections des livres
+
         const bookCards = document.querySelectorAll('#livres .app-title, #livres .button');
         language.books.forEach((book, index) => {
             bookCards[index * 2].innerText = book.title;
             bookCards[index * 2 + 1].innerText = book.link;
         });
 
-        // Met à jour les sections YouTube
+
         const youtubeCards = document.querySelectorAll('#youtube .app-title, #youtube .button');
         language.youtube.forEach((youtube, index) => {
             youtubeCards[index * 2].innerText = youtube.title;
@@ -1036,7 +1034,7 @@ function changeLanguage(lang) {
     }
 }
 
-// Appelle la fonction de détection de langue lorsque la page est chargée
+
 window.onload = detectLanguage;
     </script>
 </body>
